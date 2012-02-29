@@ -1,0 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Trochut|Bowlby+One+SC);
+
+body {
+  background-image: url(../img/azulejo.jpg)
+}
+
+#main, header {
+  background-color: white;
+  opacity: 0.9;
+}
+
+h1 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 100px;
+}
