@@ -6,19 +6,7 @@ body {
   font-size: 16px;
   color: white;
   background-color: #1d85c6;
-  /*background-image: -khtml-gradient(linear, left top, left bottom, from(#1d85c6), to(#1581c3));
-  background-image: -moz-linear-gradient(top, #1d85c6, #1581c3);
-  background-image: -ms-linear-gradient(top, #1d85c6, #1581c3);
-  */
-  /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1d85c6), color-stop(10%, #1581c3));*/
-  background-image: -webkit-linear-gradient(top, #1d85c6 0%, #3393ce 150px, #1581c3 300px,  #3393ce 100%);
-  /*
-  background-image: -o-linear-gradient(top, #1d85c6, #1581c3);
-  */
-  background-image: linear-gradient(top, #1d85c6, #1581c3);
-  background-image: linear-gradient(top, yellow, red);
-  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=0);*/
-
+  background-image: url(/img/noise.png);
 }
 
 a {
@@ -26,10 +14,11 @@ a {
   text-decoration: underline;
 }
 
-p {
+p, li {
   font-family: 'Asap', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
+  text-shadow: 0 1px 0 #666;
 }
 
 h2.when {
@@ -48,23 +37,28 @@ p.boilerplate {
 
 header {
   text-align: center;
-  padding-top: 25px;
+  /*padding-top: 25px;*/
   margin: 0px;
   margin-left: -10px;
   margin-right: -10px;
 }
 
+#ribbon {
+  height: 30px;
+  background-color: #288cca;
+  border-bottom: 1px solid #3393ce;
+}
+
 #logo img {
   border: 1px solid #3393ce;
-/*  border-left: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #999;
-  border-bottom: 1px solid #999;
-*/}
+  border-top: 0;
+  margin-top: -30px;
+}
 
 h1, h2, h3 {
   margin-top: 1em;
   margin-bottom: 1em;
+  text-shadow: 0 1px 0 #666;
 }
 
 #photos img {
