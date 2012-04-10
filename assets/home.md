@@ -87,15 +87,19 @@ I am a JavaScript developer at Top 10 I am a free and open source software user 
 
 [http://trodrigues.net/](http://trodrigues.net/)
 
+## Heitor Ferreira
+
+![Heitor Ferreira](/img/fronhas/heitor.jpg)
+
+Recently finished a detour back to the academic world, now reborn as an independent developer. Previous incarnations include consultant, web developer and technical team leader for a telecom operator. Mobile services and apps have been my focus since 2001. 
+
+[@heitorfr](https://twitter.com/heitorfr)
 
 ## Luis Reis
 
 ![Luis Reis](/img/fronhas/luismreis.jpeg)
 
-
-## Heitor Ferreira
-
-
+[@luismreis](https://twitter.com/#!/luismreis)
 
 ## Bruno Coelho
 
@@ -106,4 +110,4 @@ Coding since the age of 6, went from Basic and Pascal to Java and recently to Ru
 Currently working on several Ruby On Rails projects, he is also an advisory board member at Hole 19 Golf.
 Last but not least a father who loves to slackline, climb and surf.
 
-[@bmccoelho](http://twitter.com/bmccoelho)
+[@bmccoelho](https://twitter.com/bmccoelho)
