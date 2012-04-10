@@ -11,4 +11,6 @@ To edit the content of the website edit file assets/home.md.
 
 To edit the layout: edit the file assets/layout.html.
 
+If you edit any of these you will need to restart the server.
+
 CSS: public/css/index.css
