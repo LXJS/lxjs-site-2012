@@ -41,6 +41,10 @@ p.boilerplate {
   margin-right: 20%;
 }
 
+.container {
+  max-width: 880px;
+}
+
 header {
   text-align: center;
   padding-top: 25px;
