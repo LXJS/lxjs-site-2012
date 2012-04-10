@@ -1,8 +1,3 @@
-<h2 class="when">September 28 and 29</h2>
-
-<p class="boilerplate">A 2-day not-for-profit by-the-community and for-the-community international conference about the New Frontiers of JavaScript.</p>
-
-
 # Where?
 
 In the beautiful and sunny city of [Lisbon, Portugal](http://maps.google.com/maps/place?q=lisbon,+portugal&hl=en&ftid=0xd19331a61e4f33b:0x400ebbde49036d0).
