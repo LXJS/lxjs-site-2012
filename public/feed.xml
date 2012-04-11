@@ -1,71 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Wed, 11 Apr 2012 22:52:34 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Where?</h1>
-<p>In the beautiful and sunny city of <a href="http://maps.google.com/maps/place?q=lisbon,+portugal&amp;hl=en&amp;ftid=0xd19331a61e4f33b:0x400ebbde49036d0">Lisbon, Portugal</a>.
-
-</p>
-<p>The conference will be held inside the beautiful building of <a href="http://maps.google.com/maps/place?q=mercado+da+ribeira,+Lisbon,+Portugal&amp;hl=en&amp;cid=7706911473874070589"><em>Mercado da Ribeira</em></a>.
-
-</p>
-<section id="photos">
-  <img class="first" src="/img/venue/far.jpg" alt="Mercado da Ribeira - From afar">
-  <img src="/img/venue/lunches.jpg" alt="Mercado da Ribeira - Lunch room">
-  <img class="first" src="/img/venue/confroom.jpg" alt="Mercado da Ribeira - Conf room">
-  <img src="/img/venue/room.jpg" alt="Mercado da Ribeira - Ball room">
-</section>
-
-<div class="clearfix"></div>
-
-<h1>How much?</h1>
-<h2>Early bird: EUR 175</h2>
-<p>Limited and before May 15.
-
-</p>
-<p>Includes:
-
-</p>
-<ul>
-<li>2 day conference pass</li>
-<li>Coffee-breaks</li>
-<li>Lunch on premises on the 2 days</li>
-<li>Free WiFi</li>
-<li>After-party with snacks</li>
-</ul>
-<p>Tickets will be on sale soon.
-
-</p>
-<h1>Keep me informed</h1>
-<form action="http://lxjs.createsend.com/t/j/s/mtkp/" method="post" id="subForm" class="form-horizontal">
-  <fieldset>
-    <div class="control-group">
-      <label class="control-label" for="name">Name:</label>
-      <div class="controls"><input class="input-xlarge" type="text" name="cm-name" id="name"></div>
-    </div>
-
-    <div class="control-group">
-      <label class="control-label" for="mtkp-mtkp">Email Address:</label>
-      <div class="controls"><input class="input-xlarge" type="text" name="cm-mtkp-mtkp" id="mtkp-mtkp"></div>
-    </div>
-
-    <div class="control-group subscribe">
-      <input class="btn btn-large" type="submit" value="Subscribe">
-    </div>
-
-    <p class="fineprint">We promise we won't do anything nasty with your email address and you will only receive periodic emails about new annoucements.</p>
-
-  </fieldset>
-</form>
-
-<h1>Schedule</h1>
-<p>TBD.
-
-</p>
-<p>All we know for now is that there will be 20-30 minute talks punctuated by coffee-breaks and a catered lunch for the 2 days.
-
-</p>
-<p>We will open a Reverse Call for Speakers soon.
-
-</p>
-<h1>Who?</h1>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Wed, 11 Apr 2012 23:11:07 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>About</h1>
 <p>We are a group of seasoned and semi-seasoned JavaScript fans deeply involved in the local and international JavaScript community:
 
 
@@ -133,9 +67,13 @@ Currently working on several Ruby On Rails projects, he is also an advisory boar
 Last but not least a father who loves to slackline, climb and surf.
 
 </p>
-<p><a href="https://twitter.com/bmccoelho">@bmccoelho</a>
+<p><a href="https://twitter.com/bmccoelho">@bmccoelho</a></p>
+]]></description><link>http://undefined/about</link><guid isPermaLink="true">http://undefined/about</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Schedule</h1>
+<p>TBD.
+
 </p>
-]]></description><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[speakers]]></title><description><![CDATA[<h1>Reverse Call for Speakers</h1>
+<p>All we know for now is that there will be 20-30 minute talks punctuated by coffee-breaks and a catered lunch for the 2 days.</p>
+]]></description><link>http://undefined/schedule</link><guid isPermaLink="true">http://undefined/schedule</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Reverse Call for Speakers</h1>
 <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHYwZThwRWhNaWI2MmJoMy1wa2ZpTlE6MQ&amp;embedded=true&amp;ifq" method="POST" id="ss-form">
   <div>
     <label for="entry_3">What's your email address?</label>
@@ -170,4 +108,58 @@ Last but not least a father who loves to slackline, climb and surf.
     </p>
   </div>
 </form>
-]]></description><link>http://undefined/speakers</link><guid isPermaLink="true">http://undefined/speakers</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item></channel></rss>
+]]></description><link>http://undefined/speakers</link><guid isPermaLink="true">http://undefined/speakers</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>How much?</h1>
+<h2>Early bird: EUR 175</h2>
+<p>Limited and before May 15.
+
+</p>
+<p>Includes:
+
+</p>
+<ul>
+<li>2 day conference pass</li>
+<li>Coffee-breaks</li>
+<li>Lunch on premises on the 2 days</li>
+<li>Free WiFi</li>
+<li>After-party with snacks</li>
+</ul>
+<p>Tickets will be on sale soon.
+
+</p>
+<h1>Keep me informed</h1>
+<form action="http://lxjs.createsend.com/t/j/s/mtkp/" method="post" id="subForm" class="form-horizontal">
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label" for="name">Name:</label>
+      <div class="controls"><input class="input-xlarge" type="text" name="cm-name" id="name"></div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="mtkp-mtkp">Email Address:</label>
+      <div class="controls"><input class="input-xlarge" type="text" name="cm-mtkp-mtkp" id="mtkp-mtkp"></div>
+    </div>
+
+    <div class="control-group subscribe">
+      <input class="btn btn-large" type="submit" value="Subscribe">
+    </div>
+
+    <p class="fineprint">We promise we won't do anything nasty with your email address and you will only receive periodic emails about new annoucements.</p>
+
+  </fieldset>
+</form>
+
+]]></description><link>http://undefined/tickets</link><guid isPermaLink="true">http://undefined/tickets</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Where?</h1>
+<p>In the beautiful and sunny city of <a href="http://maps.google.com/maps/place?q=lisbon,+portugal&amp;hl=en&amp;ftid=0xd19331a61e4f33b:0x400ebbde49036d0">Lisbon, Portugal</a>.
+
+</p>
+<p>The conference will be held inside the beautiful building of <a href="http://maps.google.com/maps/place?q=mercado+da+ribeira,+Lisbon,+Portugal&amp;hl=en&amp;cid=7706911473874070589"><em>Mercado da Ribeira</em></a>.
+
+</p>
+<section id="photos">
+  <img class="first" src="/img/venue/far.jpg" alt="Mercado da Ribeira - From afar">
+  <img src="/img/venue/lunches.jpg" alt="Mercado da Ribeira - Lunch room">
+  <img class="first" src="/img/venue/confroom.jpg" alt="Mercado da Ribeira - Conf room">
+  <img src="/img/venue/room.jpg" alt="Mercado da Ribeira - Ball room">
+</section>
+
+<div class="clearfix"></div>]]></description><link>http://undefined/where</link><guid isPermaLink="true">http://undefined/where</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item></channel></rss>
