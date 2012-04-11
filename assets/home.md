@@ -99,7 +99,9 @@ Recently finished a detour back to the academic world, now reborn as an independ
 
 ![Luis Reis](/img/fronhas/luismreis.jpeg)
 
-[@luismreis](https://twitter.com/#!/luismreis)
+A curious guy always looking for the next challenge. Skynet kidnapped me on an early age, forcing me to do basic, pascal, coding graphics drivers (x86 assembly), o.O based windows systems, messing with the JVM from the inside-out, enterprisey stuff as boring as getting stuff 1e3 times faster, devops before the term was coined and more recently ruby, rails, javascript and arduino driven gadgets. Professional geek, student, coach, inspirer to and inspired by my journey companions. Making my way on the Lisbon start up community. Father of two mini-me swedish guys.
+
+[http://luismreis.com](http://luismreis.com)
 
 ## Bruno Coelho
 
