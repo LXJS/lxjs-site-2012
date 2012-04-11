@@ -1,6 +1,6 @@
 {
   "name": "lxjsweb",
-  "version": "0.1.0-5",
+  "version": "0.1.0-7",
   "private": true,
   "dependencies": {
     "marked": "*",
@@ -11,6 +11,10 @@
   "scripts": {
     "start": "bin/server.js"
   },
+  "domains": [
+    "lxjs.org",
+    "www.lxjs.org"
+  ],
   "engines": {
     "node": "0.6.x"
   },
