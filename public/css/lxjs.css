@@ -1,12 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Asap:400,700);
 
-body {
+body, label {
   margin: 0;
   font-family: 'Asap', sans-serif;
   font-size: 16px;
   color: white;
   background-color: #1d85c6;
   background-image: url(/img/noise.png);
+}
+
+#ss-form label {
+  margin: 20px 0px;
 }
 
 a {
