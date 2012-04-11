@@ -13,6 +13,10 @@ body, label {
   margin: 20px 0px;
 }
 
+.container {
+  width: auto;
+}
+
 a {
   color: white;
   text-decoration: underline;
@@ -81,6 +85,26 @@ header h1 {
   font-size: 60px;
   margin: 1em;
   margin-top: 1em;
+}
+
+#mainnav {
+  margin-top: 1em;
+  height: 40px;
+  background-color: #288cca;
+  border: 1px solid #3393ce;
+}
+
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar .nav > li > a {
+  color: #ccc;
+}
+
+.nav {
+  padding-left: 60px;
 }
 
 #main {

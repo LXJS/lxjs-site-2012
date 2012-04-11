@@ -1,22 +1,29 @@
 var director = require('director')
   , stat     = require('node-static')
+  , fs       = require('fs')
   , file     = new stat.Server('./public/')
-  , home     = require('../routes/home')
-  , speakers = require('../routes/speakers')
-  , routes   = 
-    { "/"                         : { get: home}
-    , "/reverse-call-for-speakers" : {get: speakers}
-    }
-  , router = new director.http.Router(routes)
+  , layout   = fs.readFileSync(__dirname + '/../assets/layout.html', 'utf8')
   ;
 
-var server = require('http').createServer(function(req, res) {
+var routes = {};
+
+[
+    ''
+  , 'where'
+  , 'tickets'
+  , 'reverse-call-for-speakers'
+  , 'schedule'
+  , 'about'
+].forEach(function(route) {
+  routes['/' + route] = { get: require('../routes/' + (route || 'home'))(layout) }
+})
+
+var router = new director.http.Router(routes)
+
+require('http').createServer(function(req, res) {
   router.dispatch(req, res, function(err) {
     if (err) {
-      file.serve(req, res);
-      return;
+      file.serve(req, res)
     }
-  });
-});
-
-server.listen(8080);
+  })
+}).listen(8080)
