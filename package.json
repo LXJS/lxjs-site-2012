@@ -1,15 +1,12 @@
 {
   "name": "lxjs",
-  "version": "0.2.0-4",
+  "version": "0.2.0-5",
   "private": true,
   "dependencies": {
-    "marked": "*",
-    "director": "*",
-    "node-static": "*",
-    "plates": "*"
+    "http-server": "0.2.9"
   },
   "scripts": {
-    "start": "bin/server.js"
+    "start": "bin/server"
   },
   "domains": [
     "lxjs.org",
