@@ -15,7 +15,7 @@ The conference will be held inside the beautiful building of [_Mercado da Ribeir
 
 # How much?
 
-## Early bird: EUR 200
+## Early bird: EUR 175
 
 Limited and before May 15.
 
