@@ -24,6 +24,7 @@ Includes:
 * 2 day conference pass
 * Coffee-breaks
 * Lunch on premises on the 2 days
+* Free WiFi
 * After-party with snacks
 
 Tickets will be on sale soon.
@@ -54,6 +55,10 @@ Tickets will be on sale soon.
 # Schedule
 
 TBD.
+
+All we know for now is that there will be 20-30 minute talks punctuated by coffee-breaks and a catered lunch for the 2 days.
+
+We will open a Reverse Call for Speakers soon.
 
 # Who?
 
