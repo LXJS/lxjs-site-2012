@@ -1,6 +1,6 @@
 # Schedule
 
-All we know for now is that there will be 2 tracks with 30 minute talks punctuated by coffee-breaks and a catered lunch for the 2 days.
+The conference will have 2 tracks with 30 minute talks punctuated by coffee-breaks and a catered lunch for the 2 days.
 
 ## Track A
 

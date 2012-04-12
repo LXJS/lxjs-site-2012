@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Thu, 12 Apr 2012 12:23:40 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>About</h1>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Thu, 12 Apr 2012 22:52:17 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>About</h1>
 <p>We are a group of seasoned and semi-seasoned JavaScript fans deeply involved in the local and international JavaScript community:
 
 
@@ -31,7 +31,7 @@
 <p><img src="/img/fronhas/trodrigues.jpeg" alt="Tiago Rodrigues">
 
 </p>
-<p>I am a JavaScript developer at Top 10 I am a free and open source software user and advocate, and a strong webstandards defender.
+<p>JavaScript developer at Top10.com, previously at Playfish and SAPO. Mostly a frontend developer with an engineering background, becoming a more seasoned Node.js developer. Free and open source software user and advocate, and a strong webstandards defender.
 
 </p>
 <p><a href="http://trodrigues.net/"><a href="http://trodrigues.net/">http://trodrigues.net/</a></a>
@@ -67,7 +67,8 @@ Currently working on several Ruby On Rails projects, he is also an advisory boar
 Last but not least a father who loves to slackline, climb and surf.
 
 </p>
-<p><a href="https://twitter.com/bmccoelho">@bmccoelho</a></p>
+<p><a href="https://twitter.com/bmccoelho">@bmccoelho</a>
+</p>
 ]]></description><link>http://undefined/about</link><guid isPermaLink="true">http://undefined/about</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Reverse Call for Speakers</h1>
 <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHYwZThwRWhNaWI2MmJoMy1wa2ZpTlE6MQ&amp;embedded=true&amp;ifq" method="POST" id="ss-form">
   <div>
@@ -76,9 +77,9 @@ Last but not least a father who loves to slackline, climb and surf.
   </div>
   <div>
     <label for="entry_0">
-      Who would you like to speak? <br>
+      Who would you like to see as a speaker? <br>
       <em>
-        (yourself is fine if you have something super exciting to share)
+        (submiting yourself is fine if you have something super exciting to share)
       </em>
     </label>
     <textarea name="entry.0.single" rows="8" cols="100" id="entry_0" class="span7"></textarea>
@@ -104,7 +105,7 @@ Last but not least a father who loves to slackline, climb and surf.
   </div>
 </form>
 ]]></description><link>http://undefined/reverse-call-for-speakers</link><guid isPermaLink="true">http://undefined/reverse-call-for-speakers</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Schedule</h1>
-<p>All we know for now is that there will be 2 tracks with 30 minute talks punctuated by coffee-breaks and a catered lunch for the 2 days.
+<p>The conference will have 2 tracks with 30 minute talks punctuated by coffee-breaks and a catered lunch for the 2 days.
 
 </p>
 <h2>Track A</h2>
@@ -121,7 +122,7 @@ Last but not least a father who loves to slackline, climb and surf.
 <ul>
 <li>2 day conference pass</li>
 <li>Coffee-breaks</li>
-<li>Lunch on premises on the 2 days</li>
+<li>Lunch on premises for the 2 days</li>
 <li>Free WiFi</li>
 <li>After-party with snacks</li>
 </ul>
@@ -154,7 +155,7 @@ Last but not least a father who loves to slackline, climb and surf.
 <p>In the beautiful and sunny city of <a href="http://maps.google.com/maps/place?q=lisbon,+portugal&amp;hl=en&amp;ftid=0xd19331a61e4f33b:0x400ebbde49036d0">Lisbon, Portugal</a>.
 
 </p>
-<p>The conference will be held inside the beautiful building of <a href="http://maps.google.com/maps/place?q=mercado+da+ribeira,+Lisbon,+Portugal&amp;hl=en&amp;cid=7706911473874070589"><em>Mercado da Ribeira</em></a>.
+<p>The conference will be held inside the amazing <a href="http://maps.google.com/maps/place?q=mercado+da+ribeira,+Lisbon,+Portugal&amp;hl=en&amp;cid=7706911473874070589"><em>Mercado da Ribeira</em></a>.
 
 </p>
 <section id="photos">
@@ -164,4 +165,5 @@ Last but not least a father who loves to slackline, climb and surf.
   <img src="/img/venue/room.jpg" alt="Mercado da Ribeira - Ball room">
 </section>
 
-<div class="clearfix"></div>]]></description><link>http://undefined/where</link><guid isPermaLink="true">http://undefined/where</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item></channel></rss>
+<div class="clearfix"></div>
+]]></description><link>http://undefined/where</link><guid isPermaLink="true">http://undefined/where</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item></channel></rss>

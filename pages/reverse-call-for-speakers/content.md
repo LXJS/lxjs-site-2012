@@ -7,9 +7,9 @@
   </div>
   <div>
     <label for="entry_0">
-      Who would you like to speak? <br/>
+      Who would you like to see as a speaker? <br/>
       <em>
-        (yourself is fine if you have something super exciting to share)
+        (submiting yourself is fine if you have something super exciting to share)
       </em>
     </label>
     <textarea name="entry.0.single" rows="8" cols="100" id="entry_0"

@@ -26,7 +26,7 @@ Coming from the NoSQL Revolution, Nuno has helped shape a new breed of document 
 
 ![Tiago Rodrigues](/img/fronhas/trodrigues.jpeg)
 
-I am a JavaScript developer at Top 10 I am a free and open source software user and advocate, and a strong webstandards defender.
+JavaScript developer at Top10.com, previously at Playfish and SAPO. Mostly a frontend developer with an engineering background, becoming a more seasoned Node.js developer. Free and open source software user and advocate, and a strong webstandards defender.
 
 [http://trodrigues.net/](http://trodrigues.net/)
 
