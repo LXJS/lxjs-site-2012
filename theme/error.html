@@ -1,45 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Blacksmith is a static site generator.">
-    <meta name="keywords" content="">
-    <title>Blacksmith</title>
-    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-    <link rel="stylesheet" href="/css/application.css" type="text/css" media="all">
-    <link rel="stylesheet" href="/css/blacksmith.css" type="text/css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LxJS - Lisbon JavaScript Conference 2012</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/lxjs.css" rel="stylesheet">
   </head>
   <body>
-    <div id="container">
-      <header id="header">
-        <h1 class="title"><a href="/">Blacksmith</a></h1>
+    <div id="ribbon"></div>
+    <div class="container container-fluid">
+      <header class="clearfix">
+        <div id="logo">
+          <a href="http://lxjs.org/"><img src="/img/logo.png" /></a>
+        </div>
+        <span class="if-home">
+          <h1>Lisbon JavaScript 2012</h1>
+          <h2 class="when">September 28 and 29</h2>
+
+          <p class="boilerplate">A 2-day not-for-profit by-the-community and for-the-community international conference about the New Frontiers of JavaScript.</p>
+        </span>
+
       </header>
-
-      <div id="page">
-
-        <div id="sidebar">
-          <nav id="sidebar-node" class="breadcrumbs">
-            <a href="" class="breadcrumb"></a>
-          </nav>
-          <div id="sidebar-node">
-            <h2>Table of Contents</h2>
-            <nav id="toc"></nav>
-          </div>
-        </div>
-        <div id="article">
-          <h1>Error <span class="status">404</span>: <span class="message">Page Not Found</span></h1>
-          <h3>Try exploring one of the links to the left!<h3>
-        </div>
-        <script type="text/javascript" src="/js/jquery.js"></script>
-      </div>
-      <footer id="footer">
-        <hr />
-        <p><a href="/">Blacksmith</a></p>
-        <ul>
-          <li>Powered by <a href="http://nodejitsu.com">Nodejitsu</a> / styled with <a href="http://quotedprintable.com/pages/scribbish">scribbish</a></li>
-        </ul>
-      </footer>
     </div>
+
+    <div id="mainnav">
+
+      <div class="container container-fluid">
+
+        <nav class="navbar">
+          <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/where">Where</a></li>
+            <li><a href="/tickets">Tickets</a></li>
+            <li><a href="/reverse-call-for-speakers">Reverse Call For Speakers</a></li>
+            <li><a href="/schedule">Schedule</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="container container-fluid">
+
+      <section id="main" class="content"><h1>Oops!</h1></section>
+
+      <section id="footer">
+        <hr />
+        <p>LxJS Logo designed by <a href="https://twitter.com/#!/Aworkz">Bruno Cartaxeiro</a></p>
+        <p>Hosted at <a href="http://nodejitsu">Nodejitsu</a> and running on <a href="http://flatironjs.org/">Flatiron.js</a></p>
+        <p>&copy; lxjs.org</p>
+      </section>
+  
+    </div>
+
   </body>
 </html>
+
