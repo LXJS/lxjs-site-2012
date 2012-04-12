@@ -49,5 +49,5 @@
     "active": false,
     "running": false
   },
-  "main": "bin/server.js"
+  "main": "bin/server"
 }
