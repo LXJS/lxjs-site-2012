@@ -8,7 +8,6 @@
   "scripts": {
     "start": "bin/server"
   },
-  "main": "bin/server.js",
   "domains": [
     "lxjs.org",
     "www.lxjs.org",
@@ -17,5 +16,38 @@
   "engines": {
     "node": "0.6.x"
   },
-  "subdomain": "lxjs"
+  "subdomain": "lxjs",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luismreis/lxjsweb.git"
+  },
+  "env": {
+    "SUBDOMAIN": "lxjs",
+    "NODE_ENV": "production"
+  },
+  "databases": {},
+  "ctime": 1332720057383,
+  "mtime": 1334233493758,
+  "author": "Tiago Rodrigues <trodrigues@lxjs.org> (http://lxjs.org)",
+  "description": "lxjs website",
+  "homepage": "http://lxjs.org",
+  "devDependencies": {},
+  "analyze": false,
+  "last": {
+    "id": "0.5.0-4",
+    "ctime": 1334227730818,
+    "md5": "e58e41cc13ae5b4b7330db429bef8eed",
+    "filename": "lxjs-lxjs-0.5.0-4.tgz",
+    "active": false,
+    "running": false
+  },
+  "running": {
+    "id": "0.5.0-5",
+    "ctime": 1334233484220,
+    "md5": "771626ffb5e7d65d8b1961df3ae59263",
+    "filename": "lxjs-lxjs-0.5.0-5.tgz",
+    "active": false,
+    "running": false
+  },
+  "main": "bin/server.js"
 }
