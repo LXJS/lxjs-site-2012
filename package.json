@@ -1,6 +1,6 @@
 {
   "name": "lxjs",
-  "version": "0.5.0-7",
+  "version": "0.5.1",
   "private": true,
   "dependencies": {
     "http-server": "*"
@@ -19,7 +19,7 @@
   "subdomain": "lxjs",
   "repository": {
     "type": "git",
-    "url": "git://github.com/luismreis/lxjsweb.git"
+    "url": "git://github.com/pgte/lxjs.git"
   },
   "env": {
     "SUBDOMAIN": "lxjs",
