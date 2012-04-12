@@ -1,6 +1,6 @@
 {
   "name": "lxjs",
-  "version": "0.5.0-6",
+  "version": "0.5.0-7",
   "private": true,
   "dependencies": {
     "http-server": "*"
