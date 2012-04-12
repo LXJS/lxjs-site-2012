@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Thu, 12 Apr 2012 08:55:23 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>About</h1>
+<p>We are a group of seasoned and semi-seasoned JavaScript fans deeply involved in the local and international JavaScript community:
+
+
+</p>
+<h2>Pedro Teixeira</h2>
+<p><img src="/img/fronhas/pgte.png" alt="Pedro Teixeira">
+
+
+</p>
+<p>Geek, programmer, freelancer, and entrepreneur. Author of many Node.js modules, the Node Tuts screencast, and the Hands-on Node.js e-book and overall fervent proclaimer of the Node.js creed. Writing a book for Wiley on Node.js. Engineer @ <a href="http://nodejitsu.com">Nodejitsu</a>.
+
+</p>
+<p><a href="http://about.me/pedroteixeira"><a href="http://about.me/pedroteixeira">http://about.me/pedroteixeira</a></a>
+
+
+</p>
+<h2>Nuno Job</h2>
+<p><img src="/img/fronhas/dscape.png" alt="Nuno Job">
+
+</p>
+<p>Coming from the NoSQL Revolution, Nuno has helped shape a new breed of document database technology with his work on IBM Research and MarkLogic. Hacker at heart, open-source enthusiast, Nuno has performed roles ranging from Community, Training, Marketing, Pre-sales, and Engineering. In his free time Nuno is running The Node Firm, a Node.js bite-sized consulting business, and expense.cat. He holds a Bachelor of Engineering from University of Minho, and studied cryptography and parsers during his Master of Computer Science.
+
+</p>
+<p><a href="http://nunojob.com"><a href="http://nunojob.com">http://nunojob.com</a></a>
+
+
+</p>
+<h2>Tiago Rodrigues</h2>
+<p><img src="/img/fronhas/trodrigues.jpeg" alt="Tiago Rodrigues">
+
+</p>
+<p>I am a JavaScript developer at Top 10 I am a free and open source software user and advocate, and a strong webstandards defender.
+
+</p>
+<p><a href="http://trodrigues.net/"><a href="http://trodrigues.net/">http://trodrigues.net/</a></a>
+
+</p>
+<h2>Heitor Ferreira</h2>
+<p><img src="/img/fronhas/heitor.jpg" alt="Heitor Ferreira">
+
+</p>
+<p>Recently finished a detour back to the academic world, now reborn as an independent developer. Previous incarnations include consultant, web developer and technical team leader for a telecom operator. Mobile services and apps have been my focus since 2001. 
+
+</p>
+<p><a href="https://twitter.com/heitorfr">@heitorfr</a>
+
+</p>
+<h2>Luis Reis</h2>
+<p><img src="/img/fronhas/luismreis.jpeg" alt="Luis Reis">
+
+</p>
+<p>A curious guy always looking for the next challenge. Skynet kidnapped me on an early age, forcing me to do basic, pascal, coding graphics drivers (x86 assembly), o.O based windows systems, messing with the JVM from the inside-out, enterprisey stuff as boring as getting stuff 1e3 times faster, devops before the term was coined and more recently ruby, rails, javascript and arduino driven gadgets. Professional geek, student, coach, inspirer to and inspired by my journey companions. Making my way on the Lisbon start up community. Father of two mini-me swedish guys.
+
+</p>
+<p><a href="http://luismreis.com"><a href="http://luismreis.com">http://luismreis.com</a></a>
+
+</p>
+<h2>Bruno Coelho</h2>
+<p><img src="/img/fronhas/bmccoelho.jpg" alt="Bruno Coelho">
+
+</p>
+<p>A software enginneer that loves to code and participate in the creation process of something great.
+Coding since the age of 6, went from Basic and Pascal to Java and recently to Ruby On Rails.
+Currently working on several Ruby On Rails projects, he is also an advisory board member at Hole 19 Golf.
+Last but not least a father who loves to slackline, climb and surf.
+
+</p>
+<p><a href="https://twitter.com/bmccoelho">@bmccoelho</a></p>
+]]></description><link>http://undefined/about</link><guid isPermaLink="true">http://undefined/about</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Reverse Call for Speakers</h1>
+<form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHYwZThwRWhNaWI2MmJoMy1wa2ZpTlE6MQ&amp;embedded=true&amp;ifq" method="POST" id="ss-form">
+  <div>
+    <label for="entry_3">What's your email address?</label>
+    <input type="text" name="entry.3.single" value="" class="span4">
+  </div>
+  <div>
+    <label for="entry_0">
+      Who would you like to speak? <br>
+      <em>
+        (yourself is fine if you have something super exciting to share)
+      </em>
+    </label>
+    <textarea name="entry.0.single" rows="8" cols="100" id="entry_0" class="span7"></textarea>
+  </div>
+  <div>
+    <label for="entry_1">
+      On what topic?
+    </label>
+    <textarea name="entry.1.single" rows="8" cols="100" id="entry_1" class="span7"></textarea>
+  </div>
+  <div>
+    <label for="entry_4">
+      Anything else you want to share with us? <br>
+      <em>Questions/Concerns?</em>
+    </label>
+    <textarea name="entry.4.single" rows="8" cols="100" id="entry_4" class="span7"></textarea>
+  </div>
+  <div>
+    <br>
+    <p align="right">
+      <input class="btn" type="submit" name="submit" value="Submit">
+    </p>
+  </div>
+</form>
+]]></description><link>http://undefined/reverse-call-for-speakers</link><guid isPermaLink="true">http://undefined/reverse-call-for-speakers</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Schedule</h1>
+<p>TBD.
+
+</p>
+<p>All we know for now is that there will be 20-30 minute talks punctuated by coffee-breaks and a catered lunch for the 2 days.</p>
+]]></description><link>http://undefined/schedule</link><guid isPermaLink="true">http://undefined/schedule</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>How much?</h1>
+<h2>Early bird: EUR 175</h2>
+<p>Limited and before May 15.
+
+</p>
+<p>Includes:
+
+</p>
+<ul>
+<li>2 day conference pass</li>
+<li>Coffee-breaks</li>
+<li>Lunch on premises on the 2 days</li>
+<li>Free WiFi</li>
+<li>After-party with snacks</li>
+</ul>
+<p>Tickets will be on sale soon.
+
+</p>
+<h1>Keep me informed</h1>
+<form action="http://lxjs.createsend.com/t/j/s/mtkp/" method="post" id="subForm" class="form-horizontal">
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label" for="name">Name:</label>
+      <div class="controls"><input class="input-xlarge" type="text" name="cm-name" id="name"></div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="mtkp-mtkp">Email Address:</label>
+      <div class="controls"><input class="input-xlarge" type="text" name="cm-mtkp-mtkp" id="mtkp-mtkp"></div>
+    </div>
+
+    <div class="control-group subscribe">
+      <input class="btn btn-large" type="submit" value="Subscribe">
+    </div>
+
+    <p class="fineprint">We promise we won't do anything nasty with your email address and you will only receive periodic emails about new annoucements.</p>
+
+  </fieldset>
+</form>
+
+]]></description><link>http://undefined/tickets</link><guid isPermaLink="true">http://undefined/tickets</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Where?</h1>
+<p>In the beautiful and sunny city of <a href="http://maps.google.com/maps/place?q=lisbon,+portugal&amp;hl=en&amp;ftid=0xd19331a61e4f33b:0x400ebbde49036d0">Lisbon, Portugal</a>.
+
+</p>
+<p>The conference will be held inside the beautiful building of <a href="http://maps.google.com/maps/place?q=mercado+da+ribeira,+Lisbon,+Portugal&amp;hl=en&amp;cid=7706911473874070589"><em>Mercado da Ribeira</em></a>.
+
+</p>
+<section id="photos">
+  <img class="first" src="/img/venue/far.jpg" alt="Mercado da Ribeira - From afar">
+  <img src="/img/venue/lunches.jpg" alt="Mercado da Ribeira - Lunch room">
+  <img class="first" src="/img/venue/confroom.jpg" alt="Mercado da Ribeira - Conf room">
+  <img src="/img/venue/room.jpg" alt="Mercado da Ribeira - Ball room">
+</section>
+
+<div class="clearfix"></div>]]></description><link>http://undefined/where</link><guid isPermaLink="true">http://undefined/where</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item></channel></rss>
