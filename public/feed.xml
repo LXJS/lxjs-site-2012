@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Thu, 12 Apr 2012 09:43:37 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>About</h1>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Thu, 12 Apr 2012 12:23:40 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>About</h1>
 <p>We are a group of seasoned and semi-seasoned JavaScript fans deeply involved in the local and international JavaScript community:
 
 
@@ -104,16 +104,18 @@ Last but not least a father who loves to slackline, climb and surf.
   </div>
 </form>
 ]]></description><link>http://undefined/reverse-call-for-speakers</link><guid isPermaLink="true">http://undefined/reverse-call-for-speakers</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Schedule</h1>
-<p>TBD.
+<p>All we know for now is that there will be 2 tracks with 30 minute talks punctuated by coffee-breaks and a catered lunch for the 2 days.
 
 </p>
-<p>All we know for now is that there will be 20-30 minute talks punctuated by coffee-breaks and a catered lunch for the 2 days.</p>
-]]></description><link>http://undefined/schedule</link><guid isPermaLink="true">http://undefined/schedule</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>How much?</h1>
-<h2>Early bird: EUR 175</h2>
-<p>Limited and before May 15.
+<h2>Track A</h2>
+<p>Curated speakers.
 
 </p>
-<p>Includes:
+<h2>Track B</h2>
+<p>For attendees. Registration will only open some time before the event.
+</p>
+]]></description><link>http://undefined/schedule</link><guid isPermaLink="true">http://undefined/schedule</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Tickets</h1>
+<p>Conference Ticket includes:
 
 </p>
 <ul>

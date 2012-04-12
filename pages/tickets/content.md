@@ -1,10 +1,6 @@
-# How much?
+# Tickets
 
-## Early bird: EUR 175
-
-Limited and before May 15.
-
-Includes:
+Conference Ticket includes:
 
 * 2 day conference pass
 * Coffee-breaks
