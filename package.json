@@ -6,7 +6,7 @@
     "http-server": "*"
   },
   "scripts": {
-    "start": "node bin/server.js"
+    "start": "bin/server"
   },
   "main": "bin/server.js",
   "domains": [
