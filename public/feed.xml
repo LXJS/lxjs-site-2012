@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Fri, 13 Apr 2012 07:28:57 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>About</h1>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Fri, 13 Apr 2012 10:46:49 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>About</h1>
 <p>We are a group of seasoned and semi-seasoned JavaScript fans deeply involved in the local and international JavaScript community:
 
 
@@ -115,7 +115,9 @@ Last but not least a father who loves to slackline, climb and surf.
 <h2>Track B</h2>
 <p>For attendees. Registration will only open some time before the event.
 </p>
-]]></description><link>http://undefined/schedule</link><guid isPermaLink="true">http://undefined/schedule</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Tickets</h1>
+]]></description><link>http://undefined/schedule</link><guid isPermaLink="true">http://undefined/schedule</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Sponsors</h1>
+<p>If you have any interest in sponsoring this event please get in contact with <a href="mailto:nunojobpinto@gmail.com">Nuno Job</a>.</p>
+]]></description><link>http://undefined/sponsors</link><guid isPermaLink="true">http://undefined/sponsors</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Tickets</h1>
 <p>Conference Ticket includes:
 
 </p>
