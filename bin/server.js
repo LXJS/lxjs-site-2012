@@ -1,9 +1,8 @@
-#!/usr/bin/env node
-
-var HTTPServer = require('../lib/http-server').HTTPServer;
+var HTTPServer = require('http-server').HTTPServer;
 
 var httpServer = new HTTPServer({
-  root: './public'
+    root: './public/',
+    port: process.env.PORT || process.env.C9_PORT || 80
 });
 
 httpServer.start();
