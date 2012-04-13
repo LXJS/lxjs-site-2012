@@ -1,13 +1,14 @@
 {
   "name": "lxjs",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "private": true,
   "dependencies": {
-    "http-server": "0.2.9"
+    "http-server": "*"
   },
   "scripts": {
     "start": "node bin/server.js"
   },
+  "main": "bin/server.js",
   "domains": [
     "lxjs.org",
     "www.lxjs.org",
@@ -25,12 +26,8 @@
     "SUBDOMAIN": "lxjs",
     "NODE_ENV": "production"
   },
-  "databases": {},
-  "ctime": 1332720057383,
-  "mtime": 1334233493758,
   "author": "Tiago Rodrigues <trodrigues@lxjs.org> (http://lxjs.org)",
   "description": "lxjs website",
   "homepage": "http://lxjs.org",
-  "devDependencies": {},
-  "analyze": false
+  "devDependencies": {}
 }
