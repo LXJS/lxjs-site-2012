@@ -152,5 +152,17 @@ h2.when {
   text-align: center;
 }
 
+.person {
+  margin-bottom: 20px;
+}
 
+.person img {
+  float: left;
+  margin-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
 
+.person .info {
+  clear: left;
+}
