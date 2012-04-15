@@ -1,26 +1,32 @@
 @import url(http://fonts.googleapis.com/css?family=Asap:400,700);
 
-body, label {
+body {
   margin: 0;
+  padding: 0;
   font-family: 'Asap', sans-serif;
-  font-size: 16px;
-  color: white;
+  font-size: 100%;
   background-color: #1d85c6;
   background-image: url(/img/noise.png);
+}
+
+body > *, label {
+  color: #fff;
 }
 
 #ss-form label {
   margin: 20px 0px;
 }
 
+/*
+ * general element styles
+ */
 a {
   color: white;
   text-decoration: underline;
 }
 
 p, li {
-  font-family: 'Asap', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5em;
   text-shadow: 0 1px 0 #666;
 }
@@ -34,14 +40,25 @@ h1, h2, h3 {
   text-shadow: 0 1px 0 #666;
 }
 
-.container {
-  max-width: 880px;
+label {
+  font-size: 1em;
 }
 
+input {
+  height: 2.2em;
+}
+
+/*
+ * layout
+ */
 #ribbon {
   height: 30px;
   background-color: #288cca;
   border-bottom: 1px solid #3393ce;
+}
+
+.container {
+  max-width: 880px;
 }
 
 #logo img {
@@ -73,8 +90,12 @@ nav ul.nav li {
 #footer {
   padding: 2em;
   text-align: center;
+  font-size: 0.8em;
 }
 
+/*
+ * content elements
+ */
 p.boilerplate {
   text-align: center;
   margin-left: 20%;
@@ -94,12 +115,14 @@ header h1 {
   margin-top: 0.5em;
 }
 
-h2.when {
-  text-align: center;
-}
-
 section h1 {
   margin: 1em 0;
+}
+
+#main {
+  position: relative;
+  min-height: 300px;
+  margin: 0 10% 0 10%;
 }
 
 #photos img {
@@ -111,10 +134,9 @@ section h1 {
   margin-left: 0;
 }
 
-#main {
-  position: relative;
-  min-height: 300px;
-  margin: 0 10% 0 10%;
+h2.when {
+  text-align: center;
 }
+
 
 
