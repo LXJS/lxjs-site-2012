@@ -85,7 +85,7 @@ nav ul.nav {
   display: block;
   overflow: hidden;
   margin: 0 auto;
-  width: 640px;
+  width: 540px;
   margin-bottom: 0;
   padding: 4px 0px;
 }
@@ -109,7 +109,7 @@ nav ul.nav li {
 }
 
 .sponsors {
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -164,6 +164,10 @@ h2.when {
 
 .person .info {
   clear: left;
+}
+
+.speakerssep {
+  margin: 70px 0;
 }
 
 /* responsiveness */
