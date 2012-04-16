@@ -1,20 +1,3 @@
-# Speakers
-
-<div class="person">
-<h2>Mikeal Rogers</h2>
-
-![Mikeal Rogers](/img/speakers/mikeal.png)
-<p>Founder and creator of Gather. Node.js core contributor and maintainer of request and curator of NodeConf.</p>
-<p class="info">
-http://www.mikealrogers.com
-</p>
-<p class="info">
-http://twitter.com/mikeal
-</p>
-</div>
-
-<hr class="speakerssep"/>
-
 ## Reverse Call for Speakers
 
 <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHYwZThwRWhNaWI2MmJoMy1wa2ZpTlE6MQ&amp;embedded=true&amp;ifq" method="POST" id="ss-form">
