@@ -108,17 +108,9 @@ nav ul.nav li {
   font-size: 0.8em;
 }
 
-.side-sponsors {
-  margin-top: 360px;
-}
-
-.side-sponsors h1 {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-.side-sponsors ul {
-  list-style: none;
+.sponsors {
+  margin-top: 20px;
+  text-align: center;
 }
 
 /*
@@ -172,4 +164,22 @@ h2.when {
 
 .person .info {
   clear: left;
+}
+
+/* responsiveness */
+@media screen and (max-width: 1100px) {
+  .right-sponsors {
+    display: none;
+  }
+
+  .row-fluid > .left-content {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .right-sponsors {
+    margin-left: 10%;
+  }
 }
