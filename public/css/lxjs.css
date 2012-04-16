@@ -77,7 +77,8 @@ header {
 nav {
   background-color: #288cca;
   border: 1px solid #3393ce;
-  margin: 1em 10% 18px 10%;
+  margin: 1em auto 18px;
+  width: 650px;
 }
 
 nav ul.nav {
@@ -97,7 +98,7 @@ nav ul.nav li {
 
 #main {
   position: relative;
-  min-height: 300px;
+  min-height: 200px;
   margin: 0 10% 0 10%;
 }
 

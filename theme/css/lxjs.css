@@ -77,7 +77,8 @@ header {
 nav {
   background-color: #288cca;
   border: 1px solid #3393ce;
-  margin: 1em 10% 18px 10%;
+  margin: 1em auto 18px;
+  width: 650px;
 }
 
 nav ul.nav {
@@ -133,6 +134,7 @@ header h1 {
   font-size: 60px;
   margin: 1em;
   margin-top: 0.5em;
+  line-height: 1.2em;
 }
 
 section h1 {

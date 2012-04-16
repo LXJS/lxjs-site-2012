@@ -1,6 +1,6 @@
 {
   "name": "lxjs",
-  "version": "0.5.4-16",
+  "version": "0.5.7",
   "private": true,
   "dependencies": {
     "http-server": "*"
@@ -29,5 +29,17 @@
   "author": "Tiago Rodrigues <trodrigues@lxjs.org> (http://lxjs.org)",
   "description": "lxjs website",
   "homepage": "http://lxjs.org",
-  "devDependencies": {}
+  "devDependencies": {},
+  "databases": {},
+  "ctime": 1334561463195,
+  "mtime": 1334561476217,
+  "last": null,
+  "running": {
+    "id": "0.5.4-10",
+    "ctime": 1334561466783,
+    "md5": "dcbb9885b98a349405b308113e695187",
+    "filename": "lxjs-lxjs-0.5.4-10.tgz",
+    "active": false,
+    "running": false
+  }
 }
