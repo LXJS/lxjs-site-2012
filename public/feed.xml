@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Mon, 16 Apr 2012 14:43:11 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>About</h1>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>http://github.com/dylan/node-rss</link><generator>NodeJS RSS Module</generator><lastBuildDate>Tue, 17 Apr 2012 22:08:38 GMT</lastBuildDate><atom:link href="/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[undefined -- Untitled]]></title><link>http://undefined.</link><guid isPermaLink="true">http://undefined.</guid><dc:creator><![CDATA[Tiago Rodrigues]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>About</h1>
 <p>We are a group of seasoned and semi-seasoned JavaScript fans deeply involved in the local and international JavaScript community:
 
 </p>
@@ -156,16 +156,6 @@ have open sourced much of their own software.</p>
 
 
 ]]></description><link>http://undefined/sponsors</link><guid isPermaLink="true">http://undefined/sponsors</guid><pubDate>Wed, 11 Apr 2012 22:51:56 GMT</pubDate></item><item><title><![CDATA[undefined -- Untitled]]></title><description><![CDATA[<h1>Tickets</h1>
-<p>Conference Ticket includes:
-
-</p>
-<ul>
-<li>2 day conference pass</li>
-<li>Coffee-breaks</li>
-<li>Lunch on premises for the 2 days</li>
-<li>Free WiFi</li>
-<li>After-party with snacks</li>
-</ul>
 <p>Tickets will be on sale soon.
 
 </p>

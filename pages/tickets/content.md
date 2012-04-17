@@ -1,13 +1,5 @@
 # Tickets
 
-Conference Ticket includes:
-
-* 2 day conference pass
-* Coffee-breaks
-* Lunch on premises for the 2 days
-* Free WiFi
-* After-party with snacks
-
 Tickets will be on sale soon.
 
 # Keep me informed
