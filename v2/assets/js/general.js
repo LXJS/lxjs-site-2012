@@ -38,6 +38,16 @@ $(function() {
 			positions = [],
 			$twitterFeed = $('#twitter_feed');
 		
+		/**
+		 * ANIMATIONS
+		 *
+		 */
+		
+		$('.panel').hover(function(){
+			$(this).addClass('flip');
+		}, function() {
+			$(this).removeClass('flip');
+		});
 		
 		/**
 		 * LAYOUT
