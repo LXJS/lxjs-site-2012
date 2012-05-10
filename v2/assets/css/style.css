@@ -247,7 +247,7 @@ td {
 	top: 0;
 	left: 0;
 	overflow: hidden;
-	z-index: 10;
+	z-index: 1000;
 }
 
 #page_nav ul {
@@ -1181,7 +1181,7 @@ a.no-transition {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 900;
+	z-index: 400;
 	width: inherit;
 	height: inherit;
 	
@@ -1202,7 +1202,7 @@ a.no-transition {
 }
 
 .panel.flip .front {
-	z-index: 900;
+	z-index: 400;
 	border-color: #eee;
 
 	-webkit-transform: rotateY(180deg);
@@ -1214,7 +1214,7 @@ a.no-transition {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 800;
+	z-index: 300;
 	width: inherit;
 	height: inherit;
 	
@@ -1235,7 +1235,7 @@ a.no-transition {
 }
 
 .panel.flip .back {
-	z-index: 1000;
+	z-index: 500;
 	
 	-webkit-transform: rotateY(0deg);
 	-moz-transform: rotateY(0deg);
