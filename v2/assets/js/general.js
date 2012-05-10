@@ -35,13 +35,29 @@ $(function() {
 			pageNavHeight = $('#page_nav').height(),
 			scrollTimeout = null,
 			sections = [],
-			positions = [];
+			positions = [],
+			$twitterFeed = $('#twitter_feed'),
+			isKonamied = false,
+			konami;
 		
+		/**
+		 * ANIMATIONS
+		 *
+		 */
+		
+		$('.panel').hover(function(){
+			$(this).addClass('flip');
+		}, function() {
+			$(this).removeClass('flip');
+		});
 		
 		/**
 		 * LAYOUT
 		 *
 		 */
+		 
+		// Carousel
+		$('.carousel').carousel();
 		
 		// Masonry
 		$('#speakers .entry_list').masonry({
@@ -72,6 +88,21 @@ $(function() {
 		positions = $.map(sections, function(id) {
 			return $(id).position().top;
 		});
+		
+		/**
+		 * TWITTER
+		 *
+		 */
+		
+		if ($twitterFeed.length) {
+		
+			$twitterFeed.tweet({
+				username: "lxjs",
+				count: 3,
+				loading_text: "Loading Tweets..."
+			});
+			
+		}
 		
 		/**
 		 * MAPS
@@ -148,7 +179,7 @@ $(function() {
 				$.bbq.pushState('/' + section.replace('#', ''), 2);
 				setTimeout(function() {
 					$(window).on('hashchange', hashChangeHandler);
-				}, 500);
+				}, 0);
 			}
 			
 			$navLinks.removeClass('active').filter('[href="' + section + '"]').addClass('active');
@@ -184,6 +215,12 @@ $(function() {
 			
 				$panel.fadeIn('fast', function() {
 					loadMaps($panel);
+					$panel.find('.carousel').carousel();
+					
+					// Recalculate positions
+					positions = $.map(sections, function(id) {
+						return $(id).position().top;
+					});
 				});
 			});
 			
@@ -195,7 +232,6 @@ $(function() {
 		 * HISTORY
 		 *
 		 */
-		
 		 
 		function hashChangeHandler(evt) {
 			// Get state
@@ -203,11 +239,7 @@ $(function() {
 			
 			if (url) {
 				// Scroll to section
-				$.scrollTo('#' + url, 'normal', {
-					onAfter: function() {
-
-					}
-				});
+				$.scrollTo('#' + url, 'normal');
 			}
 			
 			evt.preventDefault();
@@ -218,7 +250,159 @@ $(function() {
 		// Trigger for url present on first load
 		$(window).trigger('hashchange');
 		highlightCurrentNav(false);
-	
+		
+		
+		/**
+		 * KONAMI CODE
+		 *
+		 */
+		 
+		konami = new Konami();
+		
+		konami.code = function() {
+			if (!isKonamied) {
+				logoFall();
+				isKonamied = true;
+			} else {
+				$('#konami_easter_egg').remove();
+				isKonamied = false;
+			}
+		};
+		
+		konami.iphone.code = konami.code;
+		
+		konami.load();
+		
+		function logoFall() {
+			var canvas, 
+				$canvas, 
+				context,
+				x, 
+				y, 
+				radius = 25, 
+				clickX, 
+				clickY, 
+				drag = false,
+				total_dots = 150,
+				fps = 24,
+				dots = new Array(),
+				drag_i = -1,
+				gravity = .05,
+				friction = .98,
+				bounce = -.96,
+				wrap = true,
+				float = true,
+				imgs = new Array(),
+				img1 = new Image(),
+				img2 = new Image(),
+				this_dot = {};
+			
+			canvas = document.createElement('canvas');
+			canvas.id = 'konami_easter_egg';
+			canvas.width = $(window).width();
+			canvas.height = $(window).height();
+			$canvas = $(canvas);
+			$canvas.css({position: 'fixed', zIndex: 8000, top: 0, left: 0});
+			context = canvas.getContext("2d");
+			
+			
+			img1.src = "assets/images/lxjs_logo.png";
+			img2.src = "assets/images/brand_quodis.png";
+			
+			imgs[0] = img1;
+			imgs[1] = img2;
+			
+			for (var i=0; i < total_dots; i++){
+				createDot();
+			}
+			function createDot(x, y, r, vx, vy){
+				var this_dot = {
+					x:      typeof(x) != 'undefined' ? x : Math.random()*canvas.width, 
+					y:      typeof(y) != 'undefined' ? y : Math.random()*-canvas.height,
+					radius: typeof(r) != 'undefined' ? r : 25,
+					scale:  Math.floor(10 + (1+50-10)*Math.random()),
+					vx:     typeof(vx) != 'undefined' ? vx : Math.random()*3-1,
+					vy:     typeof(vy) != 'undefined' ? vy : Math.random()*3,
+					//this will pick a digit 1, 2 or 3 and set it as the src value, this could also be a Math.floor(Math.random()*3)+1 to really be random
+					src:    (dots.length % 3) + 1,
+					r:      0,
+					vr:     0
+				};
+				dots.push(this_dot);
+			}
+			
+			$canvas.mousedown(function (event) {
+				createDot(event.pageX - this.offsetLeft-25, event.pageY - this.offsetTop-25);
+			});
+			
+		 
+			$canvas.mouseup(function (event) {
+				drag = false;
+				drag_i = -1;
+			});
+			
+			function update(){
+				var this_dot;
+				
+				for (var i=0; i < dots.length; i++){
+					if (drag_i != i){
+						this_dot = dots[i];
+						if (float){
+							this_dot.vx += Math.random() - .5;
+							this_dot.vy += Math.random() - .5;
+							this_dot.vr += Math.random()*.01 - .005;
+						}
+						this_dot.vx *= friction;
+						this_dot.vy = this_dot.vy * friction + gravity;
+						this_dot.x += this_dot.vx;
+						this_dot.y += this_dot.vy;
+						this_dot.r += this_dot.vr;
+						
+							if (this_dot.x > canvas.width + this_dot.radius){
+									this_dot.x -= canvas.width + this_dot.radius*2;
+									this_dot.vr = 0;
+							}
+							else if(this_dot.x < 0 - this_dot.radius){
+									this_dot.x += canvas.width + this_dot.radius*2;
+									this_dot.vr = 0;
+							}
+							if (this_dot.y > canvas.height + this_dot.radius){
+									this_dot.y -= canvas.height + this_dot.radius*2;
+									this_dot.vr = 0;
+							}
+						
+					}
+				}
+			}
+			function draw() {
+				var i, src;
+				
+				context.clearRect(0, 0, canvas.width, canvas.height);
+				for (i=0; i < dots.length; i++){
+					src = img1;
+					
+					if (dots[i].src == 2) src = img2;
+					
+					context.save();
+					context.translate(dots[i].x+dots[i].scale/2, dots[i].y+dots[i].scale/2);
+					context.rotate(dots[i].r);
+					context.translate(-dots[i].x-dots[i].scale/2, -dots[i].y-dots[i].scale/2);
+					context.drawImage(src, dots[i].x, dots[i].y, dots[i].scale, dots[i].scale);
+					context.restore();
+				}
+			}
+			
+			$('body').append(canvas);
+			
+			setInterval(function() {
+				update();
+				draw();
+			}, 1000/fps);
+			
+			draw();
+			
+		}
+		
 	});
 	
 	if (window.APP.fontActive) $(document).trigger('APP.fontActive');
