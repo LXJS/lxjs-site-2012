@@ -214,6 +214,11 @@ $(function() {
 				$panel.fadeIn('fast', function() {
 					loadMaps($panel);
 					$panel.find('.carousel').carousel();
+					
+					// Recalculate positions
+					positions = $.map(sections, function(id) {
+						return $(id).position().top;
+					});
 				});
 			});
 			
