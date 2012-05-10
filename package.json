@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "http-server": "*",
-    "blacksmith": "0.0.*"
+    "blacksmith": "0.0.x"
   },
   "scripts": {
     "start": "bin/server.js"
