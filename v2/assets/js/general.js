@@ -42,6 +42,9 @@ $(function() {
 		 * LAYOUT
 		 *
 		 */
+		 
+		// Carousel
+		$('.carousel').carousel();
 		
 		// Masonry
 		$('#speakers .entry_list').masonry({
@@ -148,7 +151,7 @@ $(function() {
 				$.bbq.pushState('/' + section.replace('#', ''), 2);
 				setTimeout(function() {
 					$(window).on('hashchange', hashChangeHandler);
-				}, 500);
+				}, 0);
 			}
 			
 			$navLinks.removeClass('active').filter('[href="' + section + '"]').addClass('active');
@@ -184,6 +187,7 @@ $(function() {
 			
 				$panel.fadeIn('fast', function() {
 					loadMaps($panel);
+					$panel.find('.carousel').carousel();
 				});
 			});
 			
@@ -203,11 +207,7 @@ $(function() {
 			
 			if (url) {
 				// Scroll to section
-				$.scrollTo('#' + url, 'normal', {
-					onAfter: function() {
-
-					}
-				});
+				$.scrollTo('#' + url, 'normal');
 			}
 			
 			evt.preventDefault();

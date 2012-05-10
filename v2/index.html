@@ -240,6 +240,36 @@
 								<dt class="row">Website:</dt>
 								<dd><a href="http://thehub-edinburgh.com" title="Go to The Hub Website">thehub-edinburgh.com</a></dd>
 							</dl>
+							
+							<div id="venueCarousel" class="carousel slide">
+								<!-- Carousel items -->
+								<div class="carousel-inner">
+									<div class="active item">
+										<img src="http://www.morgadioreal.com/wp-content/gallery/mercado-da-ribeira/mercado_da_ribeira_foto_lu_s_ponte_1.jpg" />
+										<div class="carousel-caption">
+											<h4>First thumbnail label</h4>
+											<p>First thumbnail caption</p>
+										</div>
+									</div>
+									<div class="item">
+										<img src="http://www.cm-lisboa.pt/archive/img/Mercado_da_Ribeira_Foto_Am_rico_Simas_1.jpg" />
+										<div class="carousel-caption">
+											<h4>Second thumbnail label</h4>
+											<p>Second thumbnail caption</p>
+										</div>
+									</div>
+									<div class="item">
+										<img src="http://ipt.olhares.com/data/big/260/2605330.jpg" />
+										<div class="carousel-caption">
+											<h4>Third thumbnail label</h4>
+											<p>Third thumbnail caption</p>
+										</div>
+									</div>
+								</div>
+								<!-- Carousel nav -->
+								<a class="carousel-control left" href="#venueCarousel" data-slide="prev">&lsaquo;</a>
+								<a class="carousel-control right" href="#venueCarousel" data-slide="next">&rsaquo;</a>
+							</div>
 						
 						</div><!-- /prose -->
 						
@@ -910,11 +940,24 @@ Whilst he’s not writing articles or running and speaking at conferences, he ru
 					<li class="entry_item block">
 						<article>
 							<header>
-								<a href="http://quodis.com/" title="Go to Quodis Website">
+								<a href="#quodisModal" data-toggle="modal" title="Go to Quodis Website">
 									<h1 class="entry_title visuallyhidden">Quodis</h1>
 									<p class="entry_thumbnail"><img src="assets/images/sponsor_main_quodis.png" alt="Quodis" width="160" height="120" /></p>
 								</a>
 							</header>
+						</article>
+						
+						<article class="modal hide fade" id="quodisModal">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">×</button>
+								<h3>Modal header</h3>
+							</div>
+							<div class="modal-body">
+								<p>One fine body…</p>
+							</div>
+							<div class="modal-footer">
+								<p>footer</p>
+							</div>
 						</article>
 					</li>
 					
@@ -1319,6 +1362,9 @@ Whilst he’s not writing articles or running and speaking at conferences, he ru
 	<script src="assets/js/libs/jquery.scrollTo-1.4.2-min.js"></script>
 	<script src="assets/js/libs/jquery.ba-bbq.min.js"></script>
 	<script src="assets/js/libs/leaflet.js"></script>
+	<script src="assets/js/libs/bootstrap-transition.js"></script>
+	<script src="assets/js/libs/bootstrap-modal.js"></script>
+	<script src="assets/js/libs/bootstrap-carousel.js"></script>
 	<script src="assets/js/general.js"></script>
 	
 </body>
