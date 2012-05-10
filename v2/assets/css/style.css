@@ -247,7 +247,7 @@ td {
 	top: 0;
 	left: 0;
 	overflow: hidden;
-	z-index: 10;
+	z-index: 1000;
 }
 
 #page_nav ul {
@@ -578,11 +578,23 @@ td {
 }
 
 #contacts .social_nav li {
-	background: url(../images/social_icons_bg.png) 0px 0px no-repeat;
-	padding: 0 0 0 50px;
+	padding: 0 0 0 0px;
 	margin: 0 0 20px 0;
 	font-size: 16px;
 	letter-spacing: -1px;
+}
+
+#contacts .social_nav .icon {
+	background: url(../images/social_icons_bg.png) 0px 0px no-repeat;
+	display: block;
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#contacts .social_nav li a {
+	display: block;
 }
 
 #contacts .social_nav li small {
@@ -600,15 +612,15 @@ td {
 	color: #355971;
 }
 
-#contacts .social_nav .email { background-position: 0px 0px;}
-#contacts .social_nav .phone { background-position: 0px -60px;}
-#contacts .social_nav .twitter { background-position: 0px -120px;}
-#contacts .social_nav .tumblr { background-position: 0px -180px;}
-#contacts .social_nav .lanyard { background-position: 0px -240px;}
+#contacts .social_nav .email .icon { background-position: 0px 0px;}
+#contacts .social_nav .phone .icon { background-position: 0px -60px;}
+#contacts .social_nav .twitter .icon { background-position: 0px -120px;}
+#contacts .social_nav .tumblr .icon { background-position: 0px -180px;}
+#contacts .social_nav .lanyard .icon { background-position: 0px -240px;}
 
 #newsletter_form {
 	background-color: #D2EAF4;
-	background-color: rgba(5,117,187,.2);
+	background-color: rgba(29,151,202,.2);
 	padding: 20px;
 }
 
@@ -756,6 +768,11 @@ button:hover {
 	font-weight: 700;
 	line-height: 40px;
 	letter-spacing: -1px;
+	-webkit-transition: color .2s ease;
+	   -moz-transition: color .2s ease;
+	    -ms-transition: color .2s ease;
+	     -o-transition: color .2s ease;
+	        transition: color .2s ease;
 }
 
 #info_nav li a:hover {
@@ -772,6 +789,7 @@ button:hover {
 }
 
 #info_nav li a.active {
+	
 	color: #BBE0EF;
 	background: url(../images/info_nav_bg.png) 196px -100px no-repeat;
 }
@@ -871,14 +889,372 @@ p.dropcap::first-letter {
 
 
 
+/* 5. Modals
+------------------------------------------------------------------ */
+
+.hide {
+	display: none;
+}
+
+.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.15s linear;
+     -moz-transition: opacity 0.15s linear;
+      -ms-transition: opacity 0.15s linear;
+       -o-transition: opacity 0.15s linear;
+          transition: opacity 0.15s linear;
+}
+
+.fade.in {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1050;
+  width: 560px;
+  margin: -250px 0 0 -280px;
+  overflow: auto;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+.modal.fade {
+  top: -25%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+      -ms-transition: opacity 0.3s linear, top 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+          transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+
+.modal.fade.in {
+  top: 50%;
+}
+
+.modal-header {
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header .close {
+  margin-top: 2px;
+}
+
+.modal-body {
+  max-height: 400px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.modal-form {
+  margin-bottom: 0;
+}
+
+.modal-footer {
+  padding: 14px 15px 15px;
+  margin-bottom: 0;
+  text-align: right;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+     -moz-box-shadow: inset 0 1px 0 #ffffff;
+          box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  content: "";
+}
+
+.modal-footer:after {
+  clear: both;
+}
+
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
 
 
+/* 6. Carousel
+------------------------------------------------------------------ */
+
+.carousel {
+  position: relative;
+  margin-bottom: 18px;
+  line-height: 1;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+     -moz-transition: 0.6s ease-in-out left;
+      -ms-transition: 0.6s ease-in-out left;
+       -o-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.carousel .item > img {
+  display: block;
+  line-height: 1;
+}
+
+.carousel .active,
+.carousel .next,
+.carousel .prev {
+  display: block;
+}
+
+.carousel .active {
+  left: 0;
+}
+
+.carousel .next,
+.carousel .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel .next {
+  left: 100%;
+}
+
+.carousel .prev {
+  left: -100%;
+}
+
+.carousel .next.left,
+.carousel .prev.right {
+  left: 0;
+}
+
+.carousel .active.left {
+  left: -100%;
+}
+
+.carousel .active.right {
+  left: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+     -moz-border-radius: 23px;
+          border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.carousel-control.right {
+  right: 15px;
+  left: auto;
+}
+
+.carousel-control:hover {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 15px 5px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-caption h4,
+.carousel-caption p {
+  color: #ffffff;
+}
 
 
+/* 7. Transitions
+------------------------------------------------------------------ */
+a { 
+	-webkit-transition: .2s ease;
+	   -moz-transition: .2s ease;
+	    -ms-transition: .2s ease;
+	     -o-transition: .2s ease;
+	        transition: .2s ease;
+}
 
+a.no-transition {
+	-webkit-transition: none;
+	   -moz-transition: none;
+	    -ms-transition: none;
+	     -o-transition: none;
+	        transition: none;
+}
 
+.spin {
+	-webkit-transition: -webkit-transform 0.4s ease-out;
+		  -moz-transition: -moz-transform 0.4s ease-out;
+		    -ms-transition: -ms-transform 0.4s ease-out;
+		      -o-transition: -o-transform 0.4s ease-out;
+		            transition: transform 0.4s ease-out;
+}
 
+*:hover > .spin {
+	-webkit-transform: rotateZ(360deg);
+       -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+         -o-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+}
 
+.panel {
+	position: relative;
+}
 
+.panel .front {
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 400;
+	width: inherit;
+	height: inherit;
+	
+	-webkit-transform: rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
 
+	-moz-transform: rotateY(0deg);
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
 
+	/* -- transition is the magic sauce for animation -- */
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.panel.flip .front {
+	z-index: 400;
+	border-color: #eee;
+
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+
+.panel .back {
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 300;
+	width: inherit;
+	height: inherit;
+	
+	-webkit-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+
+	-moz-transform: rotateY(-180deg);
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+
+	/* -- transition is the magic sauce for animation -- */
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.panel.flip .back {
+	z-index: 500;
+	
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+}
+
+/* -- diagonal axis rotation -- */
+.diagonal .front {
+	-webkit-transform: rotate3d(45,45,0,0deg);
+	-moz-transform: rotate3d(45,45,0,0deg);
+}
+.diagonal.flip .front {
+	-webkit-transform: rotate3d(45,45,0,180deg);
+	-moz-transform: rotate3d(45,45,0,180deg);
+}
+.diagonal .back {
+	-webkit-transform: rotate3d(45,45,0,-180deg);
+	-moz-transform: rotate3d(45,45,0,-180deg);
+}
+.diagonal.flip .back {
+	-webkit-transform: rotate3d(45,45,0,0deg);
+	-moz-transform: rotate3d(45,45,0,0deg);
+}
