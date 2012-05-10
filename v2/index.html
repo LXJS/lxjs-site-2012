@@ -1,1125 +1,955 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-	<title>LXJS - Lisbon Javascript 2012</title>
+	<head>
 	
-	<meta charset="utf-8" />
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta name="author" content="Partners, Quodis" />
-	<meta name="copyright" content="© 2012" />
-	<meta name="distribution" content="global" />
-
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png"> 
-	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-ipad.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-iphone4.png" />
+		<title>LXJS - Lisbon Javascript 2012</title>
+		
+		<meta charset="utf-8" />
+		<meta name="description" content="A 2-day not-for-profit by-the-community and for-the-community international conference about the New Worlds of JavaScript." />
+		<meta name="author" content="LXJS, Quodis" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 	
-<!-- 	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'> -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png"> 
+		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-iphone4.png" />
+		
+		<!-- 	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'> -->
+		
+		<link rel="stylesheet" href="assets/css/boilerplate.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/leaflet.css" />
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="assets/css/leaflet.ie.css" />
+		<![endif]-->
 	
-	<link rel="stylesheet" href="assets/css/boilerplate.css" />
-	<link rel="stylesheet" href="assets/css/style.css" />
-	<link rel="stylesheet" href="assets/css/leaflet.css" />
-	<!--[if lte IE 8]>
-		<link rel="stylesheet" href="assets/css/leaflet.ie.css" />
-	<![endif]-->
-
-	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-</head>
-
-<body>
-
-	<!-- NAVIGATION -->
-	<nav id="page_nav" class="alt" role="navigation">
-		<div class="container">
-			<ul class="l_grid">
-				<li class="active"><a href="#welcome" title="Welcome">Welcome</a></li>
-				<li><a href="#information" title="Information">Information</a></li>
-				<li><a href="#speakers" title="Speakers">Speakers</a></li>
-				<li><a href="#schedule" title="Schedule">Schedule</a></li>
-				<li><a href="#sponsors" title="Sponsors">Sponsors</a></li>
-				<li><a href="#tickets" title="Tickets">Tickets</a></li>
-				<li><a href="#contacts" title="Contacts">Contacts</a></li>
-			</ul>
-		</div>
-	</nav><!-- /nav -->
-
-	<!--CONTENT -->
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	
-		<!-- 1. Welcome -->
-		<section id="welcome" class="section">
-		
-			<div class="container">
-					
-				<header id="brand" class="section-header">
-							
-					<hgroup>
-						<a href="#">
-						<h1 class="brand_initials"><img src="assets/images/lxjs_logo.png" alt="lxjs-logo" width="240" height="240" />LXJS</h1>
-						<h2 class="brand_name">Lisbon Javascript <span>2012</span></h2>
-						</a>
-						<h2 class="brand_info">September 28+29 <span class="info">Lisbon, Portugal</span></h2>
-					</hgroup>
-					
-					<p class="description">A 2-day not-for-profit by-the-community and for-the-community international conference about the New Worlds of JavaScript.</p>		
-					
-				</header><!-- /header -->
-				
-				<dl class="social_nav">
-					<dt>Follow us</dt>
-					<dd class="twitter large"><a href="http://twitter.com/#!/lxjs" title="Follow us on Twitter" class="ir spin">@lxjs</a></dd>
-					<dd class="tumblr medium"><a href="http://lxjs.tumblr.com" title="Follow us on Tumblr" class="ir spin">lxjs.tumblr.com</a></dd>
-					<dd class="lanyard"><a href="http://lanyrd.com/2012/lxjs" title="Follow us on Lanyard" class="ir spin">lanyrd.com/2012/lxjs</a></dd>
-				</dl>
-			
-			</div><!-- /container -->
-			
-		</section><!-- /welcome -->
-		
-		
-		<!-- 2. Information -->
-		<section id="information" class="section alt">
-		
-			<div class="container">
-					
-				<header class="section_header">
-					<h1>Information</h1>
-				</header><!-- /header -->
-				
-				<nav id="info_nav" role="navigation" class="tabs">
-					<ul>
-						<li><a href="#news" title="News" class="active">News</a></li>
-						<li><a href="#about" title="About">About</a></li>
-						<li><a href="#venue" title="Venue">Venue</a></li>
-						<li><a href="#accommodation" title="Accommodation">Accommodation</a></li>
-						<li><a href="#travel" title="Travel">Travel</a></li>
-						<li><a href="#tourguide" title="Tour Guide">Tour Guide</a></li>
-						<li><a href="#afterparty" title="After Party">After Party</a></li>
+	</head>
+	
+	<body>
+	
+		<div id="wrapper">
+	
+			<!-- NAVIGATION -->
+			<nav id="page_nav" class="alt" role="navigation">
+				<div class="container">
+					<ul class="l_grid">
+						<li class="active"><a href="#welcome" title="Welcome">Welcome</a></li>
+						<li><a href="#information" title="Information">Information</a></li>
+						<li><a href="#speakers" title="Speakers">Speakers</a></li>
+						<li><a href="#schedule" title="Schedule">Schedule</a></li>
+						<li><a href="#sponsors" title="Sponsors">Sponsors</a></li>
+						<li><a href="#tickets" title="Tickets">Tickets</a></li>
+						<li><a href="#contacts" title="Contacts">Contacts</a></li>
 					</ul>
-				</nav>
-					
-				<!-- 2.1 News -->
-				<div class="panel" data-panel="news" style="display: block;">
-					
-					<section class="col_medium">
-						<header>
-							<h2><a href="http://lxjs.tumblr.com" class="external_link" title="Go to LXJS Tumblr">From Tumblr</a></h2>
-						</header>
-						
-						<div class="prose">
-						
-							<ul class="border_list">
-								<li>
-									<article>
-										<header>
-											<h3><a href="#" title="Go to blog post">The logo work on LXJS: Curly braces in a typical portuguese tile</a></h3>
-											<p class="meta">24th April, 2012</p>
-										</header>
-										<p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales adipiscing nisi, id scelerisque justo congue in. Praesent gravida diam vitae turpis vehicula ornare. Maecenas varius neque leo, at mollis tellus. </p>
-									</article>
-								</li>
-								<li>
-									<article>
-										<header>
-											<h3><a href="#" title="Go to blog post">Interview: Adam Christian</a></h3>
-											<p class="meta">24th April, 2012</p>
-										</header>
-										<p class="dropcap">Nam id semper risus. Phasellus nibh mauris, ullamcorper ac viverra id, tincidunt sed leo. Sed et nisl eget nibh feugiat convallis. Duis laoreet elit id risus commodo volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-									</article>
-								</li>
-							</ul>
-							
-						</div>
-						
-					</section><!-- col_medium -->
-					
-					<section class="col_small">
-						<header>
-							<h2><a href="http://twitter.com/#!/lxjs" class="external_link" title="Go to Twitter Website">From Twitter</a></h2>
-						</header>
-						
-						<div class="prose" id="twitter_feed">
-						</div>
-						
-					</section><!-- col_small -->
-					
 				</div>
+			</nav><!-- /nav -->
+		
+			<!--CONTENT -->
+			
+				<!-- 1. Welcome -->
+				<section id="welcome" class="section">
 				
-				
-				<!-- 2.2 About -->
-				<div class="panel" data-panel="about">
-				
-					<section class="col_large">
-						<header>
-							<h2>About</h2>
-						</header>
-						
-						<div class="prose">
-							<p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elite. Ut adipiscing congue sapien eu varius. Phasellus dolor est, mollis net placerat eu, congue a veldt. Curabitur posuere, duo see hendrerit elementum, ipsum eros lobortis tells, eu rhoncus veldt ipsum at diam.</p>
-	
-							<p>Aliquam posuere, mi vitae iaculis incident, sapien tells pellentesque ante, at dignissim risus libero a met us. Etiam diam duo, sagittis ac egestas aliquot, bland it net nunc. Nunc rutrum lacus del leo dapibus laoreet. Cras enim dolor, rhoncus at imperdiet id, faucibus vitae felis. Maecenas luctus incident dapibus. Donec interdum imperdiet sapien, condimentum scelerisque neque adipiscing vel. Suspendisse potent.</p>
-	
-							<p>Sed temper consectetur ante egestas premium. Cras vitae odio et nisi placerat interdum id in diam. Nulla facilisi. Aliquam erat volutpat. Duis consequent, purrs net pharetra suscipit, sam arcu ultricies met us, at facilisis nibh orci see magna. Cras ac hendrerit nisi.</p>
-	
-							<p>Etiam see ligula a justo vulputate porta. Praesent venerates, veldt see rutrum bibendum, ante arcu temper lacus, ullamcorper condimentum turps tort or eu tort or. Etiam null magna, sollicitudin eu malesuada see, tempus a neque. Aliquam erat volutpat. Sed vulputate nunc at urn a dignissim laoreet. Maecenas viverra rhoncus enim, del facilisis odio ornate eu. Sed et mi ut neque sagittis rhoncus. Maecenas commode lacus ut erat ultrices et imperdiet erat ullamcorper.</p>
-						
-						</div><!-- /prose -->
-						
-					</section><!-- col_large -->
-					
-				</div><!-- About Panel -->
-				
-				
-				<!-- 2.3 Venue -->
-				<div class="panel" data-panel="venue">
-					
-					<section class="col_medium">
-						<header>
-							<h2>Mercado da Ribeira</h2>
-						</header>
-						
-						<div class="prose">
-						
-							<p>We booked the Mercado da Ribeira, a great venue overlooking the beautiful river Tagus (one of the largest in Europe). The Venue is located in the newly renovated Lisbon Port, surrounded by great bars, restaurants and coffee shops by the river. Location is ideal and transportation is abundant.</p>
+					<div class="container">
 							
-							<h3>Map</h3>
-							
-							<div class="map" data-latitude="38.706611" data-longitude="-9.14556">
-								
-							</div>
-							
-							<h3>Contact details</h3>
-
-							<dl>
-								<dt>Address:</dt>
-								<dd>
-									<address>
-										Mercado da Ribeira<br/>
-										Rua Duque de Palmela, 34<br/>
-										1250-098 Lisbon, Portugal
-									</address>
-								</dd>
-								
-								<dt class="row">Email:</dt>
-								<dd><a href="mailto:gr.tor@solmeliaportugal.com" title="Email us">gr.tor@solmeliaportugal.com</a></dd>
-								
-								<dt class="row">Phone:</dt>
-								<dd><a href="tel:00351218930017" title="Phone Number">(+351) 218930017</a></dd>
-								
-								<dt class="row">Website:</dt>
-								<dd><a href="http://thehub-edinburgh.com" title="Go to The Hub Website">thehub-edinburgh.com</a></dd>
-							</dl>
-							
-							<div id="venueCarousel" class="carousel slide">
-								<!-- Carousel items -->
-								<div class="carousel-inner">
-									<div class="active item">
-										<img src="http://www.morgadioreal.com/wp-content/gallery/mercado-da-ribeira/mercado_da_ribeira_foto_lu_s_ponte_1.jpg" />
-										<div class="carousel-caption">
-											<h4>First thumbnail label</h4>
-											<p>First thumbnail caption</p>
-										</div>
-									</div>
-									<div class="item">
-										<img src="http://www.cm-lisboa.pt/archive/img/Mercado_da_Ribeira_Foto_Am_rico_Simas_1.jpg" />
-										<div class="carousel-caption">
-											<h4>Second thumbnail label</h4>
-											<p>Second thumbnail caption</p>
-										</div>
-									</div>
-									<div class="item">
-										<img src="http://ipt.olhares.com/data/big/260/2605330.jpg" />
-										<div class="carousel-caption">
-											<h4>Third thumbnail label</h4>
-											<p>Third thumbnail caption</p>
-										</div>
-									</div>
-								</div>
-								<!-- Carousel nav -->
-								<a class="carousel-control left" href="#venueCarousel" data-slide="prev">&lsaquo;</a>
-								<a class="carousel-control right" href="#venueCarousel" data-slide="next">&rsaquo;</a>
-							</div>
-						
-						</div><!-- /prose -->
-						
-					</section><!-- /col_medium -->
-					
-					<aside class="col_small">
-						
-						<header>
-							<h2>How to get there</h2>
-						</header>
-						
-						<h3>Subway</h3>
-
-						<p>Just take the "Metro" green line until its end at "Cais do Sodré" and walk straight up towards the river and the venue will be a few hundred feet to your left.</p>
-						<p><strong>More info:</strong> <a href="#" title="Subway Map">Subway Map</a></p>
-
-						<h3>Bus</h3>
-
-						<p>You can take any of the 5, 21 and 25 buses towards "Cais do Sodré" station. Then just walk straight towards the river and the venue will be a few hundred feet to your left.</p>
-						<p><strong>More info:</strong> <a href="#" title="Timetables">Timetables</a></p>
-
-						<h3>Train</h3>
-
-						<p>You can take both the "Azambuja" and "Sintra" lines towards "Oriente" station. Then just walk straight towards the river and the venue will be a few hundred feet to your left.</p>
-						
-						<p><strong>More info:</strong> <a href="#" title="Timetables">Timetables</a></p>
-
-						<h3>Parking</h3>
-
-						<p>The venue has its own parking facilities but you can also choose to leave your car at the "Oriente" station or the "Vasco da Gama" Shopping Centre.</p>						
-						
-					</aside><!-- col_small -->
-					
-				</div><!-- Venue Panel -->
-				
-				
-				<!-- 2.4 Accommodation -->
-				<div class="panel" data-panel="accommodation">
-					
-					<section class="col_medium">
-						<header>
-							<h2>Hotel Florida</h2>
-						</header>
-						
-						<div class="prose">
-						
-							<p>We signed up an exclusive deal with Hotel Florida (4 stars) entitling you to a very special rate during your stay in Lisbon for LXJS:</p>
-							
-							<h3>Map</h3>
-							
-							<div class="map" data-latitude="38.706611" data-longitude="-9.14556">
-								
-							</div>
-							
-							<h3>Lorem Ipsum</h3>
-							
-							<p>
-								<strong>Single:</strong> 99€ per night (Breakfast included)<br/>
-								<strong>Double:</strong> 116€ per night (Breakfast included)</p>
-							
-							<p>All taxes are included. Internet Access costs €1 per hour or €5 per day.</p>
-
-
-							<h3>How to claim this rate</h3>
-							
-							<p>Book your room by <a href="#" title="Book your room by email">email</a> or <a href="tel:" title="Book by phone">phone</a>.</p>
-							<p>Don't forget to mention that you're an attendee of LXJS 2012 in order to get the rate.</p>
-							
-							
-							<h3>Contact details</h3>
-
-							<dl>
-								<dt>Address:</dt>
-								<dd>
-									<address>
-										Mercado da Ribeira<br/>
-										Rua Duque de Palmela, 34<br/>
-										1250-098 Lisbon, Portugal
-									</address>
-								</dd>
-								
-								<dt class="row">Email:</dt>
-								<dd><a href="mailto:gr.tor@solmeliaportugal.com" title="Email us">gr.tor@solmeliaportugal.com</a></dd>
-								
-								<dt class="row">Phone:</dt>
-								<dd><a href="tel:00351218930017" title="Phone Number">(+351) 218930017</a></dd>
-								
-								<dt class="row">Website:</dt>
-								<dd><a href="http://thehub-edinburgh.com" title="Go to The Hub Website">thehub-edinburgh.com</a></dd>
-							</dl>
-						
-						</div><!-- /prose -->
-						
-					</section><!-- /col_medium -->
-					
-					<div class="col_small">
-					
-						<aside>	
-							<header>
-								<h2>How to get there</h2>
-							</header>
-							
-							<h3>Subway</h3>
-	
-							<p>Just take the "Metro" green line until its end at "Cais do Sodré" and walk straight up towards the river and the venue will be a few hundred feet to your left.</p>
-							<p><strong>More info:</strong> <a href="#" title="Subway Map">Subway Map</a></p>
-	
-							<h3>Bus</h3>
-	
-							<p>You can take any of the 5, 21 and 25 buses towards "Cais do Sodré" station. Then just walk straight towards the river and the venue will be a few hundred feet to your left.</p>
-							<p><strong>More info:</strong> <a href="#" title="Timetables">Timetables</a></p>
-	
-							<h3>Parking</h3>
-	
-							<p>The venue has its own parking facilities but you can also choose to leave your car at the "Oriente" station or the "Vasco da Gama" Shopping Centre.</p>
-							
-							<p><strong>More info:</strong> <a href="#" title="Timetables">Timetables</a></p>
-
-						</aside>
-						
-						<section>
-							<header>
-								<h2>Other Hotels nearby</h2>
-							</header>
-							
-							<ul class="border_list">
-								<li>
-									<h3>Tivoli Hotel</h3>
-									<dl>
-										<dt class="row">Price:</dt>
-										<dd>From £45 pp/pn</dd>
-										<dt class="row">Distance:</dt>
-										<dd> ~5 minute walk</dd>
-										<dt>Address:</dt>
-										<dd>
-											<address>
-											6 Hunter Square, Off Royal Mile,<br/>
-											Edinburgh, EH1 1QW
-											</address>
-										</dd>	
-									</dl>
-								</li>
-								<li>
-									<h3>Tivoli Hotel</h3>
-									<dl>
-										<dt class="row">Price:</dt>
-										<dd>From £45 pp/pn</dd>
-										<dt class="row">Distance:</dt>
-										<dd> ~5 minute walk</dd>
-										<dt>Address:</dt>
-										<dd>
-											<address>
-											6 Hunter Square, Off Royal Mile,<br/>
-											Edinburgh, EH1 1QW
-											</address>
-										</dd>	
-									</dl>
-								</li>
-							</ul>							
-							
-						</section>	
+						<header id="brand" class="section-header">
 									
-					</div><!-- col_small -->
-				
-				</div><!-- Accommodation Panel -->
-				
-				
-				
-				<!-- 2.5 Travel -->
-				<div class="panel" data-panel="travel">
-					
-					<section class="col_medium">
-						<header>
-							<h2>TAP Portugal</h2>
-						</header>
+							<hgroup>
+								<h1 class="brand_initials"><img src="assets/images/lxjs_logo.png" alt="lxjs-logo" width="240" height="240" />LXJS</h1>
+								<h2 class="brand_name">Lisbon Javascript <span>2012</span></h2>
+								<h2 class="brand_info">September 28+29 <span class="info">Lisbon, Portugal</span></h2>
+							</hgroup>
+							
+							<p class="description">A 2-day not-for-profit by-the-community and for-the-community international conference about the New Worlds of JavaScript.</p>		
+							
+						</header><!-- /header -->
 						
-						<div class="prose">
+						<dl class="social_nav">
+							<dt>Follow us</dt>
+							<dd class="twitter large"><a href="http://twitter.com/#!/lxjs" title="Follow us on Twitter" class="ir spin">@lxjs</a></dd>
+							<dd class="tumblr medium"><a href="http://lxjs.tumblr.com" title="Follow us on Tumblr" class="ir spin">lxjs.tumblr.com</a></dd>
+							<dd class="lanyard"><a href="http://lanyrd.com/2012/lxjs" title="Follow us on Lanyard" class="ir spin">lanyrd.com/2012/lxjs</a></dd>
+						</dl>
+					
+					</div><!-- /container -->
+					
+				</section><!-- /welcome -->
+				
+				
+				<!-- 2. Information -->
+				<section id="information" class="section alt">
+				
+					<div class="container">
 							
-							<p>We signed up an <a href="assets/cnt/tap_lisbon_javascript_2012.pdf" title="Download PDF" target="_blank">exclusive deal</a> with TAP Portugal that generously offered 20% Off Business Class and 10% Off Economy when flying into Lisbon for LXJS. You just have to follow the instructions to the right.</p>
-							
-							<h3>Conditions</h3>
-							
+						<header class="section_header">
+							<h1>Information</h1>
+						</header><!-- /header -->
+						
+						<nav id="info_nav" role="navigation" class="tabs">
 							<ul>
-								<li>The discount applicable to this event is only valid for online bookings made through TAP Portugal's website www.flytap.com and with payment by credit card. The ticket will always be an electronic ticket.</li>
-								<li>Bookings made previously by travel agencies or at our desks are not eligible for this discount.</li>
-								<li>The final price shown at the end of the booking is the final fare, including the discount and all related taxes. The discount is applicable only over the fare, excluding all taxes related to the voyage.</li>
-								<li>The discount only applies to TAP operated flights. Bookings on code-share flights operated by other airlines or on other airlines do not benefit from the discount. Code-share flights are identified on online bookings with the message "OAL" or a 5 point star.</li>
-								<li>The discount is not accumulative with fares for resident / student / child / infant /senior, etc.</li>
-								<li>The discount applies only for travel to the event. It is valid for round trip journeys from any TAP destination to Lisbon.</li>
-								<li>The booking can be made at any time. The travel dates must be comprehended in the period of 10 days before / 10 days after the event dates ( from May 6th to May 28th 2011 ). The dates of the event must be comprehended in the period of travel.</li>
-								<li>The discount is also extended to persons accompanying the participants.</li>
-								<li>The conditions and restrictions regarding changes and refunds are those of the applicable fare. Please check the fare details before ending your booking.</li>
+								<li><a href="#news" title="News" class="active">News</a></li>
+								<li><a href="#about" title="About">About</a></li>
+								<li><a href="#venue" title="Venue">Venue</a></li>
+								<li><a href="#accommodation" title="Accommodation">Accommodation</a></li>
+								<li><a href="#travel" title="Travel">Travel</a></li>
+								<li><a href="#tourguide" title="Tour Guide">Tour Guide</a></li>
+								<li><a href="#afterparty" title="After Party">After Party</a></li>
 							</ul>
+						</nav>
 							
-						</div><!-- prose -->
-												
-					</section><!-- col_medium -->	
-					
-					
-					<aside class="col_small">
-						
-						<header>
-							<h2>Claiming the discount</h2>
-						</header>
-						
-						<h3>Instructions</h3>
-
-						<p>Use event code IT12TPCG39 and follow these instructions:</p>
-						
-						<ul>
-							<li>Enter the website and choose Advanced Search</li>
-							<li>Select flights and dates</li>
-							<li>Insert the event code in the Congress Code Box, located in the grey area, on the right side of the webpage</li>
-						</ul>				
-						
-						<h3>Assistance</h3>
-
-						<p>In case of questions, please contact TAP Portugal on the following email: <a href="mailto:congressos@tap.pt" title="Contact TAP">congressos@tap.pt</a></p> 
-						
-					</aside><!-- col_small -->	
+						<!-- 2.1 News -->
+						<div class="panel" data-panel="news" style="display: block;">
+							
+							<section class="col_medium">
+								<header>
+									<h2><a href="http://lxjs.tumblr.com" class="external_link" title="Go to LXJS Tumblr" target="_blank">From Tumblr</a></h2>
+								</header>
+								
+								<div class="prose">
+								
+									<ul class="border_list">
+										<li>
+											<article>
+												<header>
+													<h3><a href="#" title="Go to blog post">The logo work on LXJS: Curly braces in a typical portuguese tile</a></h3>
+													<p class="meta">24th April, 2012</p>
+												</header>
+												<p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales adipiscing nisi, id scelerisque justo congue in. Praesent gravida diam vitae turpis vehicula ornare. Maecenas varius neque leo, at mollis tellus. </p>
+											</article>
+										</li>
+										<li>
+											<article>
+												<header>
+													<h3><a href="#" title="Go to blog post">Interview: Adam Christian</a></h3>
+													<p class="meta">24th April, 2012</p>
+												</header>
+												<p class="dropcap">Nam id semper risus. Phasellus nibh mauris, ullamcorper ac viverra id, tincidunt sed leo. Sed et nisl eget nibh feugiat convallis. Duis laoreet elit id risus commodo volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+											</article>
+										</li>
+									</ul>
 									
-				</div><!-- Travel Panel -->
-				
-				
-				<!-- 2.6 Tour Guide -->
-				<div class="panel" data-panel="tourguide">
-				
-					<div class="col_medium">
-					
-						<section>
-							<header>
-								<h2>The Sunny Lisbon</h2>
-							</header>
+								</div>
+								
+							</section><!-- col_medium -->
 							
-							<div class="prose">
+							<section class="col_small">
+								<header>
+									<h2><a href="http://twitter.com/#!/lxjs" class="external_link" title="Go to Twitter Website" target="_blank">From Twitter</a></h2>
+								</header>
 								
-								<p>Lisbon, the city of the seven hills, is one of the oldest cities in the world. Julius Caesar made it a municipium called Felicitas Julia, adding to the name Olissipo. Lisbon was called many things over the centuries like Luxbona, Lixbuna or Ulixbone (hence the LX shorthand still used today). The city was ruled by a series of Germanic tribes from the fifth century, it was captured by the Moors in the eighth century. In 1147, the Crusaders under Afonso Henriques reconquered the city for the Christians and since then it has been a major political, economic, and cultural centre of Portugal. Walking is the best way to wander around in Lisbon, cross its narrow streets, enjoy the views on the top of its hills and mingle with the population. For longer distances, public transportation is fast and cheap.</p>
-
-								<p>More about Lisbon here: <a href="http://visitlisboa.com" title="Go to Visit Lisboa Website">visitlisboa.com</a></p>
+								<div class="prose" id="twitter_feed">
+								</div>
 								
-							</div><!-- prose -->
-													
-						</section>
-
-						<section class="col_small">
-							<header>
-								<h2>Eating</h2>
-							</header>
+							</section><!-- col_small -->
 							
-							<ul class="border_list">
-								<li>
-									<h3>Adega do Chico <small class="wireless">(Has Wireless)</small></h3>
-									<p>Beautiful place by the river lore ipsum dolor sit amet.</p>
-	
-									<dl>
-										<dt>Address:</dt>
-										<dd>
-											<address>6 Hunter Square, Off Royal Mile,<br/> Edinburgh, EH1 1QW</address>
-										</dd>
-									</dl>
-								</li>
-								<li>
-									<h3>Adega do Chico</h3>
-									<p>Beautiful place by the river lore ipsum dolor sit amet.</p>
-	
-									<dl>
-										<dt>Address:</dt>
-										<dd>
-											<address>6 Hunter Square, Off Royal Mile,<br/> Edinburgh, EH1 1QW</address>
-										</dd>
-									</dl>
-								</li>
-								
-							</ul>
-													
-						</section><!-- col_small -->
+						</div>
 						
-						<section class="col_small">
-							<header>
-								<h2>Drinking</h2>
-							</header>
-							
-							<ul class="border_list">
-								<li>
-									<h3>Adega do Chico <small class="wireless">(Has Wireless)</small></h3>
-									<p>Beautiful place by the river lore ipsum dolor sit amet.</p>
-	
-									<dl>
-										<dt>Address:</dt>
-										<dd>
-											<address>6 Hunter Square, Off Royal Mile,<br/> Edinburgh, EH1 1QW</address>
-										</dd>
-									</dl>
-								</li>
-								<li>
-									<h3>Adega do Chico</h3>
-									<p>Beautiful place by the river lore ipsum dolor sit amet.</p>
-	
-									<dl>
-										<dt>Address:</dt>
-										<dd>
-											<address>6 Hunter Square, Off Royal Mile,<br/> Edinburgh, EH1 1QW</address>
-										</dd>
-									</dl>
-								</li>
+						
+						<!-- 2.2 About -->
+						<div class="panel" data-panel="about">
+						
+							<section class="col_large">
+								<header>
+									<h2>About</h2>
+								</header>
 								
-							</ul>
-
-																				
-						</section><!-- col_small -->
+								<div class="prose">
+									<p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elite. Ut adipiscing congue sapien eu varius. Phasellus dolor est, mollis net placerat eu, congue a veldt. Curabitur posuere, duo see hendrerit elementum, ipsum eros lobortis tells, eu rhoncus veldt ipsum at diam.</p>
+			
+									<p>Aliquam posuere, mi vitae iaculis incident, sapien tells pellentesque ante, at dignissim risus libero a met us. Etiam diam duo, sagittis ac egestas aliquot, bland it net nunc. Nunc rutrum lacus del leo dapibus laoreet. Cras enim dolor, rhoncus at imperdiet id, faucibus vitae felis. Maecenas luctus incident dapibus. Donec interdum imperdiet sapien, condimentum scelerisque neque adipiscing vel. Suspendisse potent.</p>
+			
+									<p>Sed temper consectetur ante egestas premium. Cras vitae odio et nisi placerat interdum id in diam. Nulla facilisi. Aliquam erat volutpat. Duis consequent, purrs net pharetra suscipit, sam arcu ultricies met us, at facilisis nibh orci see magna. Cras ac hendrerit nisi.</p>
+			
+									<p>Etiam see ligula a justo vulputate porta. Praesent venerates, veldt see rutrum bibendum, ante arcu temper lacus, ullamcorper condimentum turps tort or eu tort or. Etiam null magna, sollicitudin eu malesuada see, tempus a neque. Aliquam erat volutpat. Sed vulputate nunc at urn a dignissim laoreet. Maecenas viverra rhoncus enim, del facilisis odio ornate eu. Sed et mi ut neque sagittis rhoncus. Maecenas commode lacus ut erat ultrices et imperdiet erat ullamcorper.</p>
+								
+								</div><!-- /prose -->
+								
+							</section><!-- col_large -->
+							
+						</div><!-- About Panel -->
+						
+						
+						<!-- 2.3 Venue -->
+						<div class="panel" data-panel="venue">
+							
+							<section class="col_medium">
+								<header>
+									<h2>Mercado da Ribeira</h2>
+								</header>
+								
+								<div class="prose">
+								
+									<p>We booked the Mercado da Ribeira, a great venue overlooking the beautiful river Tagus (one of the largest in Europe). The Venue is located in the newly renovated Lisbon Port, surrounded by great bars, restaurants and coffee shops by the river. Location is ideal and transportation is abundant.</p>
+									
+									<h3>Map</h3>
+									
+									<div class="map" data-latitude="38.706611" data-longitude="-9.14556">
+										
+									</div>
+									
+									<h3>Contact details</h3>
+		
+									<dl>
+										<dt>Address:</dt>
+										<dd>
+											<address>
+												Mercado da Ribeira<br/>
+												Rua Duque de Palmela, 34<br/>
+												1250-098 Lisbon, Portugal
+											</address>
+										</dd>
+										
+										<dt class="row">Email:</dt>
+										<dd><a href="mailto:gr.tor@solmeliaportugal.com" title="Email us">gr.tor@solmeliaportugal.com</a></dd>
+										
+										<dt class="row">Phone:</dt>
+										<dd><a href="tel:00351218930017" title="Phone Number">(+351) 218930017</a></dd>
+										
+										<dt class="row">Website:</dt>
+										<dd><a href="http://thehub-edinburgh.com" title="Go to The Hub Website">thehub-edinburgh.com</a></dd>
+									</dl>
+									
+									<div id="venueCarousel" class="carousel slide">
+										<!-- Carousel items -->
+										<div class="carousel-inner">
+											<div class="active item">
+												<img src="http://www.morgadioreal.com/wp-content/gallery/mercado-da-ribeira/mercado_da_ribeira_foto_lu_s_ponte_1.jpg" />
+												<div class="carousel-caption">
+													<h4>First thumbnail label</h4>
+													<p>First thumbnail caption</p>
+												</div>
+											</div>
+											<div class="item">
+												<img src="http://www.cm-lisboa.pt/archive/img/Mercado_da_Ribeira_Foto_Am_rico_Simas_1.jpg" />
+												<div class="carousel-caption">
+													<h4>Second thumbnail label</h4>
+													<p>Second thumbnail caption</p>
+												</div>
+											</div>
+											<div class="item">
+												<img src="http://ipt.olhares.com/data/big/260/2605330.jpg" />
+												<div class="carousel-caption">
+													<h4>Third thumbnail label</h4>
+													<p>Third thumbnail caption</p>
+												</div>
+											</div>
+										</div>
+										<!-- Carousel nav -->
+										<a class="carousel-control left" href="#venueCarousel" data-slide="prev">&lsaquo;</a>
+										<a class="carousel-control right" href="#venueCarousel" data-slide="next">&rsaquo;</a>
+									</div>
+								
+								</div><!-- /prose -->
+								
+							</section><!-- /col_medium -->
+							
+							<aside class="col_small">
+								
+								<header>
+									<h2>How to get there</h2>
+								</header>
+								
+								<h3>Subway</h3>
+		
+								<p>Just take the "Metro" green line until its end at "Cais do Sodré" and walk straight up towards the river and the venue will be a few hundred feet to your left.</p>
+								<p><strong>More info:</strong> <a href="#" title="Subway Map">Subway Map</a></p>
+		
+								<h3>Bus</h3>
+		
+								<p>You can take any of the 5, 21 and 25 buses towards "Cais do Sodré" station. Then just walk straight towards the river and the venue will be a few hundred feet to your left.</p>
+								<p><strong>More info:</strong> <a href="#" title="Timetables">Timetables</a></p>
+		
+								<h3>Train</h3>
+		
+								<p>You can take both the "Azambuja" and "Sintra" lines towards "Oriente" station. Then just walk straight towards the river and the venue will be a few hundred feet to your left.</p>
+								
+								<p><strong>More info:</strong> <a href="#" title="Timetables">Timetables</a></p>
+		
+								<h3>Parking</h3>
+		
+								<p>The venue has its own parking facilities but you can also choose to leave your car at the "Oriente" station or the "Vasco da Gama" Shopping Centre.</p>						
+								
+							</aside><!-- col_small -->
+							
+						</div><!-- Venue Panel -->
+						
+						
+						<!-- 2.4 Accommodation -->
+						<div class="panel" data-panel="accommodation">
+							
+							<section class="col_medium">
+								<header>
+									<h2>Hotel Florida</h2>
+								</header>
+								
+								<div class="prose">
+								
+									<p>We signed up an exclusive deal with Hotel Florida (4 stars) entitling you to a very special rate during your stay in Lisbon for LXJS:</p>
+									
+									<h3>Map</h3>
+									
+									<div class="map" data-latitude="38.706611" data-longitude="-9.14556">
+										
+									</div>
+									
+									<h3>Lorem Ipsum</h3>
+									
+									<p>
+										<strong>Single:</strong> 99€ per night (Breakfast included)<br/>
+										<strong>Double:</strong> 116€ per night (Breakfast included)</p>
+									
+									<p>All taxes are included. Internet Access costs €1 per hour or €5 per day.</p>
+		
+		
+									<h3>How to claim this rate</h3>
+									
+									<p>Book your room by <a href="#" title="Book your room by email">email</a> or <a href="tel:" title="Book by phone">phone</a>.</p>
+									<p>Don't forget to mention that you're an attendee of LXJS 2012 in order to get the rate.</p>
+									
+									
+									<h3>Contact details</h3>
+		
+									<dl>
+										<dt>Address:</dt>
+										<dd>
+											<address>
+												Mercado da Ribeira<br/>
+												Rua Duque de Palmela, 34<br/>
+												1250-098 Lisbon, Portugal
+											</address>
+										</dd>
+										
+										<dt class="row">Email:</dt>
+										<dd><a href="mailto:gr.tor@solmeliaportugal.com" title="Email us">gr.tor@solmeliaportugal.com</a></dd>
+										
+										<dt class="row">Phone:</dt>
+										<dd><a href="tel:00351218930017" title="Phone Number">(+351) 218930017</a></dd>
+										
+										<dt class="row">Website:</dt>
+										<dd><a href="http://thehub-edinburgh.com" title="Go to The Hub Website">thehub-edinburgh.com</a></dd>
+									</dl>
+								
+								</div><!-- /prose -->
+								
+							</section><!-- /col_medium -->
+							
+							<div class="col_small">
+							
+								<aside>	
+									<header>
+										<h2>How to get there</h2>
+									</header>
+									
+									<h3>Subway</h3>
+			
+									<p>Just take the "Metro" green line until its end at "Cais do Sodré" and walk straight up towards the river and the venue will be a few hundred feet to your left.</p>
+									<p><strong>More info:</strong> <a href="#" title="Subway Map">Subway Map</a></p>
+			
+									<h3>Bus</h3>
+			
+									<p>You can take any of the 5, 21 and 25 buses towards "Cais do Sodré" station. Then just walk straight towards the river and the venue will be a few hundred feet to your left.</p>
+									<p><strong>More info:</strong> <a href="#" title="Timetables">Timetables</a></p>
+			
+									<h3>Parking</h3>
+			
+									<p>The venue has its own parking facilities but you can also choose to leave your car at the "Oriente" station or the "Vasco da Gama" Shopping Centre.</p>
+									
+									<p><strong>More info:</strong> <a href="#" title="Timetables">Timetables</a></p>
+		
+								</aside>
+								
+								<section>
+									<header>
+										<h2>Other Hotels nearby</h2>
+									</header>
+									
+									<ul class="border_list">
+										<li>
+											<h3>Tivoli Hotel</h3>
+											<dl>
+												<dt class="row">Price:</dt>
+												<dd>From £45 pp/pn</dd>
+												<dt class="row">Distance:</dt>
+												<dd> ~5 minute walk</dd>
+												<dt>Address:</dt>
+												<dd>
+													<address>
+													6 Hunter Square, Off Royal Mile,<br/>
+													Edinburgh, EH1 1QW
+													</address>
+												</dd>	
+											</dl>
+										</li>
+										<li>
+											<h3>Tivoli Hotel</h3>
+											<dl>
+												<dt class="row">Price:</dt>
+												<dd>From £45 pp/pn</dd>
+												<dt class="row">Distance:</dt>
+												<dd> ~5 minute walk</dd>
+												<dt>Address:</dt>
+												<dd>
+													<address>
+													6 Hunter Square, Off Royal Mile,<br/>
+													Edinburgh, EH1 1QW
+													</address>
+												</dd>	
+											</dl>
+										</li>
+									</ul>							
+									
+								</section>	
 											
-					</div><!-- col_medium -->	
-					
-					
-					<div class="col_small">
-						<aside>
-							
-							<header>
-								<h2>Tips & Tricks</h2>
-							</header>
-							
-							<h3>On Arrival</h3>
-	
-							<p>If you flew to Lisbon, you'll need to get to the city from the airport. It's not something that makes us proud, but you can get ripped off by Taxi Drivers if you take one at Arrivals. You can either take a Taxi from Departures instead, one floor above, or catch one of the Aero buses, which are fast and cheap. If your Hotel is in the City Centre catch the AeroBus 91. If it's near the Venue, catch the AeroShuttle 96. They both run about every 30min and will cost you €3,50. You can use this ticket on all the Carris network for the remainder of the day. If you came by train, then stop at Estação Oriente and you're already a stone's throw from the Venue.</p> 
-
-							<h3>Getting Around</h3>
-
-							<p>The best way to roam about the city is to get a Lisboa Card which you can use in every kind of transport around the city and that will get you free admission to more than 80 museums and attractions. They cost €17 for 24h, €27 for 48h and €33.50 for 72h. Or you can get the 7 Colinas Card for 50 cents and charge a day fare onto it that will get you around in the Carris and Metro networks for €3.50. A single ticket is 90 cents on the subway and €1.40 in buses. Taxis are fairly cheap and will get you around the city for around €5 to €10 a ride. Be aware that they can charge you extra for carrying big luggage of if you called them on the phone (+351 218119000).</p>
-							
-							
-						</aside>
+							</div><!-- col_small -->
 						
-					</div><!-- col_small -->	
-					
-				</div> <!-- Tour Guide Panel -->
-				
-				
-				<!-- 2.7 After Party -->
-				<div class="panel" data-panel="afterparty">
-					
-					<section class="col_medium">
-						<header>
-							<h2>After Party</h2>
-						</header>
+						</div><!-- Accommodation Panel -->
 						
-						<div class="prose">
 						
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elite. Ut adipiscing congue sapien eu varius. Phasellus dolor est, mollis net placerat eu, congue a veldt. Curabitur posuere, duo see hendrerit elementum, ipsum eros lobortis tells, eu rhoncus veldt ipsum at diam.</p>
-
-							<p>Aliquam posuere, mi vitae iaculis incident, sapien tells pellentesque ante, at dignissim risus libero a met us. Etiam diam duo, sagittis ac egestas aliquot, bland it net nunc. Nunc rutrum lacus del leo dapibus laoreet. Cras enim dolor, rhoncus at imperdiet id, faucibus vitae felis. Maecenas luctus incident dapibus. Donec interdum imperdiet sapien, condimentum scelerisque neque adipiscing vel. Suspendisse potent.</p>
+						
+						<!-- 2.5 Travel -->
+						<div class="panel" data-panel="travel">
 							
-							<h3>Map</h3>
-							
-							<div class="map" data-latitude="38.706611" data-longitude="-9.14556">
+							<section class="col_medium">
+								<header>
+									<h2>TAP Portugal</h2>
+								</header>
 								
-							</div>
+								<div class="prose">
+									
+									<p>We signed up an <a href="assets/cnt/tap_lisbon_javascript_2012.pdf" title="Download PDF" target="_blank">exclusive deal</a> with TAP Portugal that generously offered 20% Off Business Class and 10% Off Economy when flying into Lisbon for LXJS. You just have to follow the instructions to the right.</p>
+									
+									<h3>Conditions</h3>
+									
+									<ul>
+										<li>The discount applicable to this event is only valid for online bookings made through TAP Portugal's website www.flytap.com and with payment by credit card. The ticket will always be an electronic ticket.</li>
+										<li>Bookings made previously by travel agencies or at our desks are not eligible for this discount.</li>
+										<li>The final price shown at the end of the booking is the final fare, including the discount and all related taxes. The discount is applicable only over the fare, excluding all taxes related to the voyage.</li>
+										<li>The discount only applies to TAP operated flights. Bookings on code-share flights operated by other airlines or on other airlines do not benefit from the discount. Code-share flights are identified on online bookings with the message "OAL" or a 5 point star.</li>
+										<li>The discount is not accumulative with fares for resident / student / child / infant /senior, etc.</li>
+										<li>The discount applies only for travel to the event. It is valid for round trip journeys from any TAP destination to Lisbon.</li>
+										<li>The booking can be made at any time. The travel dates must be comprehended in the period of 10 days before / 10 days after the event dates ( from May 6th to May 28th 2011 ). The dates of the event must be comprehended in the period of travel.</li>
+										<li>The discount is also extended to persons accompanying the participants.</li>
+										<li>The conditions and restrictions regarding changes and refunds are those of the applicable fare. Please check the fare details before ending your booking.</li>
+									</ul>
+									
+								</div><!-- prose -->
+														
+							</section><!-- col_medium -->	
 							
-							<h3>Contact details</h3>
-
-							<dl>
-								<dt>Address:</dt>
-								<dd>
-									<address>
-										Mercado da Ribeira<br/>
-										Rua Duque de Palmela, 34<br/>
-										1250-098 Lisbon, Portugal
-									</address>
-								</dd>
+							
+							<aside class="col_small">
 								
-								<dt class="row">Email:</dt>
-								<dd><a href="mailto:gr.tor@solmeliaportugal.com" title="Email us">gr.tor@solmeliaportugal.com</a></dd>
+								<header>
+									<h2>Claiming the discount</h2>
+								</header>
 								
-								<dt class="row">Phone:</dt>
-								<dd><a href="tel:00351218930017" title="Phone Number">(+351) 218930017</a></dd>
+								<h3>Instructions</h3>
+		
+								<p>Use event code IT12TPCG39 and follow these instructions:</p>
 								
-								<dt class="row">Website:</dt>
-								<dd><a href="http://thehub-edinburgh.com" title="Go to The Hub Website">thehub-edinburgh.com</a></dd>
-							</dl>
-						
-						</div><!-- /prose -->
-						
-					</section><!-- /col_medium -->
-					
-					<aside class="col_small">
-						
-						<header>
-							<h2>How to get there</h2>
-						</header>
-						
-						<h3>Subway</h3>
-
-						<p>Just take the "Metro" green line until its end at "Cais do Sodré" and walk straight up towards the river and the venue will be a few hundred feet to your left.</p>
-						<p><strong>More info:</strong> <a href="#" title="Subway Map">Subway Map</a></p>
-
-						<h3>Bus</h3>
-
-						<p>You can take any of the 5, 21 and 25 buses towards "Cais do Sodré" station. Then just walk straight towards the river and the venue will be a few hundred feet to your left.</p>
-						<p><strong>More info:</strong> <a href="#" title="Timetables">Timetables</a></p>				
-						
-					</aside><!-- col_small -->
-					
-				</div>
-				
-			
-			</div><!-- /container -->
-			
-		</section><!-- /information -->
-
-
-		<!-- 3. Speakers -->
-		<section id="speakers" class="section masonry">
-		
-			<div class="container">
-					
-				<header class="section_header">
-					<h1>Speakers</h1>
-				</header><!-- /header -->
-				
-				<ul class="entry_list">
-					
-					<li class="corner_stamp entry_item">
-						<h2>Insert text about the speakers.</h2>
-						<h3 class="info">More to be announced.</h3>
-					</li>
-					
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title">Brendan Eich</h1>
-								<h2 class="entry_position">CTO, Mozilla</h2>
-								<p class="entry_thumbnail"><img src="assets/images/speakers_brendan_eich.png" alt="speakers_rebecca_murphey" width="160" height="160" /></p>
-							</header>
-							<div class="excerpt">
-								<p>Is a computer programmer and creator of the JavaScript scripting language. He is the chief technology officer at the Mozilla Corporation.</p>
-								<p class="entry_twitter"><a href="#" title="Go to Twitter">@BrendanEich</a></p>
-							</div>
-						</article>
-					</li>
-
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title">John Resig</h1>
-								<h2 class="entry_position">Programmer, Khan Academy</h2>
-								<p class="entry_thumbnail"><img src="assets/images/speakers_john_resig.png" alt="speakers_rebecca_murphey" width="160" height="160" /></p>
-							</header>
-							<div class="excerpt">
-								<p>I’ve been working on a few projects in my spare time and one service, in particular, would greatly benefit from a high quality image similarity search. I’ve been trying a number of the Open (and non-Open) Source tools . Thus far none of the tools that I’ve found are of high-enough quality to warrant further pursuit. They either do simple color comparison, basic wavelet/outline comparison, or some form of hashing – none of which appears to work very well beyond basic images.</p>
-								<p class="entry_twitter"><a href="#" title="Go to Twitter">@jeresig</a></p>
-							</div>
-						</article>
-					</li>
-
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title">Remy Sharp</h1>
-								<h2 class="entry_position">Founder, Left Logic</h2>
-								<p class="entry_thumbnail"><img src="assets/images/speakers_remy_sharp.png" alt="speakers_rebecca_murphey" width="160" height="160" /></p>
-							</header>
-							<div class="excerpt">
-								<p>Remy is the founder and curator of Full Frontal, the UK based JavaScript conference. He also runs jQuery for Designers, co-authored Introducing HTML5 (adding all the JavaScripty bits) and is one of the curators of HTML5Doctor.com.
-Whilst he’s not writing articles or running and speaking at conferences, he runs his own development and training company in Brighton called Left Logic.</p>
-								<p class="entry_twitter"><a href="#" title="Go to Twitter">@rem</a></p>
-							</div>
-						</article>
-					</li>
-
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title">Rebecca Murphey</h1>
-								<h2 class="entry_position">Senior JS dev. Bocoup</h2>
-								<p class="entry_thumbnail"><img src="assets/images/speakers_rebecca_murphey.png" alt="speakers_rebecca_murphey" width="160" height="160" /></p>
-							</header>
-							<div class="excerpt">
-								<p>I’m a senior JavaScript engineer at Bocoup, the co-host of the yayQuery podcast, a co-organizer of TXJS, a contributor to the jQuery Cookbook from O’Reilly, and the author of the open-source jQuery Fundamentals.</p>
-								<p class="entry_twitter"><a href="#" title="Go to Twitter">@rmurphey</a></p>
-							</div>
-						</article>
-					</li>
-
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title l_center">Coming Soon</h1>
-								<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
-							</header>
-						</article>
-					</li>
-
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title l_center">Coming Soon</h1>
-								<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
-							</header>
-						</article>
-					</li>
-					
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title l_center">Coming Soon</h1>
-								<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
-							</header>
-						</article>
-					</li>
-
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title l_center">Coming Soon</h1>
-								<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
-							</header>
-						</article>
-					</li>
-
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title l_center">Coming Soon</h1>
-								<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
-							</header>
-						</article>
-					</li>
-
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title l_center">Coming Soon</h1>
-								<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
-							</header>
-						</article>
-					</li>
-					
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title l_center">Coming Soon</h1>
-								<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
-							</header>
-						</article>
-					</li>
-
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title l_center">Coming Soon</h1>
-								<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
-							</header>
-						</article>
-					</li>
-			
-					<li class="entry_item">
-						<article>
-							<header>
-								<h1 class="entry_title l_center">Coming Soon</h1>
-								<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
-							</header>
-						</article>
-					</li>
+								<ul>
+									<li>Enter the website and choose Advanced Search</li>
+									<li>Select flights and dates</li>
+									<li>Insert the event code in the Congress Code Box, located in the grey area, on the right side of the webpage</li>
+								</ul>				
 								
-																				
-				</ul><!-- entry-list -->
-			
-			</div><!-- /container -->
-			
-		</section><!-- /speakers -->
+								<h3>Assistance</h3>
 		
+								<p>In case of questions, please contact TAP Portugal on the following email: <a href="mailto:congressos@tap.pt" title="Contact TAP">congressos@tap.pt</a></p> 
+								
+							</aside><!-- col_small -->	
+											
+						</div><!-- Travel Panel -->
+						
+						
+						<!-- 2.6 Tour Guide -->
+						<div class="panel" data-panel="tourguide">
+						
+							<div class="col_medium">
+							
+								<section>
+									<header>
+										<h2>The Sunny Lisbon</h2>
+									</header>
+									
+									<div class="prose">
+										
+										<p>Lisbon, the city of the seven hills, is one of the oldest cities in the world. Julius Caesar made it a municipium called Felicitas Julia, adding to the name Olissipo. Lisbon was called many things over the centuries like Luxbona, Lixbuna or Ulixbone (hence the LX shorthand still used today). The city was ruled by a series of Germanic tribes from the fifth century, it was captured by the Moors in the eighth century. In 1147, the Crusaders under Afonso Henriques reconquered the city for the Christians and since then it has been a major political, economic, and cultural centre of Portugal. Walking is the best way to wander around in Lisbon, cross its narrow streets, enjoy the views on the top of its hills and mingle with the population. For longer distances, public transportation is fast and cheap.</p>
 		
-		<!-- 4. Schedule -->
-		<section id="schedule" class="section alt">
+										<p>More about Lisbon here: <a href="http://visitlisboa.com" title="Go to Visit Lisboa Website">visitlisboa.com</a></p>
+										
+									</div><!-- prose -->
+															
+								</section>
 		
-			<div class="container">
-					
-				<header class="section_header">
-					<h1>Schedule</h1>					
-				</header><!-- /header -->
-				
-				<table>
-					<thead>
-						<tr>
-							<th class="sched_time"></th>
-							<th class="sched_day_one">Day 1 / Sep 28</th>
-							<th class="sched_day_two">Day 2 / Sep 29</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="l_center"><strong>08:00 - 08:45</strong></td>
-							<td colspan="2" class="l_center"><em>Arrival and Registration</em></td>
-						</tr>
-						<tr>
-							<td class="l_center"><strong>08:45 - 09:00</strong></td>
-							<td>
-								<span class="talk-title">Why Designing a Mobile App Isn’t Just About Designing for IPhone</span> — Rebecca Murphey
-							</td>
-							<td>
-								<span class="talk-title">Lessons Learned From Testing Legacy Code</span> — Brian Suda
-							</td>
-						</tr>
-						<tr>
-							<td class="l_center"><strong>09:00 - 09:40</strong></td>
-							<td>
-								<span class="talk-title">Why Designing a Mobile App Isn’t Just About Designing for IPhone</span> — Rebecca Murphey
-							</td>
-							<td>
-								<span class="talk-title">Lessons Learned From Testing Legacy Code</span> — Brian Suda
-							</td>
-						</tr>
-						<tr>
-							<td class="l_center"><strong>09:50 - 10:50</strong></td>
-							<td colspan="2" class="l_center"><em>Coffee Break</em></td>
-						</tr>
-						<tr>
-							<td class="l_center"><strong>11:00 - 12:00</strong></td>
-							<td>
-								<span class="talk-title">Why Designing a Mobile App Isn’t Just About Designing for IPhone</span> — Rebecca Murphey
-							</td>
-							<td>
-								<span class="talk-title">Lessons Learned From Testing Legacy Code</span> — Brian Suda
-							</td>
-						</tr>
-						<tr>
-							<td class="l_center"><strong>12:00 - 13:30</strong></td>
-							<td>
-								<span class="talk-title">Why Designing a Mobile App Isn’t Just About Designing for IPhone</span> — Rebecca Murphey
-							</td>
-							<td>
-								<span class="talk-title">Lessons Learned From Testing Legacy Code</span> — Brian Suda
-							</td>
-						</tr>
-					</tbody>
-				</table>
+								<section class="col_small">
+									<header>
+										<h2>Eating</h2>
+									</header>
+									
+									<ul class="border_list">
+										<li>
+											<h3>Adega do Chico <small class="wireless">(Has Wireless)</small></h3>
+											<p>Beautiful place by the river lore ipsum dolor sit amet.</p>
 			
-			</div><!-- /container -->
+											<dl>
+												<dt>Address:</dt>
+												<dd>
+													<address>6 Hunter Square, Off Royal Mile,<br/> Edinburgh, EH1 1QW</address>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<h3>Adega do Chico</h3>
+											<p>Beautiful place by the river lore ipsum dolor sit amet.</p>
 			
-		</section><!-- /schedule -->
-
-		<!-- 5. Sponsors -->
-		<section id="sponsors" class="section masonry">
+											<dl>
+												<dt>Address:</dt>
+												<dd>
+													<address>6 Hunter Square, Off Royal Mile,<br/> Edinburgh, EH1 1QW</address>
+												</dd>
+											</dl>
+										</li>
+										
+									</ul>
+															
+								</section><!-- col_small -->
+								
+								<section class="col_small">
+									<header>
+										<h2>Drinking</h2>
+									</header>
+									
+									<ul class="border_list">
+										<li>
+											<h3>Adega do Chico <small class="wireless">(Has Wireless)</small></h3>
+											<p>Beautiful place by the river lore ipsum dolor sit amet.</p>
+			
+											<dl>
+												<dt>Address:</dt>
+												<dd>
+													<address>6 Hunter Square, Off Royal Mile,<br/> Edinburgh, EH1 1QW</address>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<h3>Adega do Chico</h3>
+											<p>Beautiful place by the river lore ipsum dolor sit amet.</p>
+			
+											<dl>
+												<dt>Address:</dt>
+												<dd>
+													<address>6 Hunter Square, Off Royal Mile,<br/> Edinburgh, EH1 1QW</address>
+												</dd>
+											</dl>
+										</li>
+										
+									</ul>
 		
-			<div class="container">
-					
-				<header class="section_header">
-					<h1>Sponsors</h1>
-				</header><!-- /header -->
-				
-				<ul class="entry_list">
-					
-					<li class="corner_stamp entry_item block">
-						<h2>We couldn't make this happen without our sponsors.</h2>
-						<p class="become_sponsor"><a href="mailto:hello@lxjs.org" title="Send us an email" >Become a Sponsor</a></p>
-					</li>
-					
-					<li class="entry_item block diagonal panel">
-						<article class="front">
-							<header>
-								<a href="#loveblipModal" class="no-transition" data-toggle="modal" title="Go to Loveblip Website">
-									<h1 class="entry_title visuallyhidden">Loveblip</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponspor_main_loveblip.png" alt="Loveblip" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="back">
-							<header>
-								<a href="#loveblipModal" data-toggle="modal" title="Go to Loveblip Website">
-									<h1 class="entry_title visuallyhidden">Loveblip</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponspor_main_loveblip.png" alt="Loveblip" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="modal hide fade" id="loveblipModal">
-							<div class="modal-header">
-								<button class="close" data-dismiss="modal">×</button>
-								<h3>Modal header</h3>
-							</div>
-							<div class="modal-body">
-								<p>One fine body…</p>
-							</div>
-							<div class="modal-footer">
-								<p>footer</p>
-							</div>
-						</article>
-					</li>
-
-					<li class="entry_item block diagonal panel">
-						<article class="front">
-							<header>
-								<a href="#quodisModal" class="no-transition" data-toggle="modal" title="Go to Quodis Website">
-									<h1 class="entry_title visuallyhidden">Quodis</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponsor_main_quodis.png" alt="Quodis" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="back">
-							<header>
-								<a href="#quodisModal" data-toggle="modal" title="Go to Quodis Website">
-									<h1 class="entry_title visuallyhidden">Quodis</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponspor_main_loveblip.png" alt="Quodis" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="modal hide fade" id="quodisModal">
-							<div class="modal-header">
-								<button class="close" data-dismiss="modal">×</button>
-								<h3>Modal header</h3>
-							</div>
-							<div class="modal-body">
-								<p>One fine body…</p>
-							</div>
-							<div class="modal-footer">
-								<p>footer</p>
-							</div>
-						</article>
-					</li>
-					
-					<li class="entry_item block diagonal panel">
-						<article class="front">
-							<header>
-								<a href="#nodejitsuModal" class="no-transition" data-toggle="modal" title="Go to Nodejitsu Website">
-									<h1 class="entry_title visuallyhidden">Nodejitsu</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponsor_main_node_jitsu.png" alt="Nodejitsu" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="back">
-							<header>
-								<a href="#nodejitsuModal" data-toggle="modal" title="Go to Nodejitsu Website">
-									<h1 class="entry_title visuallyhidden">Nodejitsu</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponsor_main_node_jitsu.png" alt="Nodejitsu" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="modal hide fade" id="#nodejitsuModal">
-							<div class="modal-header">
-								<button class="close" data-dismiss="modal">×</button>
-								<h3>Modal header</h3>
-							</div>
-							<div class="modal-body">
-								<p>One fine body…</p>
-							</div>
-							<div class="modal-footer">
-								<p>footer</p>
-							</div>
-						</article>
-					</li>
-					
-					<li class="entry_item block diagonal panel">
-						<article class="front">
-							<header>
-								<a href="#nodefirmModal" class="no-transition" data-toggle="modal" title="Go to The Node Firm Website">
-									<h1 class="entry_title visuallyhidden">The Node Firm</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponsor_main_nodefirm.png" alt="The Node Firm" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="back">
-							<header>
-								<a href="#nodefirmModal" data-toggle="modal" title="Go to The Node Firm Website">
-									<h1 class="entry_title visuallyhidden">The Node Firm</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponsor_main_nodefirm.png" alt="The Node Firm" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="modal hide fade" id="#nodefirmModal">
-							<div class="modal-header">
-								<button class="close" data-dismiss="modal">×</button>
-								<h3>Modal header</h3>
-							</div>
-							<div class="modal-body">
-								<p>One fine body…</p>
-							</div>
-							<div class="modal-footer">
-								<p>footer</p>
-							</div>
-						</article>
-					</li>
-					
-					<li class="entry_item block diagonal panel">
-						<article class="front">
-							<header>
-								<a href="#sapoModal" class="no-transition" data-toggle="modal" title="Go to Sapo Website">
-									<h1 class="entry_title visuallyhidden">Sapo</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponsor_main_sapo.png" alt="Sapo" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="back">
-							<header>
-								<a href="#sapoModal" data-toggle="modal" title="Go to Sapo Website">
-									<h1 class="entry_title visuallyhidden">Sapo</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponsor_main_sapo.png" alt="Sapo" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="modal hide fade" id="#sapoModal">
-							<div class="modal-header">
-								<button class="close" data-dismiss="modal">×</button>
-								<h3>Modal header</h3>
-							</div>
-							<div class="modal-body">
-								<p>One fine body…</p>
-							</div>
-							<div class="modal-footer">
-								<p>footer</p>
-							</div>
-						</article>
-					</li>
-					
-					<li class="entry_item block diagonal panel">
-						<article class="front">
-							<header>
-								<a href="#voltdbModal" class="no-transition" data-toggle="modal" title="Go to VoltDB Website">
-									<h1 class="entry_title visuallyhidden">VoltDB</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponsor_main_voltdb.png" alt="VoltDB" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="back">
-							<header>
-								<a href="#voltdbModal" data-toggle="modal" title="Go to VoltDB Website">
-									<h1 class="entry_title visuallyhidden">VoltDB</h1>
-									<p class="entry_thumbnail"><img src="assets/images/sponsor_main_voltdb.png" alt="VoltDB" width="160" height="120" /></p>
-								</a>
-							</header>
-						</article>
-						
-						<article class="modal hide fade" id="#voltdbModal">
-							<div class="modal-header">
-								<button class="close" data-dismiss="modal">×</button>
-								<h3>Modal header</h3>
-							</div>
-							<div class="modal-body">
-								<p>One fine body…</p>
-							</div>
-							<div class="modal-footer">
-								<p>footer</p>
-							</div>
-						</article>
-					</li>
-					
-					<li class="large block">
-					
-						<ul class="item_container">
+																						
+								</section><!-- col_small -->
 													
-							<li class="entry_item small diagonal panel">
+							</div><!-- col_medium -->	
+							
+							
+							<div class="col_small">
+								<aside>
+									
+									<header>
+										<h2>Tips & Tricks</h2>
+									</header>
+									
+									<h3>On Arrival</h3>
+			
+									<p>If you flew to Lisbon, you'll need to get to the city from the airport. It's not something that makes us proud, but you can get ripped off by Taxi Drivers if you take one at Arrivals. You can either take a Taxi from Departures instead, one floor above, or catch one of the Aero buses, which are fast and cheap. If your Hotel is in the City Centre catch the AeroBus 91. If it's near the Venue, catch the AeroShuttle 96. They both run about every 30min and will cost you €3,50. You can use this ticket on all the Carris network for the remainder of the day. If you came by train, then stop at Estação Oriente and you're already a stone's throw from the Venue.</p> 
+		
+									<h3>Getting Around</h3>
+		
+									<p>The best way to roam about the city is to get a Lisboa Card which you can use in every kind of transport around the city and that will get you free admission to more than 80 museums and attractions. They cost €17 for 24h, €27 for 48h and €33.50 for 72h. Or you can get the 7 Colinas Card for 50 cents and charge a day fare onto it that will get you around in the Carris and Metro networks for €3.50. A single ticket is 90 cents on the subway and €1.40 in buses. Taxis are fairly cheap and will get you around the city for around €5 to €10 a ride. Be aware that they can charge you extra for carrying big luggage of if you called them on the phone (+351 218119000).</p>
+									
+									
+								</aside>
+								
+							</div><!-- col_small -->	
+							
+						</div> <!-- Tour Guide Panel -->
+						
+						
+						<!-- 2.7 After Party -->
+						<div class="panel" data-panel="afterparty">
+							
+							<section class="col_medium">
+								<header>
+									<h2>After Party</h2>
+								</header>
+								
+								<div class="prose">
+								
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elite. Ut adipiscing congue sapien eu varius. Phasellus dolor est, mollis net placerat eu, congue a veldt. Curabitur posuere, duo see hendrerit elementum, ipsum eros lobortis tells, eu rhoncus veldt ipsum at diam.</p>
+		
+									<p>Aliquam posuere, mi vitae iaculis incident, sapien tells pellentesque ante, at dignissim risus libero a met us. Etiam diam duo, sagittis ac egestas aliquot, bland it net nunc. Nunc rutrum lacus del leo dapibus laoreet. Cras enim dolor, rhoncus at imperdiet id, faucibus vitae felis. Maecenas luctus incident dapibus. Donec interdum imperdiet sapien, condimentum scelerisque neque adipiscing vel. Suspendisse potent.</p>
+									
+									<h3>Map</h3>
+									
+									<div class="map" data-latitude="38.706611" data-longitude="-9.14556">
+										
+									</div>
+									
+									<h3>Contact details</h3>
+		
+									<dl>
+										<dt>Address:</dt>
+										<dd>
+											<address>
+												Mercado da Ribeira<br/>
+												Rua Duque de Palmela, 34<br/>
+												1250-098 Lisbon, Portugal
+											</address>
+										</dd>
+										
+										<dt class="row">Email:</dt>
+										<dd><a href="mailto:gr.tor@solmeliaportugal.com" title="Email us">gr.tor@solmeliaportugal.com</a></dd>
+										
+										<dt class="row">Phone:</dt>
+										<dd><a href="tel:00351218930017" title="Phone Number">(+351) 218930017</a></dd>
+										
+										<dt class="row">Website:</dt>
+										<dd><a href="http://thehub-edinburgh.com" title="Go to The Hub Website">thehub-edinburgh.com</a></dd>
+									</dl>
+								
+								</div><!-- /prose -->
+								
+							</section><!-- /col_medium -->
+							
+							<aside class="col_small">
+								
+								<header>
+									<h2>How to get there</h2>
+								</header>
+								
+								<h3>Subway</h3>
+		
+								<p>Just take the "Metro" green line until its end at "Cais do Sodré" and walk straight up towards the river and the venue will be a few hundred feet to your left.</p>
+								<p><strong>More info:</strong> <a href="#" title="Subway Map">Subway Map</a></p>
+		
+								<h3>Bus</h3>
+		
+								<p>You can take any of the 5, 21 and 25 buses towards "Cais do Sodré" station. Then just walk straight towards the river and the venue will be a few hundred feet to your left.</p>
+								<p><strong>More info:</strong> <a href="#" title="Timetables">Timetables</a></p>				
+								
+							</aside><!-- col_small -->
+							
+						</div>
+						
+					
+					</div><!-- /container -->
+					
+				</section><!-- /information -->
+		
+		
+				<!-- 3. Speakers -->
+				<section id="speakers" class="section masonry">
+				
+					<div class="container">
+							
+						<header class="section_header">
+							<h1>Speakers</h1>
+						</header><!-- /header -->
+						
+						<ul class="entry_list">
+							
+							<li class="corner_stamp entry_item">
+								<h2>Insert text about the speakers.</h2>
+								<h3 class="info">More to be announced.</h3>
+							</li>
+							
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title">Brendan Eich</h1>
+										<h2 class="entry_position">CTO, Mozilla</h2>
+										<p class="entry_thumbnail"><img src="assets/images/speakers_brendan_eich.png" alt="speakers_rebecca_murphey" width="160" height="160" /></p>
+									</header>
+									<div class="excerpt">
+										<p>Is a computer programmer and creator of the JavaScript scripting language. He is the chief technology officer at the Mozilla Corporation.</p>
+										<p class="entry_twitter"><a href="#" title="Go to Twitter">@BrendanEich</a></p>
+									</div>
+								</article>
+							</li>
+		
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title">John Resig</h1>
+										<h2 class="entry_position">Programmer, Khan Academy</h2>
+										<p class="entry_thumbnail"><img src="assets/images/speakers_john_resig.png" alt="speakers_rebecca_murphey" width="160" height="160" /></p>
+									</header>
+									<div class="excerpt">
+										<p>I’ve been working on a few projects in my spare time and one service, in particular, would greatly benefit from a high quality image similarity search. I’ve been trying a number of the Open (and non-Open) Source tools . Thus far none of the tools that I’ve found are of high-enough quality to warrant further pursuit. They either do simple color comparison, basic wavelet/outline comparison, or some form of hashing – none of which appears to work very well beyond basic images.</p>
+										<p class="entry_twitter"><a href="#" title="Go to Twitter">@jeresig</a></p>
+									</div>
+								</article>
+							</li>
+		
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title">Remy Sharp</h1>
+										<h2 class="entry_position">Founder, Left Logic</h2>
+										<p class="entry_thumbnail"><img src="assets/images/speakers_remy_sharp.png" alt="speakers_rebecca_murphey" width="160" height="160" /></p>
+									</header>
+									<div class="excerpt">
+										<p>Remy is the founder and curator of Full Frontal, the UK based JavaScript conference. He also runs jQuery for Designers, co-authored Introducing HTML5 (adding all the JavaScripty bits) and is one of the curators of HTML5Doctor.com.
+		Whilst he’s not writing articles or running and speaking at conferences, he runs his own development and training company in Brighton called Left Logic.</p>
+										<p class="entry_twitter"><a href="#" title="Go to Twitter">@rem</a></p>
+									</div>
+								</article>
+							</li>
+		
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title">Rebecca Murphey</h1>
+										<h2 class="entry_position">Senior JS dev. Bocoup</h2>
+										<p class="entry_thumbnail"><img src="assets/images/speakers_rebecca_murphey.png" alt="speakers_rebecca_murphey" width="160" height="160" /></p>
+									</header>
+									<div class="excerpt">
+										<p>I’m a senior JavaScript engineer at Bocoup, the co-host of the yayQuery podcast, a co-organizer of TXJS, a contributor to the jQuery Cookbook from O’Reilly, and the author of the open-source jQuery Fundamentals.</p>
+										<p class="entry_twitter"><a href="#" title="Go to Twitter">@rmurphey</a></p>
+									</div>
+								</article>
+							</li>
+		
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title l_center">Coming Soon</h1>
+										<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
+									</header>
+								</article>
+							</li>
+		
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title l_center">Coming Soon</h1>
+										<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
+									</header>
+								</article>
+							</li>
+							
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title l_center">Coming Soon</h1>
+										<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
+									</header>
+								</article>
+							</li>
+		
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title l_center">Coming Soon</h1>
+										<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
+									</header>
+								</article>
+							</li>
+		
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title l_center">Coming Soon</h1>
+										<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
+									</header>
+								</article>
+							</li>
+		
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title l_center">Coming Soon</h1>
+										<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
+									</header>
+								</article>
+							</li>
+							
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title l_center">Coming Soon</h1>
+										<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
+									</header>
+								</article>
+							</li>
+		
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title l_center">Coming Soon</h1>
+										<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
+									</header>
+								</article>
+							</li>
+					
+							<li class="entry_item">
+								<article>
+									<header>
+										<h1 class="entry_title l_center">Coming Soon</h1>
+										<p class="entry_thumbnail"><img src="assets/images/spearker_default_thumbnail.png" alt="spearker_default_thumbnail" width="160" height="160" /></p>
+									</header>
+								</article>
+							</li>
+										
+																						
+						</ul><!-- entry-list -->
+					
+					</div><!-- /container -->
+					
+				</section><!-- /speakers -->
+				
+				
+				<!-- 4. Schedule -->
+				<section id="schedule" class="section alt">
+				
+					<div class="container">
+							
+						<header class="section_header">
+							<h1>Schedule</h1>					
+						</header><!-- /header -->
+						
+						<table>
+							<thead>
+								<tr>
+									<th class="sched_time"></th>
+									<th class="sched_day_one">Day 1 / Sep 28</th>
+									<th class="sched_day_two">Day 2 / Sep 29</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="l_center"><strong>08:00 - 08:45</strong></td>
+									<td colspan="2" class="l_center"><em>Arrival and Registration</em></td>
+								</tr>
+								<tr>
+									<td class="l_center"><strong>08:45 - 09:00</strong></td>
+									<td>
+										<span class="talk-title">Why Designing a Mobile App Isn’t Just About Designing for IPhone</span> — Rebecca Murphey
+									</td>
+									<td>
+										<span class="talk-title">Lessons Learned From Testing Legacy Code</span> — Brian Suda
+									</td>
+								</tr>
+								<tr>
+									<td class="l_center"><strong>09:00 - 09:40</strong></td>
+									<td>
+										<span class="talk-title">Why Designing a Mobile App Isn’t Just About Designing for IPhone</span> — Rebecca Murphey
+									</td>
+									<td>
+										<span class="talk-title">Lessons Learned From Testing Legacy Code</span> — Brian Suda
+									</td>
+								</tr>
+								<tr>
+									<td class="l_center"><strong>09:50 - 10:50</strong></td>
+									<td colspan="2" class="l_center"><em>Coffee Break</em></td>
+								</tr>
+								<tr>
+									<td class="l_center"><strong>11:00 - 12:00</strong></td>
+									<td>
+										<span class="talk-title">Why Designing a Mobile App Isn’t Just About Designing for IPhone</span> — Rebecca Murphey
+									</td>
+									<td>
+										<span class="talk-title">Lessons Learned From Testing Legacy Code</span> — Brian Suda
+									</td>
+								</tr>
+								<tr>
+									<td class="l_center"><strong>12:00 - 13:30</strong></td>
+									<td>
+										<span class="talk-title">Why Designing a Mobile App Isn’t Just About Designing for IPhone</span> — Rebecca Murphey
+									</td>
+									<td>
+										<span class="talk-title">Lessons Learned From Testing Legacy Code</span> — Brian Suda
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					
+					</div><!-- /container -->
+					
+				</section><!-- /schedule -->
+		
+				<!-- 5. Sponsors -->
+				<section id="sponsors" class="section masonry">
+				
+					<div class="container">
+							
+						<header class="section_header">
+							<h1>Sponsors</h1>
+						</header><!-- /header -->
+						
+						<ul class="entry_list">
+							
+							<li class="corner_stamp entry_item block">
+								<h2>We couldn't make this happen without our sponsors.</h2>
+								<p class="become_sponsor"><a href="mailto:hello@lxjs.org" title="Send us an email" >Become a Sponsor</a></p>
+							</li>
+							
+							<li class="entry_item block diagonal panel">
 								<article class="front">
 									<header>
-										<a href="#jqueryModal" class="no-transition" data-toggle="modal" title="Go to jQuery Website">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="jQuery" width="100" height="80" /></p>
+										<a href="#loveblipModal" class="no-transition" data-toggle="modal" title="Go to Loveblip Website">
+											<h1 class="entry_title visuallyhidden">Loveblip</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponspor_main_loveblip.png" alt="Loveblip" width="160" height="120" /></p>
 										</a>
 									</header>
 								</article>
 								
 								<article class="back">
 									<header>
-										<a href="#jqueryModal" data-toggle="modal" title="Go to jQuery Website">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="jQuery" width="100" height="80" /></p>
+										<a href="#loveblipModal" data-toggle="modal" title="Go to Loveblip Website">
+											<h1 class="entry_title visuallyhidden">Loveblip</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponspor_main_loveblip.png" alt="Loveblip" width="160" height="120" /></p>
 										</a>
 									</header>
 								</article>
 								
-								<article class="modal hide fade" id="#jqueryModal">
+								<article class="modal hide fade" id="loveblipModal">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">×</button>
+										<h3>Modal header</h3>
+									</div>
+									<div class="modal-body">
+										<p>One fine body…</p>
+									</div>
+									<div class="modal-footer">
+										<p>footer</p>
+									</div>
+								</article>
+							</li>
+		
+							<li class="entry_item block diagonal panel">
+								<article class="front">
+									<header>
+										<a href="#quodisModal" class="no-transition" data-toggle="modal" title="Go to Quodis Website">
+											<h1 class="entry_title visuallyhidden">Quodis</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponsor_main_quodis.png" alt="Quodis" width="160" height="120" /></p>
+										</a>
+									</header>
+								</article>
+								
+								<article class="back">
+									<header>
+										<a href="#quodisModal" data-toggle="modal" title="Go to Quodis Website">
+											<h1 class="entry_title visuallyhidden">Quodis</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponspor_main_loveblip.png" alt="Quodis" width="160" height="120" /></p>
+										</a>
+									</header>
+								</article>
+								
+								<article class="modal hide fade" id="quodisModal">
 									<div class="modal-header">
 										<button class="close" data-dismiss="modal">×</button>
 										<h3>Modal header</h3>
@@ -1133,370 +963,539 @@ Whilst he’s not writing articles or running and speaking at conferences, he ru
 								</article>
 							</li>
 							
-							<li class="entry_item small">
-								<article>
+							<li class="entry_item block diagonal panel">
+								<article class="front">
 									<header>
-										<a href="#" title="Go to Website">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+										<a href="#nodejitsuModal" class="no-transition" data-toggle="modal" title="Go to Nodejitsu Website">
+											<h1 class="entry_title visuallyhidden">Nodejitsu</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponsor_main_node_jitsu.png" alt="Nodejitsu" width="160" height="120" /></p>
 										</a>
 									</header>
 								</article>
-							</li>
-							
-							<li class="entry_item small">
-								<article>
+								
+								<article class="back">
 									<header>
-										<a href="#" title="Go to Website">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+										<a href="#nodejitsuModal" data-toggle="modal" title="Go to Nodejitsu Website">
+											<h1 class="entry_title visuallyhidden">Nodejitsu</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponsor_main_node_jitsu.png" alt="Nodejitsu" width="160" height="120" /></p>
 										</a>
 									</header>
 								</article>
-							</li>
-							
-							<li class="entry_item small">
-								<article>
-									<header>
-										<a href="#" title="Go to Website">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
-										</a>
-									</header>
+								
+								<article class="modal hide fade" id="#nodejitsuModal">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">×</button>
+										<h3>Modal header</h3>
+									</div>
+									<div class="modal-body">
+										<p>One fine body…</p>
+									</div>
+									<div class="modal-footer">
+										<p>footer</p>
+									</div>
 								</article>
 							</li>
 							
-							<li class="entry_item small">
-								<article>
+							<li class="entry_item block diagonal panel">
+								<article class="front">
 									<header>
-										<a href="#" title="Go to Website">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+										<a href="#nodefirmModal" class="no-transition" data-toggle="modal" title="Go to The Node Firm Website">
+											<h1 class="entry_title visuallyhidden">The Node Firm</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponsor_main_nodefirm.png" alt="The Node Firm" width="160" height="120" /></p>
 										</a>
 									</header>
 								</article>
+								
+								<article class="back">
+									<header>
+										<a href="#nodefirmModal" data-toggle="modal" title="Go to The Node Firm Website">
+											<h1 class="entry_title visuallyhidden">The Node Firm</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponsor_main_nodefirm.png" alt="The Node Firm" width="160" height="120" /></p>
+										</a>
+									</header>
+								</article>
+								
+								<article class="modal hide fade" id="#nodefirmModal">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">×</button>
+										<h3>Modal header</h3>
+									</div>
+									<div class="modal-body">
+										<p>One fine body…</p>
+									</div>
+									<div class="modal-footer">
+										<p>footer</p>
+									</div>
+								</article>
 							</li>
 							
-						</ul>
-					</li>									
+							<li class="entry_item block diagonal panel">
+								<article class="front">
+									<header>
+										<a href="#sapoModal" class="no-transition" data-toggle="modal" title="Go to Sapo Website">
+											<h1 class="entry_title visuallyhidden">Sapo</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponsor_main_sapo.png" alt="Sapo" width="160" height="120" /></p>
+										</a>
+									</header>
+								</article>
+								
+								<article class="back">
+									<header>
+										<a href="#sapoModal" data-toggle="modal" title="Go to Sapo Website">
+											<h1 class="entry_title visuallyhidden">Sapo</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponsor_main_sapo.png" alt="Sapo" width="160" height="120" /></p>
+										</a>
+									</header>
+								</article>
+								
+								<article class="modal hide fade" id="#sapoModal">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">×</button>
+										<h3>Modal header</h3>
+									</div>
+									<div class="modal-body">
+										<p>One fine body…</p>
+									</div>
+									<div class="modal-footer">
+										<p>footer</p>
+									</div>
+								</article>
+							</li>
+							
+							<li class="entry_item block diagonal panel">
+								<article class="front">
+									<header>
+										<a href="#voltdbModal" class="no-transition" data-toggle="modal" title="Go to VoltDB Website">
+											<h1 class="entry_title visuallyhidden">VoltDB</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponsor_main_voltdb.png" alt="VoltDB" width="160" height="120" /></p>
+										</a>
+									</header>
+								</article>
+								
+								<article class="back">
+									<header>
+										<a href="#voltdbModal" data-toggle="modal" title="Go to VoltDB Website">
+											<h1 class="entry_title visuallyhidden">VoltDB</h1>
+											<p class="entry_thumbnail"><img src="assets/images/sponsor_main_voltdb.png" alt="VoltDB" width="160" height="120" /></p>
+										</a>
+									</header>
+								</article>
+								
+								<article class="modal hide fade" id="#voltdbModal">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">×</button>
+										<h3>Modal header</h3>
+									</div>
+									<div class="modal-body">
+										<p>One fine body…</p>
+									</div>
+									<div class="modal-footer">
+										<p>footer</p>
+									</div>
+								</article>
+							</li>
+							
+							<li class="large block">
+							
+								<ul class="item_container">
+															
+									<li class="entry_item small diagonal panel">
+										<article class="front">
+											<header>
+												<a href="#jqueryModal" class="no-transition" data-toggle="modal" title="Go to jQuery Website">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="jQuery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+										
+										<article class="back">
+											<header>
+												<a href="#jqueryModal" data-toggle="modal" title="Go to jQuery Website">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="jQuery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+										
+										<article class="modal hide fade" id="#jqueryModal">
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">×</button>
+												<h3>Modal header</h3>
+											</div>
+											<div class="modal-body">
+												<p>One fine body…</p>
+											</div>
+											<div class="modal-footer">
+												<p>footer</p>
+											</div>
+										</article>
+									</li>
+									
+									<li class="entry_item small">
+										<article>
+											<header>
+												<a href="#" title="Go to Website">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+									</li>
+									
+									<li class="entry_item small">
+										<article>
+											<header>
+												<a href="#" title="Go to Website">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+									</li>
+									
+									<li class="entry_item small">
+										<article>
+											<header>
+												<a href="#" title="Go to Website">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+									</li>
+									
+									<li class="entry_item small">
+										<article>
+											<header>
+												<a href="#" title="Go to Website">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+									</li>
+									
+								</ul>
+							</li>									
+							
+							<li class="large block">
+							
+								<ul class="item_container">
+									<li class="entry_item small">
+										<article>
+											<header>
+												<a href="#">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+									</li>
+									
+									<li class="entry_item small">
+										<article>
+											<header>
+												<a href="#">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+									</li>
+									
+									<li class="entry_item small">
+										<article>
+											<header>
+												<a href="#">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+									</li>
+									
+									<li class="entry_item small">
+										<article>
+											<header>
+												<a href="#">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+									</li>
+									
+									<li class="entry_item small">
+										<article>
+											<header>
+												<a href="#">
+													<h1 class="entry_title visuallyhidden">jQuery</h1>
+													<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
+												</a>
+											</header>
+										</article>
+									</li>
+									
+								</ul>
+							</li>					
+																						
+						</ul><!-- entry-list -->
 					
-					<li class="large block">
+					</div><!-- /container -->
 					
-						<ul class="item_container">
-							<li class="entry_item small">
-								<article>
-									<header>
-										<a href="#">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
-										</a>
-									</header>
-								</article>
-							</li>
-							
-							<li class="entry_item small">
-								<article>
-									<header>
-										<a href="#">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
-										</a>
-									</header>
-								</article>
-							</li>
-							
-							<li class="entry_item small">
-								<article>
-									<header>
-										<a href="#">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
-										</a>
-									</header>
-								</article>
-							</li>
-							
-							<li class="entry_item small">
-								<article>
-									<header>
-										<a href="#">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
-										</a>
-									</header>
-								</article>
-							</li>
-							
-							<li class="entry_item small">
-								<article>
-									<header>
-										<a href="#">
-											<h1 class="entry_title visuallyhidden">jQuery</h1>
-											<p class="entry_thumbnail"><img src="assets/images/sponsor_sec_jquery.png" alt="sponsor_sec_jquery" width="100" height="80" /></p>
-										</a>
-									</header>
-								</article>
-							</li>
-							
-						</ul>
-					</li>					
-																				
-				</ul><!-- entry-list -->
-			
-			</div><!-- /container -->
-			
-		</section><!-- /sponsors -->
-		
-		<!-- 6. Tickets -->
-		<section id="tickets" class="section alt">
-		
-			<div class="container">
-					
-				<header class="section_header">
-					<h1>Tickets</h1>
-				</header><!-- /header -->	
+				</section><!-- /sponsors -->
 				
-				<div class="col_one">	
+				<!-- 6. Tickets -->
+				<section id="tickets" class="section alt">
 				
-					<h2>Your ticket provides access to two days full of great talks and:</h2>
-					
-					<ul>
-						<li>Lunch for every day you attend, with all you can eat yummy Portuguese dishes.</li>
-						<li>Coffee breaks with delicious Portuguese cakes and pastries.</li>
-						<li>Free access to the After-Party, with drinks included!</li>
-						<li>An awesome  swag bag.</li>
-						<li>Free, unlocked Wi-Fi at the venue.</li>
-					</ul>
-					
-				</div><!-- col_one -->
-				
-				<div class="col_two">
-					<h2>Ticket Information</h2>
-					
-					<table>
-						<thead>
-							<tr>
-								<th class="">Ticket Type</th>
-								<th class="">Sales End</th>
-								<th class="">Price</th>
-								<th class="">Fee</th>
-								<th class="">Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>Early Bird</td>
-								<td>May 11, 2012</td>
-								<td>€175.00</td>
-								<td>€5.00</td>
-								<td>Sold Out</td>
-							</tr>
-							<tr>
-								<th>Normal Ticket</td>
-								<td>May 11, 2012</td>
-								<td>€225.00</td>
-								<td>€7.00</td>
-								<td><a href="#" title="Buy Ticket">Buy</a></td>
-							</tr>
-						</tbody>
-					</table>
-				
-				</div><!-- col_two -->
-			
-			</div><!-- /container -->
-			
-		</section><!-- /tickets -->
-
-		<!-- 6. Contacts -->
-		<section id="contacts" class="section masonry">
-		
-			<div class="container">
-					
-				<header class="section_header">
-					<h1>Contacts</h1>
-				</header><!-- /header -->	
-				
-				<div class="col_one">	
-				
-					<h2>Let's Connect</h2>
-					
-					<ul class="social_nav">
-						<li class="email">
-							<a href="mailto:hello@lxjs.org" title="Email us">
-								<span class="icon spin"></span>
-								<strong>Email</strong>
-								hello@lxjs.org
-							</a>
-						</li>
-						<li class="phone">
-							<a href="tel:00351916601881" title="Call us">
-								<span class="icon spin"></span>
-								<strong>Phone</strong>
-								+351 916 601 881 <small>(Pedro Teixeira)</small>
-							</a>
-						</li>
-						<li class="twitter">
-							<a href="http://twitter.com/#!/lxjs" title="Follow us on Twiter">
-								<span class="icon spin"></span>
-								<strong>Twitter</strong>
-								@lxjs
-							</a>
-						</li>
-						<li class="tumblr">
-							<a href="http://lxjs.tumblr.com" title="Follow us on Tumblr">
-								<span class="icon spin"></span>
-								<strong>Tumblr</strong>
-								lxjs.tumblr.com
-							</a>
-						</li>
-						<li class="lanyard">
-							<a href="http://lanyrd.com/2012/lxjs" title="Follow us on Lanyard">
-								<span class="icon spin"></span>
-								<strong>Lanyard</strong>
-								lanyrd.com/2012/lxjs
-							</a>
-						</li>
-					</ul>
-					
-					<h2>Get the news</h2>
-					
-					<form id="newsletter_form">
-						<legend class="visuallyhidden">Subscribe to our newsletter</legend>
-						<label class="visuallyhidden" for="newsletter_block_form">Email</label>
-						<input type="text" maxlength="128" id="newsletter_block_form" name="email" size="15" placeholder="Email" class="text" tabindex="10">
-						<button name="op" type="submit" class="button" value="Subscribe" id="newsletter-submit-bttn" tabindex="2">Subscribe</button>
-					</form>
-					
-				</div><!-- col_one -->
-				
-				<div class="col_two">
-					<h2>Meet the Team</h2>
-					
-					<ul class="entry_list">
+					<div class="container">
+							
+						<header class="section_header">
+							<h1>Tickets</h1>
+						</header><!-- /header -->	
 						
-						<li class="corner_stamp entry_item">
-							<h3 class="info">We are a group of seasoned and semi-seasoned JavaScript fans deeply involved in the local and international JavaScript community.</h3>
-						</li>
+						<div class="col_one">	
 						
-						<li class="entry_item">
-							<article>
-								<header>
-									<h1 class="entry_title">Pedro Teixeira</h1>
-									<h2 class="entry_position">Documentation Engineer, Nodejitsu</h2>
-									<p class="entry_thumbnail"><img src="assets/images/team_pedro_teixeira.png" alt="team_pedro_teixeira" width="100" height="100" /></p>
-								</header>
-								<div class="excerpt">
-									<p class="entry_twitter"><a href="http://twitter.com/#!/pedrogte" title="Follow Pedro on Twitter">@pedrogte</a></p>
-								</div>
-							</article>
-						</li>
-
-						<li class="entry_item">
-							<article>
-								<header>
-									<h1 class="entry_title">Nuno Job</h1>
-									<h2 class="entry_position">Engineer / Business Development, Nodejitsu</h2>
-									<p class="entry_thumbnail"><img src="assets/images/team_nuno_job.png" alt="team_nuno_job" width="100" height="100" /></p>
-								</header>
-								<div class="excerpt">
-									<p class="entry_twitter"><a href="http://twitter.com/#!/nunojob" title="Follow Nuno on Twitter">@nunojob</a></p>
-								</div>
-							</article>
-						</li>
-
-						<li class="entry_item">
-							<article>
-								<header>
-									<h1 class="entry_title">Tiago Rodrigues</h1>
-									<h2 class="entry_position">Lead Javascript Developer, Top10.com</h2>
-									<p class="entry_thumbnail"><img src="assets/images/team_tiago_rodrigues.png" alt="team_tiago_rodrigues" width="100" height="100" /></p>
-								</header>
-								<div class="excerpt">
-									<p class="entry_twitter"><a href="http://twitter.com/#!/trodrigues" title="Follow Tiago on Twitter">@trodrigues</a></p>
-								</div>
-							</article>
-						</li>
+							<h2>Your ticket provides access to two days full of great talks and:</h2>
+							
+							<ul>
+								<li>Lunch for every day you attend, with all you can eat yummy Portuguese dishes.</li>
+								<li>Coffee breaks with delicious Portuguese cakes and pastries.</li>
+								<li>Free access to the After-Party, with drinks included!</li>
+								<li>An awesome  swag bag.</li>
+								<li>Free, unlocked Wi-Fi at the venue.</li>
+							</ul>
+							
+						</div><!-- col_one -->
 						
-						<li class="entry_item">
-							<article>
-								<header>
-									<h1 class="entry_title">Heitor Ferreira</h1>
-									<h2 class="entry_position">Mobile Expert</h2>
-									<p class="entry_thumbnail"><img src="assets/images/team_heitor_ferreira.png" alt="team_heitor_ferreira" width="100" height="100" /></p>
-								</header>
-								<div class="excerpt">
-									<p class="entry_twitter"><a href="http://twitter.com/#!/heitorfr" title="Follow Heitor on Twitter">@heitorfr</a></p>
-								</div>
-							</article>
-						</li>
+						<div class="col_two">
+							<h2>Ticket Information</h2>
+							
+							<table>
+								<thead>
+									<tr>
+										<th class="">Ticket Type</th>
+										<th class="">Sales End</th>
+										<th class="">Price</th>
+										<th class="">Fee</th>
+										<th class="">Quantity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Early Bird</td>
+										<td>May 11, 2012</td>
+										<td>€175.00</td>
+										<td>€5.00</td>
+										<td>Sold Out</td>
+									</tr>
+									<tr>
+										<td>Normal Ticket</td>
+										<td>May 11, 2012</td>
+										<td>€225.00</td>
+										<td>€7.00</td>
+										<td><a href="#" title="Buy Ticket">Buy</a></td>
+									</tr>
+								</tbody>
+							</table>
 						
-						<li class="entry_item">
-							<article>
-								<header>
-									<h1 class="entry_title">Bruno Coelho</h1>
-									<h2 class="entry_position">Software Engineer</h2>
-									<p class="entry_thumbnail"><img src="assets/images/team_bruno_coelho.png" alt="team_bruno_coelho" width="100" height="100" /></p>
-								</header>
-								<div class="excerpt">
-									<p class="entry_twitter"><a href="http://twitter.com/#!/bmccoelho" title="Follow Bruno on Twitter">@bmccoelho</a></p>
-								</div>
-							</article>
-						</li>
-						
-						<li class="entry_item">
-							<article>
-								<header>
-									<h1 class="entry_title">Luís Reis</h1>
-									<h2 class="entry_position">Professional Geek</h2>
-									<p class="entry_thumbnail"><img src="assets/images/team_luis_reis.png" alt="team_luis_reis" width="100" height="100" /></p>
-								</header>
-								<div class="excerpt">
-									<p class="entry_twitter"><a href="http://twitter.com/#!/luismreis" title="Follow Luís on Twitter">@luismreis</a></p>
-								</div>
-							</article>
-						</li>
-											
-					</ul><!-- /entry_list -->
+						</div><!-- col_two -->
+					
+					</div><!-- /container -->
+					
+				</section><!-- /tickets -->
+		
+				<!-- 6. Contacts -->
+				<section id="contacts" class="section masonry">
 				
-				</div><!-- col_two -->
-			
-			</div><!-- /container -->
-			
-		</section><!-- /contacts -->
-
-
-	<!-- /content -->
-
-	<!-- FOOTER -->
-	<footer id="page_footer" class="alt" role="contentinfo">
+					<div class="container">
+							
+						<header class="section_header">
+							<h1>Contacts</h1>
+						</header><!-- /header -->	
+						
+						<div class="col_one">	
+						
+							<h2>Let's Connect</h2>
+							
+							<ul class="social_nav">
+								<li class="email">
+									<a href="mailto:hello@lxjs.org" title="Email us">
+										<span class="icon spin"></span>
+										<strong>Email</strong>
+										hello@lxjs.org
+									</a>
+								</li>
+								<li class="phone">
+									<a href="tel:00351916601881" title="Call us">
+										<span class="icon spin"></span>
+										<strong>Phone</strong>
+										+351 916 601 881 <small>(Pedro Teixeira)</small>
+									</a>
+								</li>
+								<li class="twitter">
+									<a href="http://twitter.com/#!/lxjs" title="Follow us on Twiter">
+										<span class="icon spin"></span>
+										<strong>Twitter</strong>
+										@lxjs
+									</a>
+								</li>
+								<li class="tumblr">
+									<a href="http://lxjs.tumblr.com" title="Follow us on Tumblr">
+										<span class="icon spin"></span>
+										<strong>Tumblr</strong>
+										lxjs.tumblr.com
+									</a>
+								</li>
+								<li class="lanyard">
+									<a href="http://lanyrd.com/2012/lxjs" title="Follow us on Lanyard">
+										<span class="icon spin"></span>
+										<strong>Lanyard</strong>
+										lanyrd.com/2012/lxjs
+									</a>
+								</li>
+							</ul>
+							
+							<h2>Get the news</h2>
+							
+							<form id="newsletter_form">
+								<fieldset>
+									<legend class="visuallyhidden">Subscribe to our newsletter</legend>
+									<label class="visuallyhidden" for="newsletter_block_form">Email</label>
+									<input type="text" maxlength="128" id="newsletter_block_form" name="email" size="15" placeholder="Email" class="text" tabindex="10">
+									<button name="op" type="submit" class="button" value="Subscribe" id="newsletter-submit-bttn" tabindex="2">Subscribe</button>
+								</fieldset>
+							</form>
+							
+						</div><!-- col_one -->
+						
+						<div class="col_two">
+							<h2>Meet the Team</h2>
+							
+							<ul class="entry_list">
+								
+								<li class="corner_stamp entry_item">
+									<h3 class="info">We are a group of seasoned and semi-seasoned JavaScript fans deeply involved in the local and international JavaScript community.</h3>
+								</li>
+								
+								<li class="entry_item">
+									<article>
+										<header>
+											<h1 class="entry_title">Pedro Teixeira</h1>
+											<h2 class="entry_position">Documentation Engineer, Nodejitsu</h2>
+											<p class="entry_thumbnail"><img src="assets/images/team_pedro_teixeira.png" alt="team_pedro_teixeira" width="100" height="100" /></p>
+										</header>
+										<div class="excerpt">
+											<p class="entry_twitter"><a href="http://twitter.com/#!/pedrogte" title="Follow Pedro on Twitter">@pedrogte</a></p>
+										</div>
+									</article>
+								</li>
 		
-		<div class="container">
+								<li class="entry_item">
+									<article>
+										<header>
+											<h1 class="entry_title">Nuno Job</h1>
+											<h2 class="entry_position">Engineer / Business Development, Nodejitsu</h2>
+											<p class="entry_thumbnail"><img src="assets/images/team_nuno_job.png" alt="team_nuno_job" width="100" height="100" /></p>
+										</header>
+										<div class="excerpt">
+											<p class="entry_twitter"><a href="http://twitter.com/#!/nunojob" title="Follow Nuno on Twitter">@nunojob</a></p>
+										</div>
+									</article>
+								</li>
 		
-			<p class="credits_org">2012 © lxjs.org</p>
-			<p class="credits_web">
-				Website by:
-				<a href="http://quodis.com" title="Go to Quodis website" class="ir credits-quodis-logo" target="_blank">Quodis</a> 
-			</p>
-			<p class="credits_hosting">Hosted at <a href="http://nodejitsu.com/" title="Go to Nodejitsu website" target="_blank">Nodejitsu</a> and running on <a href="http://flatironjs.org/" title="Go to Flatiron Website" target="_blank">Flatiron.js</a></p>
-			
-			<p class="credits_logo">LXJS Logo designed by <a href="http://twitter.com/#!/Aworkz" title="Go to Bruno Cartaxeiro Twitter" target="_blank">Bruno Cartaxeiro</a></p>
-			
-		</div><!-- /container -->
+								<li class="entry_item">
+									<article>
+										<header>
+											<h1 class="entry_title">Tiago Rodrigues</h1>
+											<h2 class="entry_position">Lead Javascript Developer, Top10.com</h2>
+											<p class="entry_thumbnail"><img src="assets/images/team_tiago_rodrigues.png" alt="team_tiago_rodrigues" width="100" height="100" /></p>
+										</header>
+										<div class="excerpt">
+											<p class="entry_twitter"><a href="http://twitter.com/#!/trodrigues" title="Follow Tiago on Twitter">@trodrigues</a></p>
+										</div>
+									</article>
+								</li>
+								
+								<li class="entry_item">
+									<article>
+										<header>
+											<h1 class="entry_title">Heitor Ferreira</h1>
+											<h2 class="entry_position">Mobile Expert</h2>
+											<p class="entry_thumbnail"><img src="assets/images/team_heitor_ferreira.png" alt="team_heitor_ferreira" width="100" height="100" /></p>
+										</header>
+										<div class="excerpt">
+											<p class="entry_twitter"><a href="http://twitter.com/#!/heitorfr" title="Follow Heitor on Twitter">@heitorfr</a></p>
+										</div>
+									</article>
+								</li>
+								
+								<li class="entry_item">
+									<article>
+										<header>
+											<h1 class="entry_title">Bruno Coelho</h1>
+											<h2 class="entry_position">Software Engineer</h2>
+											<p class="entry_thumbnail"><img src="assets/images/team_bruno_coelho.png" alt="team_bruno_coelho" width="100" height="100" /></p>
+										</header>
+										<div class="excerpt">
+											<p class="entry_twitter"><a href="http://twitter.com/#!/bmccoelho" title="Follow Bruno on Twitter">@bmccoelho</a></p>
+										</div>
+									</article>
+								</li>
+								
+								<li class="entry_item">
+									<article>
+										<header>
+											<h1 class="entry_title">Luís Reis</h1>
+											<h2 class="entry_position">Professional Geek</h2>
+											<p class="entry_thumbnail"><img src="assets/images/team_luis_reis.png" alt="team_luis_reis" width="100" height="100" /></p>
+										</header>
+										<div class="excerpt">
+											<p class="entry_twitter"><a href="http://twitter.com/#!/luismreis" title="Follow Luís on Twitter">@luismreis</a></p>
+										</div>
+									</article>
+								</li>
+													
+							</ul><!-- /entry_list -->
+						
+						</div><!-- col_two -->
+					
+					</div><!-- /container -->
+					
+				</section><!-- /contacts -->
 		
-	</footer><!-- /footer -->
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-	<script src="assets/js/libs/jquery.masonry.min.js"></script>
-	<script src="assets/js/libs/jquery.scrollTo-1.4.2-min.js"></script>
-	<script src="assets/js/libs/jquery.ba-bbq.min.js"></script>
-	<script src="assets/js/libs/leaflet.js"></script>
-	<script src="assets/js/libs/bootstrap-transition.js"></script>
-	<script src="assets/js/libs/bootstrap-modal.js"></script>
-	<script src="assets/js/libs/bootstrap-carousel.js"></script>
-	<script src="assets/js/libs/jquery.tweet.js"></script>
-	<script src="assets/js/general.js"></script>
-	
-</body>
+		
+			<!-- /content -->
+		
+			<!-- FOOTER -->
+			<footer id="page_footer" class="alt" role="contentinfo">
+				
+				<div class="container">
+				
+					<p class="credits_org">2012 © lxjs.org</p>
+					<p class="credits_web">Website by: <a href="http://quodis.com" title="Go to Quodis website" class="ir credits-quodis-logo" target="_blank">Quodis</a> </p>
+					<p class="credits_hosting">Hosted at <a href="http://nodejitsu.com/" title="Go to Nodejitsu website" target="_blank">Nodejitsu</a> and running on <a href="http://flatironjs.org/" title="Go to Flatiron Website" target="_blank">Flatiron.js</a></p>
+					<p class="credits_logo">LXJS Logo designed by <a href="http://twitter.com/#!/Aworkz" title="Go to Bruno Cartaxeiro Twitter" target="_blank">Bruno Cartaxeiro</a></p>
+					
+				</div><!-- /container -->
+				
+			</footer><!-- /footer -->
+		
+		</div><!-- /wrapper -->
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+		<script src="assets/js/libs/jquery.masonry.min.js"></script>
+		<script src="assets/js/libs/jquery.scrollTo-1.4.2-min.js"></script>
+		<script src="assets/js/libs/jquery.ba-bbq.min.js"></script>
+		<script src="assets/js/libs/leaflet.js"></script>
+		<script src="assets/js/libs/bootstrap-transition.js"></script>
+		<script src="assets/js/libs/bootstrap-modal.js"></script>
+		<script src="assets/js/libs/bootstrap-carousel.js"></script>
+		<script src="assets/js/libs/jquery.tweet.js"></script>
+		<script src="assets/js/general.js"></script>
+		
+	</body>
 
 </html>
