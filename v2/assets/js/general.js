@@ -35,7 +35,8 @@ $(function() {
 			pageNavHeight = $('#page_nav').height(),
 			scrollTimeout = null,
 			sections = [],
-			positions = [];
+			positions = [],
+			$twitterFeed = $('#twitter_feed');
 		
 		
 		/**
@@ -75,6 +76,21 @@ $(function() {
 		positions = $.map(sections, function(id) {
 			return $(id).position().top;
 		});
+		
+		/**
+		 * TWITTER
+		 *
+		 */
+		
+		if ($twitterFeed.length) {
+		
+			$twitterFeed.tweet({
+				username: "lxjs",
+				count: 3,
+				loading_text: "Loading Tweets..."
+			});
+			
+		}
 		
 		/**
 		 * MAPS
