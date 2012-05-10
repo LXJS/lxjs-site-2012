@@ -3,7 +3,8 @@
   "version": "0.5.7",
   "private": true,
   "dependencies": {
-    "http-server": "*"
+    "http-server": "*",
+    "blacksmith": "0.0.x"
   },
   "scripts": {
     "start": "bin/server.js"
