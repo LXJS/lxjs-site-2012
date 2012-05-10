@@ -1,6 +1,12 @@
 # Install
+Remember to have a proper PATH setup with support for binaries installed in ./node_modules.
+Do so by adding:
 
-    $ npm install blacksmith
+    export PATH="./node_modules/.bin:$PATH"
+    
+to your environment configuration files (eg: ~/.bashrc).
+
+    $ npm install
     $ blacksmith generate && blacksmith preview
 
 Access [http://localhost:8080](http://localhost:8080).
