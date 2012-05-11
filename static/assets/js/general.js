@@ -97,9 +97,9 @@ $(function() {
 		if ($twitterFeed.length) {
 		
 			$twitterFeed.tweet({
-				username: "lxjs",
+				query: '#lxjs OR @lxjs OR "Lisbon JavaScript"',
 				count: 3,
-				loading_text: "Loading Tweets..."
+				loading_text: "Loading"
 			});
 			
 		}
