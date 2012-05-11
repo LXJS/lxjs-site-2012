@@ -57,7 +57,11 @@ $(function() {
 		 */
 		 
 		// Carousel
-		$('.carousel').carousel();
+		$('.carousel').each(function() {
+			if ($(this).is('visible')) {
+				$(this).carousel();
+			}
+		});
 		
 		// Masonry
 		$('#speakers .entry_list').masonry({
@@ -200,20 +204,22 @@ $(function() {
 		
 		// Tab panels
 		$('.tabs').on('click', 'a', function(evt) {
-			var $this = $(this),
+			var $this = $that = $(this),
 				$parent = $this.parents('.section'),
 				panel = $this.attr('href').replace('#', ''),
 				$panel = $parent.find('.panel[data-panel="' + panel + '"]')
 			
 			if ($this.hasClass('active')) return false;
 			
-			$parent.find('.panel:visible .map').hide();
+			$parent.find('.panel .map').hide();
 				
-			$parent.find('.panel:visible').fadeOut('fast', function() {
+			$parent.find('.panel.active').fadeOut('fast', function() {
 				$parent.find('.tabs a').removeClass('active');
-				$this.addClass('active');
+				$that.addClass('active');
+				$(this).removeClass('active');
 			
 				$panel.fadeIn('fast', function() {
+					$panel.addClass('active');
 					loadMaps($panel);
 					$panel.find('.carousel').carousel();
 					
