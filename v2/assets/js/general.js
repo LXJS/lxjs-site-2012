@@ -301,6 +301,7 @@ $(function() {
 				imgs = new Array(),
 				img1 = new Image(),
 				img2 = new Image(),
+				img3 = new Image(),
 				this_dot = {},
 				resizeTimeout;
 			
@@ -324,9 +325,11 @@ $(function() {
 			
 			img1.src = "assets/images/footer_bg.png";
 			img2.src = "assets/images/easter_egg.png";
+			img3.src = "assets/images/crockford.jpg";
 			
 			imgs[0] = img1;
 			imgs[1] = img2;
+			imgs[2] = img3;
 			
 			for (var i=0; i < total_dots; i++){
 				createDot();
@@ -340,7 +343,7 @@ $(function() {
 					vx:     typeof(vx) != 'undefined' ? vx : Math.random()*3-1,
 					vy:     typeof(vy) != 'undefined' ? vy : Math.random()*3,
 					//this will pick a digit 1, 2 or 3 and set it as the src value, this could also be a Math.floor(Math.random()*3)+1 to really be random
-					src:    (dots.length % 3) + 1,
+					src:    Math.floor(Math.random()*3),
 					r:      0,
 					vr:     0
 				};
@@ -397,7 +400,11 @@ $(function() {
 				for (i=0; i < dots.length; i++){
 					src = img1;
 					
-					if (dots[i].src == 2) src = img2;
+					if (dots[i].src == 1) {
+						src = img2;
+					} else if (dots[i].src == 2) {
+						src = img3;
+					}
 					
 					context.save();
 					context.translate(dots[i].x+dots[i].scale/2, dots[i].y+dots[i].scale/2);
