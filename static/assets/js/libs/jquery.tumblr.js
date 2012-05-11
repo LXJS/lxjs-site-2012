@@ -288,37 +288,16 @@
       
       // Add the li to the posts stack.
       li = 
-        '<li class="tumblr-post tumblr-post-' + post.type + ' post-id-' + post.id + ' ' + oddeven + '">' +
-          '<div class="post-body">' +
-                  body +
-                '</div>' +
-          '<div class="post-footer">' +
-                      '<div class="date"><span class="posted">Posted</span> <abbr class="timeago" title="' + post['date'] + '">' + post['date'] + '</abbr></div>' +
-            '<div class="permalink">' +
-              '<a href="' + post['url-with-slug'] + '" class="permalink" target="_blank"><span class="permalink-icon">&#167;</span> <span class="permalink-text">Permalink</span></a>' +
-                    '</div>';
-
-      if(post.tags) {
-        li += '<div class="tags"><span class="tagged">Tagged </span> <ul>';
-        $.each(post.tags, function(i, tag) {
-          var tag_comma = '<span class="tag-commas">, </span>';
-          var extraClass = '';
-          if(i == post.tags.length - 1 ) {
-            extraClass = 'last';
-            tag_comma = '';
-          }
-          else if(i == 0) {
-            extraClass = 'first';
-          }
-          li += '<li class="' + extraClass + '"><a href="' + data.options.url + '/tagged/' + tag +'" target="_blank">#' + tag + '</a>' + tag_comma + '</li>';
-        });
-        li += '</ul></div>';
-      }
-
-      li += '</div>' +
-            '</li>';
+        '<li><article><header><h3><a href="' + post['url-with-slug'] + 
+        '" title="' + post['regular-title'] + '"></a>' + 
+        post['regular-title'] + '</h3>' +
+        '<p class="meta">' + post['date'] + '</p></header>' +
+        (post['regular-body'] || "")
+          .replace(/<p>/, '<p class="dropcap">') +
+        '</article></li>';
 
       data.posts.append(li);
+
     },
 
     getCssTextLength: function(text) {
