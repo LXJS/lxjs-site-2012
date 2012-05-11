@@ -289,7 +289,7 @@ $(function() {
 				clickX, 
 				clickY, 
 				drag = false,
-				total_dots = 150,
+				total_dots = 75,
 				fps = 24,
 				dots = new Array(),
 				drag_i = -1,
@@ -301,7 +301,8 @@ $(function() {
 				imgs = new Array(),
 				img1 = new Image(),
 				img2 = new Image(),
-				this_dot = {};
+				this_dot = {},
+				resizeTimeout;
 			
 			canvas = document.createElement('canvas');
 			canvas.id = 'konami_easter_egg';
@@ -310,6 +311,15 @@ $(function() {
 			$canvas = $(canvas);
 			$canvas.css({position: 'fixed', zIndex: 8000, top: 0, left: 0});
 			context = canvas.getContext("2d");
+			
+			$(window).resize(function() {
+				if (resizeTimeout) clearTimeout(resizeTimeout);
+			
+				scrollTimeout = setTimeout(function() {
+					canvas.width = $(window).width();
+					canvas.height = $(window).height();
+				}, 250);
+			})
 			
 			
 			img1.src = "assets/images/lxjs_logo.png";
