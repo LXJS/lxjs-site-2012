@@ -322,8 +322,8 @@ $(function() {
 			})
 			
 			
-			img1.src = "assets/images/lxjs_logo.png";
-			img2.src = "assets/images/brand_quodis.png";
+			img1.src = "assets/images/footer_bg.png";
+			img2.src = "assets/images/easter_egg.png";
 			
 			imgs[0] = img1;
 			imgs[1] = img2;
