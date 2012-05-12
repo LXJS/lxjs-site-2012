@@ -105,8 +105,8 @@ $(function() {
     }
     
     $('#tumblr_feed').tumblr(
-      { url     : 'http://metaduck.com'
-      , perPage : 2
+      { url     : 'http://lxjs.tumblr.com'
+      , perPage : 1
       , loading : '#loading'
       , timeago : false
       });
