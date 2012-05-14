@@ -1176,6 +1176,10 @@ a.no-transition {
 	position: relative;
 }
 
+.panel a:hover {
+	opacity: 1;
+}
+
 .panel .front {
 	float: none;
 	position: absolute;
