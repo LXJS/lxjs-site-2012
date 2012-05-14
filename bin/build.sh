@@ -14,5 +14,5 @@ cat \
   $BASEDIR/assets/js/libs/konami.js \
   $BASEDIR/assets/js/general.js \
   >$BASEDIR/assets/js/lxjs.js
-$APPPATH/node_modules/uglify-js/bin/uglifyjs $BASEDIR/assets/js/lxjs.js > $BASEDIR/assets/js/lxjs.min.js
+exec sudo -u trodrigues $APPPATH/node_modules/uglify-js/bin/uglifyjs $BASEDIR/assets/js/lxjs.js > $BASEDIR/assets/js/lxjs.min.js
 /home/trodrigues/node/bin/node $APPPATH/bin/replace_script_tags.js $BASEDIR/index.html
