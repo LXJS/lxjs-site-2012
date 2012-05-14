@@ -476,10 +476,18 @@ td {
 
 .entry_twitter a {
 	display: block;
-	background: url(../images/social_icons_bg.png) 0px -450px no-repeat; 
-	padding: 0 0 0 35px;
 	line-height: 30px;
 }
+
+
+.entry_twitter a .icon {
+  background: url(../images/social_icons_bg.png) 0px -450px no-repeat; 
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 0 0; 
+  display:block;
+  float: left;
+}   
 
 #sponsors .entry_item {
 	padding: 160px 20px 20px 20px;
@@ -708,12 +716,15 @@ button:hover {
 }
 
 #contacts .entry_twitter a {
-	background: url(../images/social_icons_bg.png) 0px -500px no-repeat; 
-	padding: 0 0 0 25px;
+	padding: 0;
 	line-height: 20px;
 }
 
-
+#contacts .entry_twitter a .icon {
+  background-position: 0px -500px;
+  width: 20px;
+  height: 20px;
+}
 
 /* !3.7 Footer */
 
