@@ -1,46 +1,14 @@
-{
-  "name": "lxjs",
-  "version": "0.5.7",
-  "private": true,
-  "dependencies": {
-    "http-server": "*",
-    "blacksmith": "0.0.x"
-  },
-  "scripts": {
-    "start": "bin/server.js"
-  },
-  "main": "bin/server.js",
-  "domains": [
-    "lxjs.org",
-    "www.lxjs.org",
-    "2012.lxjs.org"
-  ],
-  "engines": {
-    "node": "0.6.x"
-  },
-  "subdomain": "lxjs",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/pgte/lxjs.git"
-  },
-  "env": {
-    "SUBDOMAIN": "lxjs",
-    "NODE_ENV": "production"
-  },
-  "author": "Tiago Rodrigues <trodrigues@lxjs.org> (http://lxjs.org)",
-  "description": "lxjs website",
-  "homepage": "http://lxjs.org",
-  "devDependencies": {},
-  "databases": {},
-  "ctime": 1334561463195,
-  "mtime": 1334561476217,
-  "last": null,
-  "running": {
-    "id": "0.5.4-10",
-    "ctime": 1334561466783,
-    "md5": "dcbb9885b98a349405b308113e695187",
-    "filename": "lxjs-lxjs-0.5.4-10.tgz",
-    "active": false,
-    "running": false
-  }
+{ "name"        : "lxjs"
+, "version"     : "0.5.7"
+, "description" : "lxjs website"
+, "author"      : "Quodis (http://quodis.com)"
+, "contributors": ["Tiago Rodrigues <trodrigues@lxjs.org> (http://lxjs.org)"]
+, "homepage"    : "http://lxjs.org"
+, "repository"  : { "type": "git", "url": "git://github.com/pgte/lxjs.git" }
+, "private"     : true
+, "dependencies": { "node-static": "0.5.x", "uglify-js": "1.2.6" }
+, "scripts"     : { "start": "node app.js" }
+, "engines"     : { "node": "0.6.x" }
+, "subdomain"   : "lxjs"
+, "domains"     : [ "lxjs.org", "www.lxjs.org", "2012.lxjs.org" ]
 }
