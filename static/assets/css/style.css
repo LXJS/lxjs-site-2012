@@ -1177,7 +1177,8 @@ p.dropcap::first-letter {
 
 /* 7. Transitions
 ------------------------------------------------------------------ */
-a { 
+a {
+	-webkit-transform: translateZ(0);
 	-webkit-transition: .2s ease;
 	   -moz-transition: .2s ease;
 	    -ms-transition: .2s ease;
@@ -1202,6 +1203,7 @@ a.no-transition {
 }
 
 *:hover > .spin {
+	-webkit-transform: translateZ(0);
 	-webkit-transform: rotateZ(360deg);
        -moz-transform: rotateZ(360deg);
         -ms-transform: rotateZ(360deg);
