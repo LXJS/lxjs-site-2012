@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 var fs = require('fs'),
     path = require('path'),
     srcFile = process.argv[2];
