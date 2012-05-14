@@ -1,6 +1,6 @@
 #/bin/bash
-echo `pwd`
-BASEDIR=$1
+APPPATH=$1
+BASEDIR=$2
 cat \
   $BASEDIR/assets/js/libs/jquery.masonry.min.js \
   $BASEDIR/assets/js/libs/jquery.scrollTo-1.4.2-min.js \
@@ -14,5 +14,5 @@ cat \
   $BASEDIR/assets/js/libs/konami.js \
   $BASEDIR/assets/js/general.js \
   >$BASEDIR/assets/js/lxjs.js
-./node_modules/uglify-js/bin/uglifyjs $BASEDIR/assets/js/lxjs.js > $BASEDIR/assets/js/lxjs.min.js
-./bin/replace_script_tags.js $BASEDIR/index.html
+$APPPATH/node_modules/uglify-js/bin/uglifyjs $BASEDIR/assets/js/lxjs.js > $BASEDIR/assets/js/lxjs.min.js
+$APPPATH/bin/replace_script_tags.js $BASEDIR/index.html
