@@ -320,7 +320,7 @@ $(function() {
       
       $(window).resize(function() {
         if (resizeTimeout) clearTmeout(resizeTimeout);
-        scrollTimeout = setTimeout(function() 
+        scrollTimeout = setTimeout(function() {
           canvas.width = $(window).width();
           canvas.height = $(window).height();
         }, 250);
