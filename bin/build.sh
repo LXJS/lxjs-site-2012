@@ -1,4 +1,5 @@
 #/bin/bash
+echo `pwd`
 BASEDIR=$1
 cat \
   $BASEDIR/assets/js/libs/jquery.masonry.min.js \
