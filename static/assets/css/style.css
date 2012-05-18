@@ -504,7 +504,8 @@ td {
 }
 
 #sponsors .large {
-	width: 480px;
+	/*width: 480px;*/
+	width: 640px;
 }
 
 #sponsors .large .item_container {
