@@ -137,7 +137,7 @@ $(function() {
             shadowUrl: 'assets/images/marker-shadow.png',
             iconSize: new L.Point(25, 41),
             shadowSize: new L.Point(41, 41),
-            iconAnchor: new L.Point(12, 41),
+            iconAnchor: new L.Point(2, 41),
             popupAnchor: new L.Point(-3, -76)
           }),
           marker = new L.Marker(latlng, {icon: new Icon()});
