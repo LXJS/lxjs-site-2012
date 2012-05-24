@@ -749,7 +749,7 @@ button:hover {
 	font-weight: 700;
 }
 
-.credits_hosting, .credits_logo {
+.credits_hosting, .credits_logo, .credits_media {
 	width: 140px;
 	position: absolute;
 	top: 160px;
@@ -769,6 +769,18 @@ button:hover {
 	width: 102px;
 	height: 26px;
 }
+
+.credits_media {
+  left: 476px;
+}
+
+.credits-rtp-logo {
+	background: url(../images/brand_rtp.png) top left no-repeat;
+	display: block;
+	width: 140px;
+	height: 60px;
+}
+
 
 
 /* !3.8 Information */
