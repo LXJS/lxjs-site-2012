@@ -777,10 +777,14 @@ button:hover {
 .credits-rtp-logo {
 	background: url(../images/brand_rtp.png) top left no-repeat;
 	display: block;
-	width: 150px;
-	height: 60px;
+	width: 90px;
+	height: 90px;
 }
 
+.credits-rtp-logo a {
+  margin-top: 3px;
+  margin-left: 10px;
+}
 
 
 /* !3.8 Information */
