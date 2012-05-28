@@ -1158,6 +1158,8 @@ p.dropcap::first-letter {
   text-align: center;
   opacity: 0.5;
   filter: alpha(opacity=50);
+  overflow: hidden;
+  text-indent: -40px;
 }
 
 .carousel-control.right {
