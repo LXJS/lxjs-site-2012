@@ -16,6 +16,7 @@ body {
 	font-family: 'Asap', Arial, sans-serif;
 	font-weight: 400;
 	line-height: 20px;
+	min-width: 980px;
 }
 
 ::-moz-selection { 
@@ -170,7 +171,7 @@ td {
 /* !2.1 General Structure */
 
 .container {
-	width: 940px;
+	width: 940px; 
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -352,26 +353,26 @@ td {
 	right: 0;
 }
 
-#welcome .social_nav a {
+#welcome .social_nav a .icon {
 	background: url(../images/social_icons_bg.png) 0px 0px no-repeat;
 	width: 40px;
 	height: 40px;
 	display: block;
 }
 
-#welcome .social_nav .large a {
+#welcome .social_nav .large a .icon {
 	width: 60px;
 	height: 60px;
 }
 
-#welcome .social_nav .medium a {
+#welcome .social_nav .medium a .icon{
 	width: 50px;
 	height: 50px;
 }
 
-#welcome .social_nav .twitter.large a { background-position: 0px -300px;}
-#welcome .social_nav .tumblr.medium a { background-position: 0px -380px;}
-#welcome .social_nav .lanyard a { background-position: 0px -240px;}
+#welcome .social_nav .twitter.large a .icon{ background-position: 0px -300px;}
+#welcome .social_nav .tumblr.medium a .icon{ background-position: 0px -380px;}
+#welcome .social_nav .lanyard a .icon{ background-position: 0px -240px;}
 
 
 #welcome .social_nav dt {
