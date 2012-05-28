@@ -10,13 +10,12 @@
 ------------------------------------------------------------------ */
 
 body {
-	background: #FFF url(../images/body.png) center top no-repeat;
 	color: #355971;
 	font-size: 14px;
 	font-family: 'Asap', Arial, sans-serif;
 	font-weight: 400;
 	line-height: 20px;
-	min-width: 980px; 
+	min-width: 980px;
 }
 
 ::-moz-selection { 
@@ -169,6 +168,11 @@ td {
 
 
 /* !2.1 General Structure */
+
+#wrapper {
+	background: url(../images/body.png) center 2px no-repeat;
+	background: url(../images/body_bg_1.png) center 1px no-repeat, url(../images/body_bg_2.png) center 500px no-repeat, url(../images/body_bg_3.png) center 1000px no-repeat, url(../images/body_bg_4.png) center 1500px no-repeat, url(../images/body_bg_5.png) center 2000px no-repeat, url(../images/body_bg_6.png) center 2500px no-repeat, url(../images/body_bg_7.png) center 3000px no-repeat, url(../images/body_bg_7.png) center 3500px no-repeat, url(../images/body_bg_8.png) center 4000px no-repeat, url(../images/body_bg_9.png) center 4500px no-repeat, url(../images/body_bg_10.png) center 5000px no-repeat, url(../images/body_bg_11.png) center 5500px no-repeat, url(../images/body_bg_12.png) center 6000px no-repeat; 
+}
 
 .container {
 	width: 940px; 
@@ -323,7 +327,7 @@ td {
 
 #welcome h1 img {
 	position: absolute; 
-	top: 0; 
+	top: 2px; 
 	left: -320px;
 }
 
