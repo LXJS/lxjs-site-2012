@@ -10,12 +10,12 @@
 ------------------------------------------------------------------ */
 
 body {
-	background: #FFF url(../images/body.png) center top no-repeat;
 	color: #355971;
 	font-size: 14px;
 	font-family: 'Asap', Arial, sans-serif;
 	font-weight: 400;
 	line-height: 20px;
+	min-width: 980px;
 }
 
 ::-moz-selection { 
@@ -169,8 +169,13 @@ td {
 
 /* !2.1 General Structure */
 
+#wrapper {
+	background: url(../images/body.png) center 2px no-repeat;
+	background: url(../images/body_bg_1.png) center 1px no-repeat, url(../images/body_bg_2.png) center 500px no-repeat, url(../images/body_bg_3.png) center 1000px no-repeat, url(../images/body_bg_4.png) center 1500px no-repeat, url(../images/body_bg_5.png) center 2000px no-repeat, url(../images/body_bg_6.png) center 2500px no-repeat, url(../images/body_bg_7.png) center 3000px no-repeat, url(../images/body_bg_7.png) center 3500px no-repeat, url(../images/body_bg_8.png) center 4000px no-repeat, url(../images/body_bg_9.png) center 4500px no-repeat, url(../images/body_bg_10.png) center 5000px no-repeat, url(../images/body_bg_11.png) center 5500px no-repeat, url(../images/body_bg_12.png) center 6000px no-repeat; 
+}
+
 .container {
-	width: 940px;
+	width: 940px; 
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -322,7 +327,7 @@ td {
 
 #welcome h1 img {
 	position: absolute; 
-	top: 0; 
+	top: 2px; 
 	left: -320px;
 }
 
@@ -352,26 +357,26 @@ td {
 	right: 0;
 }
 
-#welcome .social_nav a {
+#welcome .social_nav a .icon {
 	background: url(../images/social_icons_bg.png) 0px 0px no-repeat;
 	width: 40px;
 	height: 40px;
 	display: block;
 }
 
-#welcome .social_nav .large a {
+#welcome .social_nav .large a .icon {
 	width: 60px;
 	height: 60px;
 }
 
-#welcome .social_nav .medium a {
+#welcome .social_nav .medium a .icon{
 	width: 50px;
 	height: 50px;
 }
 
-#welcome .social_nav .twitter.large a { background-position: 0px -300px;}
-#welcome .social_nav .tumblr.medium a { background-position: 0px -380px;}
-#welcome .social_nav .lanyard a { background-position: 0px -240px;}
+#welcome .social_nav .twitter.large a .icon{ background-position: 0px -300px;}
+#welcome .social_nav .tumblr.medium a .icon{ background-position: 0px -380px;}
+#welcome .social_nav .lanyard a .icon{ background-position: 0px -240px;}
 
 
 #welcome .social_nav dt {
@@ -1157,6 +1162,8 @@ p.dropcap::first-letter {
   text-align: center;
   opacity: 0.5;
   filter: alpha(opacity=50);
+  overflow: hidden;
+  text-indent: -40px;
 }
 
 .carousel-control.right {
