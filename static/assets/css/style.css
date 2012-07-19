@@ -106,7 +106,7 @@ dt {
 }
 
 table {
-	width: 100%;
+	width: 90%;
 }
 
 tr {
@@ -120,13 +120,13 @@ thead tr{
 th {
 	font-size: 24px;
 	padding: 20px 10px;
-	text-align: left;
 }
 
 td {
 	padding: 10px;
 	font-size: 16px;
 	letter-spacing: 0px;
+  text-align: center;
 }
 
 /* 2. Layout
@@ -550,11 +550,11 @@ td {
 /* !3.4 Schedule */
 
 .sched_time {
-	width: 120px;
+	width: 100px;
 }
 
 .sched_day_one, .sched_day_two {
-	width: 380px;
+	width: 400px;
 }
 
 .talk-title {
