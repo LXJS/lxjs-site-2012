@@ -163,14 +163,16 @@ $(function() {
       var $this = $(this),
       target = $this.attr('href'),
       targetId = target.substring(1);
-      
-      if (document.getElementById(targetId) === null) return false;
-      
-      // Push history
-      $.bbq.pushState('/' + targetId, 2);
-      
-      // Prevent default behaviour
-      evt.preventDefault();
+
+      if(target.substr(0,1) === '#'){
+        if (document.getElementById(targetId) === null) return false;
+        
+        // Push history
+        $.bbq.pushState('/' + targetId, 2);
+        
+        // Prevent default behaviour
+        evt.preventDefault();
+      }
     });
     
     function getNavSection(scrollTop) {

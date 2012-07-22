@@ -282,7 +282,7 @@ td {
 	font-size: 22px;
 	text-decoration: none;
 	letter-spacing: -1px;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 #page_nav li a.active {
@@ -1199,7 +1199,8 @@ p.dropcap::first-letter {
 /* 7. Transitions
 ------------------------------------------------------------------ */
 a {
-	-webkit-transform: translateZ(0);
+/* keep this off because of the flickering bug on the top menu */
+/*	-webkit-transform: translateZ(0);*/
 	-webkit-transition: .2s ease;
 	   -moz-transition: .2s ease;
 	    -ms-transition: .2s ease;
