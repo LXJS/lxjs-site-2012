@@ -53,10 +53,10 @@
           <div class="container">
 
             <header id="brand" class="section_header">
-              <h1 class="brand_initials"><img src="assets/images/lxjs_logo.png" alt="lxjs-logo" width="240" height="240" />Workshops</h1>
+              <h1 class="brand_initials"><img src="assets/images/lxjs_logo.png" alt="lxjs-logo" width="240" height="240" />LXJS Workshops</h1>
               <h2 class="brand_name">Come learn with the best</h2>
               <h2 class="brand_info" style="margin-top: 1em">
-                We have 3 workshops for you: jQuery, Node.js, JS Client Side Testing and Raspberry Pi
+                We have 3 workshops for you: jQuery, Node.js and JS Client Side Testing
               </h2>
             </header><!-- /header -->
 
@@ -75,15 +75,49 @@
               <h2>by Igor Soarez</h2>
             </header><!-- /header -->
 
-            <section class="prose">
-              <ul>
-                <li>Advanced selectors</li>
-                <li>DOM traversing and manipulation</li>
-                <li>jQuery.Callbacks</li>
-                <li>Effects and animations</li>
-                <li>Ajax with jQuery</li>
-                <li>Events</li>
-            </section>
+            <ul class="entry_list masonry">
+
+              <li class="entry_item" style="padding-top: 20px">
+                <section class="prose">
+                  <article>
+                    <header>
+                      <h2>Price:</h2>
+                      <p>Attendees: 200€<br/>
+                      Non-attendees: 300€<br/>
+                      Prices are without fees and VAT</p>
+
+                      <p><button name="op" type="submit" class="button" value="Subscribe" id="newsletter-submit-bttn" tabindex="2" onclick="document.location='https://tito.io/lxjs/jquery-workshop'">Buy</button></p>
+
+                    </header>
+                    <div class="excerpt">
+                      <h2>Topics:</h2>
+                      <ul>
+                        <li>Advanced selectors</li>
+                        <li>DOM traversing and manipulation</li>
+                        <li>jQuery.Callbacks</li>
+                        <li>Effects and animations</li>
+                        <li>Ajax with jQuery</li>
+                        <li>Events</li>
+                      </ul>
+                    </div>
+                  </article>
+                </section>
+              </li>
+
+              <li class="entry_item">
+                <article>
+                  <header>
+                    <h1 class="entry_title">Igor Soarez</h1>
+                    <h2 class="entry_position"></h2>
+                    <p class="entry_thumbnail"><img src="assets/images/speakers_igor.jpg" alt="Igor Soarez" width="160" height="160" /></p>
+                  </header>
+                  <div class="excerpt">
+                    <p class="entry_twitter"><a href="http://twitter.com/igorsoarez" title="Go to Twitter"><span class="icon spin"></span>@igorsoarez</a></p>
+                  </div>
+                </article>
+              </li>
+
+            </ul>
 
           </div><!-- /container -->
 
@@ -103,19 +137,25 @@
               <ul class="entry_list masonry">
 
                 <li class="entry_item" style="padding-top: 20px">
-                  <article class="prose">
-                    <p>One day workshop deep-diving in Node.js</p>
-                    <p>
-                      Attendees<br />
-                      200€ + Fee + VAT
-                    </p>
-                    <p>
-                      Non-attendees<br />
-                      200€ + Fee + VAT
-                    </p>
-                    <p><button name="op" type="submit" class="button" value="Subscribe" id="newsletter-submit-bttn" tabindex="2" onclick="document.location='https://tito.io/lxjs/jquery-workshop'">Buy</button></p>
-                  </article>
+                  <section class="prose">
+                    <article>
+                      <header>
+                        <h2>Price:</h2>
+                        <p>Attendees: 200€<br/>
+                        Non-attendees: 300€<br/>
+                        Prices are without fees and VAT</p>
+
+                        <p><button name="op" type="submit" class="button" value="Subscribe" id="newsletter-submit-bttn" tabindex="2" onclick="document.location='https://tito.io/lxjs/node-workshop'">Buy</button></p>
+
+                      </header>
+                      <div class="excerpt">
+                        <h2>Topics:</h2>
+                        <p>One day workshop deep-diving in Node.js</p>
+                      </div>
+                    </article>
+                  </section>
                 </li>
+
 
                 <li class="entry_item">
                   <article>
@@ -167,10 +207,10 @@
               <li class="entry_item" style="padding-top: 20px">
                 <section class="prose">
                   <article>
-                    <header style="height:167px">
+                    <header>
                       <h2>Price:</h2>
-                      <p>Attendees: Free</p>
-                      <p><button name="op" type="submit" class="button" value="Subscribe" id="newsletter-submit-bttn" tabindex="2" onclick="document.location='https://tito.io/lxjs/js-client-side-testing-workshop'">Buy</button></p>
+                      <p>Free, for attendees only</p>
+                      <p><button name="op" type="submit" class="button" value="Subscribe" id="newsletter-submit-bttn" tabindex="2" onclick="document.location='https://tito.io/lxjs/js-client-side-testing-workshop'">Register</button></p>
 
                     </header>
                     <div class="excerpt">
@@ -270,11 +310,11 @@
               <table>
                 <thead>
                   <tr>
-                    <th class="">Workshop</th>
-                    <th class="">Date</th>
-                    <th class="">Atendee Price</th>
-                    <th class="">Non Atendee Price</th>
-                    <th class="">Buy</th>
+                    <th>Workshop</th>
+                    <th>Date</th>
+                    <th>Atendee Price</th>
+                    <th>Non Atendee Price</th>
+                    <th>Buy</th>
                   </tr>
                 </thead>
                 <tbody>
