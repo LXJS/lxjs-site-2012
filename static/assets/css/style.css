@@ -428,7 +428,6 @@ td {
 }
 
 .entry_item {
-	background-color: #D2EAF4;
 	background-color: rgba(29,151,202,.2);
 	width: 180px;
 	margin: 0 10px 20px 10px;
@@ -436,6 +435,10 @@ td {
 	padding: 210px 20px 20px 20px;
 	overflow: hidden;
 	position: relative;
+}
+
+section.alt .entry_item {
+	background-color: rgba(49, 127, 160, .2);
 }
 
 .corner_stamp {
