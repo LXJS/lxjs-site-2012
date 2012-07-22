@@ -757,7 +757,7 @@ button:hover {
 	font-weight: 700;
 }
 
-.credits_hosting, .credits_logo, .credits_media {
+.credits_hosting, .credits_logo, .credits_media, .credits_ldw {
 	width: 140px;
 	position: absolute;
 	top: 160px;
@@ -779,7 +779,10 @@ button:hover {
 }
 
 .credits_media {
-  left: 476px;
+  left: 454px;
+}
+.credits_ldw {
+  left: 583px;
 }
 
 .credits-rtp-logo {
@@ -791,6 +794,14 @@ button:hover {
   margin-left: 10px;
 }
 
+.credits-ldw-logo {
+	background: url(../images/lisbon_digital_week.png) top left no-repeat;
+	display: block;
+	width: 180px;
+	height: 34px;
+  margin-top: 3px;
+  margin-left: 10px;
+}
 
 /* !3.8 Information */
 
