@@ -1228,7 +1228,7 @@ a.no-transition {
 }
 
 *:hover > .spin {
-	-webkit-transform: translateZ(0);
+	/*-webkit-transform: translateZ(0);*/
 	-webkit-transform: rotateZ(360deg);
        -moz-transform: rotateZ(360deg);
         -ms-transform: rotateZ(360deg);
