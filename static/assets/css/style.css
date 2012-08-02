@@ -176,7 +176,7 @@ td {
 }
 
 .container {
-	width: 1000px; 
+	width: 940px; 
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -284,6 +284,10 @@ td {
 	text-decoration: none;
 	letter-spacing: -1px;
 	font-weight: 600;
+}
+
+#page_nav li a img{
+  margin-top: -4px;
 }
 
 #page_nav li a.active {
