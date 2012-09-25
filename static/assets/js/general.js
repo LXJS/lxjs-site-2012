@@ -212,7 +212,7 @@ $(function() {
     
     
     // Tab panels
-    $('.tabs').on('click', 'a', function(evt) {
+    function handleTabPanel(evt) {
       var $this = $that = $(this),
         $parent = $this.parents('.section'),
         panel = $this.attr('href').replace('#', ''),
@@ -238,9 +238,27 @@ $(function() {
         });
       });
       
-      evt.preventDefault();
-    });
-    
+      if(typeof evt == 'function'){
+        evt();
+      } else if(evt){
+        evt.preventDefault();
+      }
+    }
+    $('.tabs').on('click', 'a', handleTabPanel);
+
+    function loadInitialHash() {
+      var hash = window.location.hash;
+      if(hash.length > 1 && hash.indexOf('/') < 0){
+        var atag = $('#info_nav').find('a[href="#'+ hash.replace('#', '') +'"]');
+        if(atag.get(0)){
+          $.proxy(handleTabPanel, atag)(function() {
+            $.scrollTo('#information', 'normal');
+          });
+        }
+      }
+    }
+    loadInitialHash();
+
 
     /**
      * HISTORY
@@ -249,14 +267,16 @@ $(function() {
      
     function hashChangeHandler(evt) {
       // Get state
-      var url = $.param.fragment().replace('/', '');
-      
-      if (url) {
-        // Scroll to section
-        $.scrollTo('#' + url, 'normal');
+      if($.param.fragment().indexOf('/') >= 0){
+        var url = $.param.fragment().replace('/', '');
+        
+        if (url) {
+          // Scroll to section
+          $.scrollTo('#' + url, 'normal');
+        }
+        
+        evt.preventDefault();
       }
-      
-      evt.preventDefault();
     }
     
     $(window).on('hashchange', hashChangeHandler);
