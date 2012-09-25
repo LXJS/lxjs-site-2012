@@ -255,7 +255,7 @@ OOOOOZZZZZZZZZZ$$$$$ZZZ$$Z$$$7$$7777777777$$$$777777$$ZZZZZZ$=7$I7$7?Z$7$?$$Z-->
 
                 <h3>Parking</h3>
 
-                <p>If you can't find a parking spot around Mercado da Ribeira, you can find a parking lot 500m to the west, along Avenida 24 de Julho, <a href="https://maps.google.com/?hnear=Great+Sutton+St,+London,+United+Kingdom&t=h&ie=UTF8&hq=&ll=38.705805,-9.150756&spn=0.00176,0.002835&z=19&vpsrc=6">facing the river</a>.</p>
+                <p>If you can't find a parking spot around Mercado da Ribeira, you can find a parking lot 500m to the west, along Avenida 24 de Julho, <a href="https://maps.google.com/?t=h&ie=UTF8&hq=&ll=38.705805,-9.150756&spn=0.00176,0.002835&z=19&vpsrc=6">facing the river</a>.</p>
 		
               </aside><!-- col_small -->
 
@@ -269,8 +269,9 @@ OOOOOZZZZZZZZZZ$$$$$ZZZ$$Z$$$7$$7777777777$$$$777777$$ZZZZZZ$=7$I7$7?Z$7$?$$Z-->
                   <h2>Mercado da Ribeira - Venue Plan</h2>
                 </header>
 
-                <div class="prose">
-                  <iframe src="/venuemap.html" frameborder="0" scrolling="auto" width="700" height="640"></iframe>
+                <p><em>Drag me around!</em></p>
+                <div id="venueplan" class="prose" style="width:700px; height:585px; padding: 10px 0px; background-color: #fff; overflow:hidden; position:relative;">
+                  <img src="/assets/images/venue_map.png" width="1200" height="585" alt="" style="position:absolute; z-index:1; top: 0; left: 0; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; -webkit-user-drag: none;">
                 </div><!-- /prose -->
 
               </section><!-- /col_medium -->
@@ -3110,6 +3111,8 @@ OOOOOZZZZZZZZZZ$$$$$ZZZ$$Z$$$7$$7777777777$$$$777777$$ZZZZZZ$=7$I7$7?Z$7$?$$Z-->
   <script src="assets/js/libs/bootstrap-carousel.js"></script>
   <script src="assets/js/libs/jquery.tweet.js"></script>
   <script src="assets/js/libs/jquery.tumblr.js"></script>
+  <script src="assets/js/libs/hammer.js"></script>
+  <script src="assets/js/libs/jquery.hammer.js"></script>
   <script src="assets/js/libs/konami.js"></script>
   <script src="assets/js/general.js"></script>
   <!--END-SCRIPT-TAGS-->

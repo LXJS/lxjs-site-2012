@@ -285,7 +285,92 @@ $(function() {
     $(window).trigger('hashchange');
     highlightCurrentNav(false);
     
-    
+    /**
+     * super simple slideshow
+     * animation between slides happens with css transitions
+     */
+    function TouchScroll(container, options)
+    {
+        container = $(container);
+        var content = $(">img", container);
+
+        var self = this;
+        var hammer = new Hammer(container.get(0), {
+            drag: true,
+            drag_vertical: false,
+            drag_horizontal: true,
+            drag_min_distance: 0,
+
+            transform: false,
+            tap: false,
+            tap_double: false,
+            hold: false
+        });
+
+
+        function getScrollPosition() {
+            return {
+                top: parseInt(content.css('top'), 10),
+                left: parseInt(content.css('left'), 10)
+            };
+        }
+
+
+        /**
+         * get the dimensions of a element
+         * @param   jQuery  el
+         * @return  object  { width: int, height: int }
+         */
+        function getDimensions( el ) {
+            return {
+                width: el.outerWidth(),
+                height: el.outerHeight()
+            };
+        }
+
+
+        var scroll_start = {};
+        var scroll_dim = {};
+        var content_dim = {};
+
+        hammer.ondragstart = function() {
+            scroll_start = getScrollPosition();
+            scroll_start.time = new Date().getTime();
+
+            scroll_dim = getDimensions( container );
+            content_dim = getDimensions( content );
+        };
+
+
+        hammer.ondrag = function( ev ) {
+            if(ev.direction == 'up' || ev.direction == 'left') {
+                ev.distance = 0-ev.distance;
+            }
+
+            var delta = 1;
+
+            var left = scroll_start.left + ev.distance * delta;
+            content.css({ left: left });
+        };
+
+
+        hammer.ondragend = function( ev ) {
+            var scroll = getScrollPosition();
+            var corrections = {};
+            if(scroll.left > 0) {
+                corrections.left = 0;
+            }
+
+            else if(scroll.left < -(content_dim.width - scroll_dim.width) ) {
+                corrections.left = -(content_dim.width - scroll_dim.width);
+            }
+
+            content.animate(corrections, 400);
+        };
+    }
+
+    var scroll = new TouchScroll("#venueplan");
+
     /**
      * KONAMI CODE
      *
